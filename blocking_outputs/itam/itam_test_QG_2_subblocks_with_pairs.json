@@ -1,0 +1,1424 @@
+{
+  "metadata": {
+    "total_blocks_subblocks": 62,
+    "total_pairs": 109,
+    "created_at": "2026-01-05T20:33:04.517220"
+  },
+  "blocks": {
+    "block_2015_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 249,
+          "rtable_id": 53074,
+          "label": 0,
+          "entity_a": "Song_Name: VHS Outro ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS; Genre: Alternative , Music , Rock , Adult Alternative; Price: $ 1.29; CopyRight: 2015 KIDinaKORNER/Interscope Records; Time: 1:25; Released: 30-Jun-15",
+          "entity_b": "Song_Name: First Show ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS [ Explicit ]; Genre: Alternative Rock; Price: $ 1.29; CopyRight: ( C ) 2015 KIDinaKORNER/Interscope Records; Time: 0:11; Released: June 30 , 2015",
+          "block_id": "2015"
+        },
+        {
+          "ltable_id": 252,
+          "rtable_id": 53036,
+          "label": 0,
+          "entity_a": "Song_Name: VHS Outro ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS; Genre: Alternative , Music , Rock , Adult Alternative; Price: $ 1.29; CopyRight: 2015 KIDinaKORNER/Interscope Records; Time: 1:25; Released: 30-Jun-15",
+          "entity_b": "Song_Name: Smoke ( Interlude ) [ Explicit ]; Artist_Name: X Ambassadors; Album_Name: VHS [ Explicit ]; Genre: Alternative Rock; Price: $ 1.29; CopyRight: ( C ) 2015 KIDinaKORNER/Interscope Records; Time: 0:24; Released: June 30 , 2015",
+          "block_id": "2015"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "2015",
+      "subblock_index": 0,
+      "parent_block": "2015"
+    },
+    "block_2015_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 271,
+          "rtable_id": 53030,
+          "label": 0,
+          "entity_a": "Song_Name: VHS Outro ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS; Genre: Alternative , Music , Rock , Adult Alternative; Price: $ 1.29; CopyRight: 2015 KIDinaKORNER/Interscope Records; Time: 1:25; Released: 30-Jun-15",
+          "entity_b": "Song_Name: Moving Day ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS [ Explicit ]; Genre: Alternative Rock; Price: $ 1.29; CopyRight: ( C ) 2015 KIDinaKORNER/Interscope Records; Time: 0:19; Released: June 30 , 2015",
+          "block_id": "2015"
+        },
+        {
+          "ltable_id": 275,
+          "rtable_id": 52959,
+          "label": 0,
+          "entity_a": "Song_Name: VHS Outro ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS; Genre: Alternative , Music , Rock , Adult Alternative; Price: $ 1.29; CopyRight: 2015 KIDinaKORNER/Interscope Records; Time: 1:25; Released: 30-Jun-15",
+          "entity_b": "Song_Name: Adam & Noah 's Priorities ( Interlude ); Artist_Name: X Ambassadors; Album_Name: VHS [ Clean ]; Genre: Alternative Rock; Price: $ 1.29; CopyRight: ( C ) 2015 KIDinaKORNER/Interscope Records; Time: 0:27; Released: June 30 , 2015",
+          "block_id": "2015"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "2015",
+      "subblock_index": 1,
+      "parent_block": "2015"
+    },
+    "block_2015_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 1166,
+          "rtable_id": 21565,
+          "label": 0,
+          "entity_a": "Song_Name: Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Extended ]; Artist_Name: David Guetta; Album_Name: Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Remixes ] - EP; Genre: Dance , Music; Price: $ 1.29; CopyRight: 2015 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States; Time: 4:42; Released: 12-May-15",
+          "entity_b": "Song_Name: Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Club Killers Remix ]; Artist_Name: David Guetta; Album_Name: Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ) [ Remixes EP ]; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 Michelle Kelly; Time: 4:01; Released: May 12 , 2015",
+          "block_id": "2015"
+        },
+        {
+          "ltable_id": 1410,
+          "rtable_id": 51576,
+          "label": 0,
+          "entity_a": "Song_Name: Illusion ( feat . Echosmith ); Artist_Name: Zedd; Album_Name: True Colors; Genre: Dance , Music , Electronic; Price: $ 1.29; CopyRight: 2015 Interscope Records; Time: 6:30; Released: 18-May-15",
+          "entity_b": "Song_Name: Papercut [ feat . Troye Sivan ]; Artist_Name: Zedd; Album_Name: True Colors; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2015 Interscope Records; Time: 7:23; Released: May 18 , 2015",
+          "block_id": "2015"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "2015",
+      "subblock_index": 2,
+      "parent_block": "2015"
+    },
+    "block_2015_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 1413,
+          "rtable_id": 51590,
+          "label": 1,
+          "entity_a": "Song_Name: Illusion ( feat . Echosmith ); Artist_Name: Zedd; Album_Name: True Colors; Genre: Dance , Music , Electronic; Price: $ 1.29; CopyRight: 2015 Interscope Records; Time: 6:30; Released: 18-May-15",
+          "entity_b": "Song_Name: Illusion [ feat . Echosmith ]; Artist_Name: Zedd; Album_Name: True Colors; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2015 Interscope Records; Time: 6:25; Released: May 18 , 2015",
+          "block_id": "2015"
+        },
+        {
+          "ltable_id": 4413,
+          "rtable_id": 42103,
+          "label": 1,
+          "entity_a": "Song_Name: Are You Leaving With Him; Artist_Name: Luke Bryan; Album_Name: Spring Break ... Checkin ' Out; Genre: Country , Music , Contemporary Country; Price: $ 1.29; CopyRight: 2015 Capitol Records Nashville; Time: 3:23; Released: 10-Mar-15",
+          "entity_b": "Song_Name: Are You Leaving With Him; Artist_Name: Luke Bryan; Album_Name: Spring Break ... Checkin ' Out; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2015 Capitol Records Nashville; Time: 3:24; Released: March 10 , 2015",
+          "block_id": "2015"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "2015",
+      "subblock_index": 3,
+      "parent_block": "2015"
+    },
+    "block_2015_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 6306,
+          "rtable_id": 42359,
+          "label": 0,
+          "entity_a": "Song_Name: Downside of Growing Up; Artist_Name: Maddie & Tae; Album_Name: Start Here; Genre: Country , Music , Rock , Contemporary Country , Pop , Pop/Rock , Honky Tonk; Price: $ 1.29; CopyRight: ‰ ãÑ 2015 Republic Records , a Division of UMG Recordings , Inc. ( Dot Records ); Time: 3:30; Released: 28-Aug-15",
+          "entity_b": "Song_Name: Your Side Of Town; Artist_Name: Maddie & Tae; Album_Name: Start Here; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2015 Republic Records , a Division of UMG Recordings , Inc. ( Dot Records ); Time: 3:02; Released: August 28 , 2015",
+          "block_id": "2015"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "2015",
+      "subblock_index": 4,
+      "parent_block": "2015"
+    },
+    "block_music_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 796,
+          "rtable_id": 33113,
+          "label": 0,
+          "entity_a": "Song_Name: As Long As You Love Me ( feat . Big Sean ) [ Audien Luvstep Mix ]; Artist_Name: Justin Bieber; Album_Name: As Long As You Love Me ( Remixes ) [ feat . Big Sean ]; Genre: Dance , Music , Rock; Price: $ 1.29; CopyRight: 2012 The Island Def Jam Music Group; Time: 4:40; Released: 11-Sep-12",
+          "entity_b": "Song_Name: Never Say Never [ feat . Jaden Smith ]; Artist_Name: Justin Bieber; Album_Name: Never Say Never - The Remixes; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2011 The Island Def Jam Music Group; Time: 3:48; Released: February 14 , 2011",
+          "block_id": "music"
+        },
+        {
+          "ltable_id": 1241,
+          "rtable_id": 54195,
+          "label": 0,
+          "entity_a": "Song_Name: Who 's That Chick ? ( feat . Rihanna ) [ Single Version ]; Artist_Name: David Guetta & Rihanna; Album_Name: Who 's That Chick ( feat . Rihanna ) - EP; Genre: House , Music , Dance , Rock , Electronic; Price: $ 0.99; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:45; Released: 3-Dec-10",
+          "entity_b": "Song_Name: When Love Takes Over ( Feat . Kelly Rowland - Electro Extended ); Artist_Name: David Guetta; Album_Name: When Love Takes Over ( feat . Kelly Rowland ); Genre: Dance & Electronic; Price: $ 0.99; CopyRight: ( C ) 2015 The Valory Music Co. , LLC; Time: 8:20; Released: May 5 , 2009",
+          "block_id": "music"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "music",
+      "subblock_index": 0,
+      "parent_block": "music"
+    },
+    "block_music_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 1514,
+          "rtable_id": 49668,
+          "label": 1,
+          "entity_a": "Song_Name: Through the Ghost; Artist_Name: Shinedown; Album_Name: The Studio Album Collection; Genre: Rock , Music; Price: $ 1.29; CopyRight: 2013 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 4:01; Released: 8-Nov-13",
+          "entity_b": "Song_Name: Through the Ghost; Artist_Name: Shinedown; Album_Name: The Studio Album Collection; Genre: Rock; Price: $ 1.29; CopyRight: 2013 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 4:01; Released: November 8 , 2013",
+          "block_id": "music"
+        },
+        {
+          "ltable_id": 3017,
+          "rtable_id": 22499,
+          "label": 0,
+          "entity_a": "Song_Name: We 'll Be Coming Back ( feat . Example ) [ Jacob Plant Remix ]; Artist_Name: Calvin Harris; Album_Name: We 'll Be Coming Back ( feat . Example ) [ Remixes ]; Genre: Dance , Music , R&B / Soul , Electronic; Price: $ 1.29; CopyRight: 2013 Sony Music Entertainment UK Limited; Time: 5:02; Released: 5-Feb-13",
+          "entity_b": "Song_Name: How Deep Is Your Love ( Chris Lake Remix ); Artist_Name: Calvin Harris & Disciples; Album_Name: How Deep Is Your Love ( Remixes ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2015 Island Records , a division of Universal Music Operations Limited; Time: 5:06; Released: August 7 , 2015",
+          "block_id": "music"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "music",
+      "subblock_index": 1,
+      "parent_block": "music"
+    },
+    "block_music_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 3324,
+          "rtable_id": 7357,
+          "label": 0,
+          "entity_a": "Song_Name: We Dem Boyz; Artist_Name: Wiz Khalifa; Album_Name: Blacc Hollywood ( Deluxe Version ); Genre: Hip-Hop/Rap , Music , Rap , Hardcore Rap , East Coast Rap , Rock; Price: $ 1.99; CopyRight: 2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 3:56; Released: 19-Aug-14",
+          "entity_b": "Song_Name: We Dem Boyz Remix ( feat . Rick Ross , ScHoolboy Q & Nas ) [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: Blacc Hollywood ( Deluxe ) [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 5:19; Released: August 19 , 2014",
+          "block_id": "music"
+        },
+        {
+          "ltable_id": 3392,
+          "rtable_id": 53866,
+          "label": 0,
+          "entity_a": "Song_Name: We Dem Boyz ( Louis Futon Remix ); Artist_Name: Wiz Khalifa; Album_Name: We Dem Boyz ( Louis Futon Remix ) - Single; Genre: Electronic,Music,Hip-Hop / Rap , Rap; Price: $ 1.29; CopyRight: 2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 4:19; Released: 1-Jul-14",
+          "entity_b": "Song_Name: We Dem Boyz [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: We Dem Boyz [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 3:45; Released: February 11 , 2014",
+          "block_id": "music"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "music",
+      "subblock_index": 2,
+      "parent_block": "music"
+    },
+    "block_music_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 5077,
+          "rtable_id": 40465,
+          "label": 1,
+          "entity_a": "Song_Name: Latch ( feat . Sam Smith ); Artist_Name: Disclosure; Album_Name: Settle ( Deluxe Version ); Genre: Electronic , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2014 Universal Island Records , a division of Universal Music Operations Limited; Time: 4:15; Released: 15-Apr-14",
+          "entity_b": "Song_Name: Latch [ feat . Sam Smith ]; Artist_Name: Disclosure; Album_Name: Settle; Genre: Electronica , Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2013 Universal Island Records , a division of Universal Music Operations Limited; Time: 4:15; Released: June 11 , 2013",
+          "block_id": "music"
+        },
+        {
+          "ltable_id": 5077,
+          "rtable_id": 40473,
+          "label": 0,
+          "entity_a": "Song_Name: Latch ( feat . Sam Smith ); Artist_Name: Disclosure; Album_Name: Settle ( Deluxe Version ); Genre: Electronic , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2014 Universal Island Records , a division of Universal Music Operations Limited; Time: 4:15; Released: 15-Apr-14",
+          "entity_b": "Song_Name: You & Me [ feat . Eliza Doolittle ]; Artist_Name: Disclosure; Album_Name: Settle; Genre: Electronica , Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2013 Universal Island Records , a division of Universal Music Operations Limited; Time: 4:27; Released: June 11 , 2013",
+          "block_id": "music"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "music",
+      "subblock_index": 3,
+      "parent_block": "music"
+    },
+    "block_music_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 5343,
+          "rtable_id": 47894,
+          "label": 0,
+          "entity_a": "Song_Name: The Woodland Realm ( Extended Version ); Artist_Name: Howard Shore; Album_Name: The Hobbit : The Desolation of Smaug ( Original Motion Picture Soundtrack ) [ Special Edition ]; Genre: Soundtrack , Music , Soundtrack , Classical , Original Score; Price: $ 1.29; CopyRight: ‰ ãÑ 2013 WaterTower Music; Time: 5:14; Released: 10-Dec-13",
+          "entity_b": "Song_Name: The High Fells ( Extended Version ); Artist_Name: Howard Shore; Album_Name: The Hobbit : The Desolation of Smaug ( Original Motion Picture Soundtrack ) [ Special Edition ]; Genre: Soundtracks; Price: $ 1.29; CopyRight: 2013 WaterTower Music / Warner Bros. . Entertainment / Metro - Goldwyn Mayer Pictures Inc.; Time: 3:38; Released: December 10 , 2013",
+          "block_id": "music"
+        },
+        {
+          "ltable_id": 5363,
+          "rtable_id": 47909,
+          "label": 1,
+          "entity_a": "Song_Name: My Armor Is Iron; Artist_Name: Howard Shore; Album_Name: The Hobbit : The Desolation of Smaug ( Original Motion Picture Soundtrack ) [ Special Edition ]; Genre: Soundtrack , Music , Soundtrack , Classical , Original Score; Price: $ 1.29; CopyRight: ‰ ãÑ 2013 WaterTower Music; Time: 5:16; Released: 10-Dec-13",
+          "entity_b": "Song_Name: My Armor Is Iron; Artist_Name: Howard Shore; Album_Name: The Hobbit : The Desolation of Smaug ( Original Motion Picture Soundtrack ) [ Special Edition ]; Genre: Soundtracks; Price: $ 1.29; CopyRight: 2013 WaterTower Music / Warner Bros. . Entertainment / Metro - Goldwyn Mayer Pictures Inc.; Time: 5:16; Released: December 10 , 2013",
+          "block_id": "music"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "music",
+      "subblock_index": 4,
+      "parent_block": "music"
+    },
+    "block_train": {
+      "pairs": [
+        {
+          "ltable_id": 5227,
+          "rtable_id": 27254,
+          "label": 1,
+          "entity_a": "Song_Name: I Know ( feat . Chris Brown , Wiz Khalifa & Seven ); Artist_Name: Diddy - Dirty Money , Chris Brown , Wiz Khalifa & Seven; Album_Name: Last Train to Paris; Genre: Hip-Hop/Rap , Music , R&B / Soul , Contemporary R&B , Dance , Rap; Price: $ 1.29; CopyRight: ‰ ãÑ 2010 Bad Boy/Interscope Records; Time: 4:31; Released: 14-Dec-10",
+          "entity_b": "Song_Name: I Know [ feat . Wiz Khalifa ] [ Explicit ]; Artist_Name: Diddy - Dirty Money; Album_Name: Last Train To Paris [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2010 Bad Boy/Interscope Records; Time: 4:31; Released: December 14 , 2010",
+          "block_id": "train"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "train",
+      "subblock_index": null
+    },
+    "block_ep": {
+      "pairs": [
+        {
+          "ltable_id": 4714,
+          "rtable_id": 40170,
+          "label": 0,
+          "entity_a": "Song_Name: Recess ( feat . Fatman Scoop and Michael Angelakos ) [ Flux Pavilion Remix ]; Artist_Name: Skrillex & Kill the Noise; Album_Name: Recess Remixes - EP; Genre: Dance , Music; Price: $ 1.29; CopyRight: 2014 OWSLA/Big Beat Records , Inc. for the United States and WEA International Inc. for the world outside of the United States .; Time: 3:47; Released: 7-Jul-14",
+          "entity_b": "Song_Name: Kill Everybody ( Bare Noize Remix ); Artist_Name: Skrillex; Album_Name: Scary Monsters And Nice Sprites EP [ Explicit ]; Genre: Electronica , Dance & Electronic , Dubstep; Price: $ 1.29; CopyRight: ( c ) 2013 Digitop Ltd; Time: 4:41; Released: December 21 , 2010",
+          "block_id": "ep"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "ep",
+      "subblock_index": null
+    },
+    "block_to_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 291,
+          "rtable_id": 22283,
+          "label": 0,
+          "entity_a": "Song_Name: Epilogue ( feat . George the Poet ); Artist_Name: Naughty Boy; Album_Name: Hotel Cabana; Genre: Pop , Music , R&B / Soul , Contemporary R&B , Hip-Hop/Rap , Pop/Rock , Rock; Price: $ 1.29; CopyRight: 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 1:28; Released: 6-May-14",
+          "entity_b": "Song_Name: Wonder [ feat . Emeli SandÌ © ]; Artist_Name: Naughty Boy; Album_Name: Hotel Cabana ( Deluxe Version ) [ Explicit ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 3:27; Released: May 6 , 2014",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 302,
+          "rtable_id": 22315,
+          "label": 0,
+          "entity_a": "Song_Name: Lifted ( feat . Emeli Sand ' © & Professor Green ); Artist_Name: Naughty Boy; Album_Name: Hotel Cabana ( Deluxe Version ); Genre: Pop , Music , Rock , R&B / Soul , Contemporary R&B , Dance,Electronic,Hip-Hop / Rap , Pop/Rock; Price: $ 1.29; CopyRight: 2013 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 4:15; Released: 6-May-14",
+          "entity_b": "Song_Name: Top Floor ( Cabana ) [ feat . Ed Sheeran ]; Artist_Name: Naughty Boy; Album_Name: Hotel Cabana [ Explicit ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 2:09; Released: May 6 , 2014",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 0,
+      "parent_block": "to"
+    },
+    "block_to_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 306,
+          "rtable_id": 22303,
+          "label": 0,
+          "entity_a": "Song_Name: Lifted ( feat . Emeli Sand ' © & Professor Green ); Artist_Name: Naughty Boy; Album_Name: Hotel Cabana ( Deluxe Version ); Genre: Pop , Music , Rock , R&B / Soul , Contemporary R&B , Dance,Electronic,Hip-Hop / Rap , Pop/Rock; Price: $ 1.29; CopyRight: 2013 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 4:15; Released: 6-May-14",
+          "entity_b": "Song_Name: Wonder [ feat . Emeli SandÌ © ]; Artist_Name: Naughty Boy; Album_Name: Hotel Cabana [ Explicit ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 3:27; Released: May 6 , 2014",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 313,
+          "rtable_id": 22314,
+          "label": 0,
+          "entity_a": "Song_Name: Epilogue ( feat . George the Poet ); Artist_Name: Naughty Boy; Album_Name: Hotel Cabana; Genre: Pop , Music , R&B / Soul , Contemporary R&B , Hip-Hop/Rap , Pop/Rock , Rock; Price: $ 1.29; CopyRight: 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 1:28; Released: 6-May-14",
+          "entity_b": "Song_Name: Lifted [ feat . Emeli SandÌ © ]; Artist_Name: Naughty Boy; Album_Name: Hotel Cabana [ Explicit ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 3:17; Released: May 6 , 2014",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 1,
+      "parent_block": "to"
+    },
+    "block_to_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 322,
+          "rtable_id": 22292,
+          "label": 0,
+          "entity_a": "Song_Name: Epilogue ( feat . George the Poet ); Artist_Name: Naughty Boy; Album_Name: Hotel Cabana; Genre: Pop , Music , R&B / Soul , Contemporary R&B , Hip-Hop/Rap , Pop/Rock , Rock; Price: $ 1.29; CopyRight: 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 1:28; Released: 6-May-14",
+          "entity_b": "Song_Name: So Strong [ feat . Chasing Grace ]; Artist_Name: Naughty Boy; Album_Name: Hotel Cabana ( Deluxe Version ) [ Explicit ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Naughty Boy Recordings Ltd under exclusive licence to Virgin Records Ltd; Time: 3:36; Released: May 6 , 2014",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 956,
+          "rtable_id": 44081,
+          "label": 0,
+          "entity_a": "Song_Name: Teardrops On My Guitar ( Pop Version ); Artist_Name: Taylor Swift; Album_Name: Taylor Swift ( Bonus Track Version ); Genre: Country , Music , Pop , Teen Pop , Honky Tonk , Contemporary Country; Price: $ 0.99; CopyRight: 2008 Big Machine Records , LLC All Rights Reserved Under License to UMGD; Time: 2:59; Released: 24-Oct-06",
+          "entity_b": "Song_Name: Teardrops On My Guitar ( Radio Single Remix ); Artist_Name: Taylor Swift; Album_Name: Taylor Swift; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2008 Big Machine Records , LLC All Rights Reserved Under License to UMGD; Time: 3:23; Released: March 18 , 2008",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 2,
+      "parent_block": "to"
+    },
+    "block_to_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 1176,
+          "rtable_id": 34903,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Revolver ( Madonna Vs. David Guetta Feat . Lil ' Wayne ) ( One Love Remix ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 3:18; Released: August 21 , 2009",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 1176,
+          "rtable_id": 34919,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Missing You ( Feat . Novel ; Continuous Mix Version ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 4:59; Released: August 21 , 2009",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 3,
+      "parent_block": "to"
+    },
+    "block_to_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 1318,
+          "rtable_id": 34922,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: One Love ( Feat . Estelle ; Continuous Mix Version ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 4:42; Released: August 21 , 2009",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 2456,
+          "rtable_id": 24297,
+          "label": 1,
+          "entity_a": "Song_Name: I 'd Love to Change Your Name; Artist_Name: Kenny Chesney; Album_Name: In My Wildest Dreams; Genre: Country , Music , Urban Cowboy , Contemporary Country; Price: $ 0.99; CopyRight: 2004 BMG Music; Time: 2:48; Released: 1994",
+          "entity_b": "Song_Name: I 'd Love To Change Your Name; Artist_Name: Kenny Chesney; Album_Name: In My Wildest Dreams; Genre: Country; Price: $ 0.99; CopyRight: ( p ) Moda Black; Time: 2:48; Released: July 27 , 2004",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 4,
+      "parent_block": "to"
+    },
+    "block_to_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 5747,
+          "rtable_id": 21508,
+          "label": 0,
+          "entity_a": "Song_Name: Dayum , Baby ( feat . Sarah Buxton ); Artist_Name: Florida Georgia Line; Album_Name: Here 's To the Good Times ... This Is How We Roll ( Deluxe Version ); Genre: Country , Music , Urban Cowboy , Honky Tonk , Contemporary Country; Price: $ 1.29; CopyRight: ‰ ãÑ 2013 Big Machine Label Group , LLC; Time: 3:26; Released: 25-Nov-13",
+          "entity_b": "Song_Name: This Is How We Roll [ feat . Luke Bryan ]; Artist_Name: Florida Georgia Line; Album_Name: Here 's To The Good Times ... This Is How We Roll; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2013 Big Machine Label Group , LLC; Time: 3:40; Released: November 25 , 2013",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 5761,
+          "rtable_id": 21517,
+          "label": 1,
+          "entity_a": "Song_Name: Here 's to the Good Times; Artist_Name: Florida Georgia Line; Album_Name: Here 's to the Good Times; Genre: Country , Music , Urban Cowboy , Honky Tonk , Contemporary Country; Price: $ 1.29; CopyRight: ‰ ãÑ 2012 Big Machine Label Group , LLC; Time: 4:11; Released: 4-Dec-12",
+          "entity_b": "Song_Name: Here 's To The Good Times; Artist_Name: Florida Georgia Line; Album_Name: Here 's To The Good Times; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2012 Big Machine Label Group , LLC; Time: 4:10; Released: December 4 , 2012",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 5,
+      "parent_block": "to"
+    },
+    "block_to_sub_6": {
+      "pairs": [
+        {
+          "ltable_id": 5885,
+          "rtable_id": 19151,
+          "label": 1,
+          "entity_a": "Song_Name: You Gon na Fly; Artist_Name: Keith Urban; Album_Name: Get Closer ( Deluxe Version ); Genre: Country , Music , Honky Tonk , Pop , Pop/Rock , Contemporary Country , Rock; Price: $ 1.29; CopyRight: ‰ ãÑ 2010 Hit Red Records under exclusive license to Capitol Records Nashville . All rights reserved . Unauthorized reproduction is a violation of applicable laws . Manufactured by Capitol Records Nashville , 3322 West End Avenue , 11th Floor , Nashville , TN 37; Time: 3:36; Released: 22-Feb-11",
+          "entity_b": "Song_Name: You Gon na Fly; Artist_Name: Keith Urban; Album_Name: Get Closer ( Deluxe Version ); Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2011 Hit Red Records under exclusive license to Capitol Records Nashville; Time: 3:36; Released: February 22 , 2011",
+          "block_id": "to"
+        },
+        {
+          "ltable_id": 6104,
+          "rtable_id": 7981,
+          "label": 1,
+          "entity_a": "Song_Name: Yayo; Artist_Name: Lana Del Rey; Album_Name: Born To Die - The Paradise Edition; Genre: Alternative , Music , Rock , Adult Alternative; Price: $ 1.29; CopyRight: ‰ ãÑ 2012 Lana Del Rey under exclusive licence to Polydor Ltd. ( UK ) . Under exclusive licence to Interscope Records in the USA; Time: 5:21; Released: 13-Nov-12",
+          "entity_b": "Song_Name: Yayo; Artist_Name: Lana Del Rey; Album_Name: Born To Die - The Paradise Edition [ Explicit ]; Genre: Alternative Rock; Price: $ 1.29; CopyRight: ( C ) 2012 Lana Del Rey under exclusive licence to Polydor Ltd. ( UK ) . Under exclusive licence to Interscope Records in the USA; Time: 3:57; Released: November 13 , 2012",
+          "block_id": "to"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "to",
+      "subblock_index": 6,
+      "parent_block": "to"
+    },
+    "block_xclusi": {
+      "pairs": [
+        {
+          "ltable_id": 1263,
+          "rtable_id": 34892,
+          "label": 0,
+          "entity_a": "Song_Name: Toyfriend ( feat . Wynter Gordon ) [ Continuous Mix Version ]; Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance , Music; Price: $ 1.29; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:51; Released: 21-Aug-09",
+          "entity_b": "Song_Name: On The Dancefloor ( Feat . Will I Am & Apl De Ap ; Continuous Mix Version ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 4:16; Released: August 21 , 2009",
+          "block_id": "xclusi"
+        },
+        {
+          "ltable_id": 1268,
+          "rtable_id": 34910,
+          "label": 0,
+          "entity_a": "Song_Name: Toyfriend ( feat . Wynter Gordon ) [ Continuous Mix Version ]; Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance , Music; Price: $ 1.29; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:51; Released: 21-Aug-09",
+          "entity_b": "Song_Name: Sound Of Letting Go ( Feat . Chris Willis ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 3:47; Released: August 21 , 2009",
+          "block_id": "xclusi"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "xclusi",
+      "subblock_index": null
+    },
+    "block_a_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 1585,
+          "rtable_id": 27527,
+          "label": 0,
+          "entity_a": "Song_Name: Fly from the Inside ( Live Acoustic from WXDX , Pittsburgh ); Artist_Name: Shinedown; Album_Name: Leave a Whisper ( Deluxe Version ); Genre: Rock , Music , Hard Rock , Alternative; Price: $ 1.29; CopyRight: 2009 Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States; Time: 3:59; Released: 27-May-03",
+          "entity_b": "Song_Name: Stranger Inside; Artist_Name: Shinedown; Album_Name: Leave A Whisper; Genre: Rock; Price: $ 1.29; CopyRight: 2015 Mad Decent; Time: 4:01; Released: May 27 , 2003",
+          "block_id": "a"
+        },
+        {
+          "ltable_id": 1636,
+          "rtable_id": 27530,
+          "label": 1,
+          "entity_a": "Song_Name: 45; Artist_Name: Shinedown; Album_Name: Leave a Whisper; Genre: Rock , Music , Hard Rock , Alternative; Price: $ 1.29; CopyRight: 2003 Atlantic Recording Corporation for the United States and WEA International for the world outside of the United States; Time: 4:09; Released: 27-May-03",
+          "entity_b": "Song_Name: 45; Artist_Name: Shinedown; Album_Name: Leave A Whisper; Genre: Rock; Price: $ 1.29; CopyRight: 2015 Mad Decent; Time: 4:09; Released: May 27 , 2003",
+          "block_id": "a"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "a",
+      "subblock_index": 0,
+      "parent_block": "a"
+    },
+    "block_a_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 3870,
+          "rtable_id": 23889,
+          "label": 1,
+          "entity_a": "Song_Name: Going Away For a While; Artist_Name: Brett Eldredge; Album_Name: Illinois; Genre: Country , Music , Contemporary Country , Honky Tonk , Traditional Country; Price: $ 1.29; CopyRight: 2015 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 3:13; Released: 11-Sep-15",
+          "entity_b": "Song_Name: Going Away For A While; Artist_Name: Brett Eldredge; Album_Name: Illinois; Genre: Country; Price: $ 1.29; CopyRight: ( c ) Phonotype; Time: 3:15; Released: September 11 , 2015",
+          "block_id": "a"
+        },
+        {
+          "ltable_id": 3878,
+          "rtable_id": 23925,
+          "label": 1,
+          "entity_a": "Song_Name: Going Away For a While; Artist_Name: Brett Eldredge; Album_Name: Illinois; Genre: Country , Music , Contemporary Country , Honky Tonk , Traditional Country; Price: $ 1.29; CopyRight: 2015 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 3:13; Released: 11-Sep-15",
+          "entity_b": "Song_Name: Going Away For A While; Artist_Name: Brett Eldredge; Album_Name: Illinois; Genre: Country; Price: $ 1.29; CopyRight: ( c ) Phonotype; Time: 3:15; Released: September 11 , 2015",
+          "block_id": "a"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "a",
+      "subblock_index": 1,
+      "parent_block": "a"
+    },
+    "block_record_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 2020,
+          "rtable_id": 28393,
+          "label": 0,
+          "entity_a": "Song_Name: If I Am a Stranger ( Live In Amsterdam ); Artist_Name: Ryan Adams; Album_Name: Live After Deaf ( Live ) [ Complete Collection ]; Genre: Singer/Songwriter , Music , Rock; Price: $ 0.99; CopyRight: 2012 PAXAM RECORDS; Time: 5:10; Released: 2-Jul-12",
+          "entity_b": "Song_Name: My Wrecking Ball ( Live At Carnegie Hall / 11/17/2014 ); Artist_Name: Ryan Adams; Album_Name: Live At Carnegie Hall [ Explicit ]; Genre: Rock; Price: $ 1.29; CopyRight: ( C ) 2015 PaxAmericana Recording Company Under Exclusive Licenese To Blue Note Records; Time: 5:22; Released: April 21 , 2015",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 2023,
+          "rtable_id": 28222,
+          "label": 0,
+          "entity_a": "Song_Name: If I Am a Stranger ( Live In Amsterdam ); Artist_Name: Ryan Adams; Album_Name: Live After Deaf ( Live ) [ Complete Collection ]; Genre: Singer/Songwriter , Music , Rock; Price: $ 0.99; CopyRight: 2012 PAXAM RECORDS; Time: 5:10; Released: 2-Jul-12",
+          "entity_b": "Song_Name: Do n't Fail Me Now ( Live in Malmo Bonus Track ); Artist_Name: Ryan Adams; Album_Name: Live After Deaf ( Collection ); Genre: Folk , Rock; Price: $ 0.99; CopyRight: 2012 PAXAM RECORDS; Time: 5:43; Released: July 2 , 2012",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 0,
+      "parent_block": "record"
+    },
+    "block_record_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 2023,
+          "rtable_id": 28407,
+          "label": 0,
+          "entity_a": "Song_Name: If I Am a Stranger ( Live In Amsterdam ); Artist_Name: Ryan Adams; Album_Name: Live After Deaf ( Live ) [ Complete Collection ]; Genre: Singer/Songwriter , Music , Rock; Price: $ 0.99; CopyRight: 2012 PAXAM RECORDS; Time: 5:10; Released: 2-Jul-12",
+          "entity_b": "Song_Name: Firecracker ( Live At Carnegie Hall / 11/17/2014 ) [ Explicit ]; Artist_Name: Ryan Adams; Album_Name: Live At Carnegie Hall [ Explicit ]; Genre: Rock; Price: $ 1.29; CopyRight: ( C ) 2015 PaxAmericana Recording Company Under Exclusive Licenese To Blue Note Records; Time: 4:02; Released: April 21 , 2015",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 2834,
+          "rtable_id": 53255,
+          "label": 1,
+          "entity_a": "Song_Name: Outversion; Artist_Name: Mark Ronson; Album_Name: Version; Genre: Pop , Music , R&B / Soul,Soul,Dance,Rock,Jazz,Hip-Hop / Rap,Electronic,Hip-Hop , Pop/Rock , Adult Alternative; Price: $ 0.99; CopyRight: 2007 Mark Ronson under exclusive license to SONY BMG MUSIC ENTERTAINMENT ( UK ) Limited except Track 9 ( P ) 2006 Rapster Records / BBE Records; Time: 1:50; Released: 10-Jul-07",
+          "entity_b": "Song_Name: Outversion; Artist_Name: Mark Ronson; Album_Name: Version [ Explicit ]; Genre: Pop; Price: $ 0.99; CopyRight: ( c ) 2011 J'adore Records; Time: 1:50; Released: July 10 , 2007",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 1,
+      "parent_block": "record"
+    },
+    "block_record_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 3043,
+          "rtable_id": 38003,
+          "label": 0,
+          "entity_a": "Song_Name: Ready for the Weekend ( Dave Spoon Dub Remix ); Artist_Name: Calvin Harris; Album_Name: Ready for the Weekend - EP; Genre: Dance , Music , Rock , Electronic; Price: $ 0.99; CopyRight: 2009 Sony Music Entertainment Limited under exclusive license to Ultra Records , Inc.; Time: 6:35; Released: 15-Sep-09",
+          "entity_b": "Song_Name: Ready for the Weekend ( Album Version ); Artist_Name: Calvin Harris; Album_Name: Ready For The Weekend; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 1994 UMG Recordings , Inc.; Time: 3:38; Released: July 23 , 2013",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3313,
+          "rtable_id": 34333,
+          "label": 0,
+          "entity_a": "Song_Name: Remember You ( feat . The Weeknd ); Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. ( Deluxe Version ); Genre: Hip-Hop/Rap , Music , East Coast Rap , Hardcore Rap , Rap; Price: $ 1.99; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 5:20; Released: 4-Dec-12",
+          "entity_b": "Song_Name: Initiation ( feat . Lola Monroe ) [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 4:29; Released: December 4 , 2012",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 2,
+      "parent_block": "record"
+    },
+    "block_record_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 3321,
+          "rtable_id": 34348,
+          "label": 0,
+          "entity_a": "Song_Name: Remember You ( feat . The Weeknd ); Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. ( Deluxe Version ); Genre: Hip-Hop/Rap , Music , Hardcore Rap , East Coast Rap , Rap; Price: $ 1.99; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 5:20; Released: 4-Dec-12",
+          "entity_b": "Song_Name: It 's Nothin ( feat . 2 Chainz ) [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:47; Released: December 4 , 2012",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3356,
+          "rtable_id": 39335,
+          "label": 1,
+          "entity_a": "Song_Name: Cameras; Artist_Name: Wiz Khalifa; Album_Name: Rolling Papers; Genre: Hip-Hop/Rap , Music , Rap , East Coast Rap , Hardcore Rap; Price: $ 1.29; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 4:29; Released: 28-Mar-11",
+          "entity_b": "Song_Name: Cameras [ Clean ]; Artist_Name: Wiz Khalifa; Album_Name: Rolling Papers [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 4:29; Released: March 28 , 2011",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 3,
+      "parent_block": "record"
+    },
+    "block_record_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 3363,
+          "rtable_id": 37611,
+          "label": 0,
+          "entity_a": "Song_Name: Young , Wild & Free ( feat . Bruno Mars ); Artist_Name: Snoop Dogg; Album_Name: Mac and Devin Go to High School ( Music from and Inspired By the Movie ) [ Deluxe Version ]; Genre: Soundtrack,Music,Hip-Hop / Rap , West Coast Rap , Gangsta Rap , Hardcore Rap , Rap , Soundtrack; Price: $ 1.99; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 4:12; Released: 12-Dec-11",
+          "entity_b": "Song_Name: Can You Control Yo Hoe ( Album Version ( Explicit ) ) [ feat . Soopafly ] [ Explicit ]; Artist_Name: Snoop Dogg; Album_Name: R&G ( Rhythm & Gangsta ) : The Masterpiece ( Explicit Version ); Genre: Gangsta & Hardcore , Rap & Hip-Hop; Price: $ 0.99; CopyRight: ( C ) 2004 Geffen Records; Time: 3:08; Released: November 16 , 2004",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3419,
+          "rtable_id": 7377,
+          "label": 0,
+          "entity_a": "Song_Name: Remember You ( feat . The Weeknd ); Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. ( Deluxe Version ); Genre: Hip-Hop/Rap , Music , East Coast Rap , Hardcore Rap , Rap; Price: $ 1.99; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 5:20; Released: 4-Dec-12",
+          "entity_b": "Song_Name: KK ( feat . Project Pat & Juicy J ) [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: Blacc Hollywood ( Deluxe ) [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2014 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 4:09; Released: August 19 , 2014",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 4,
+      "parent_block": "record"
+    },
+    "block_record_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 3443,
+          "rtable_id": 34350,
+          "label": 0,
+          "entity_a": "Song_Name: Medicated ( feat . Chevy Woods & Juicy J ); Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C.; Genre: Hip-Hop/Rap , Music , Hardcore Rap , East Coast Rap , Rap; Price: $ 1.29; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 5:30; Released: 4-Dec-12",
+          "entity_b": "Song_Name: Initiation ( feat . Lola Monroe ) [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: O.N.I.F.C. [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 4:29; Released: December 4 , 2012",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3503,
+          "rtable_id": 54798,
+          "label": 1,
+          "entity_a": "Song_Name: Sweet Spot 2.0 ( feat . Jennifer Lopez ); Artist_Name: Flo Rida; Album_Name: Wild Ones; Genre: Hip-Hop/Rap , Music , Rap , Electronic , World , Dance; Price: $ 1.29; CopyRight: 2012 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:11; Released: 22-Jun-12",
+          "entity_b": "Song_Name: Sweet Spot ( feat . Jennifer Lopez ); Artist_Name: Flo Rida; Album_Name: Wild Ones; Genre: Dance & Electronic , Rap & Hip-Hop , House; Price: $ 1.29; CopyRight: ( C ) 2015 MCA Nashville , a Division of UMG Recordings , Inc.; Time: 3:48; Released: June 22 , 2012",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 5,
+      "parent_block": "record"
+    },
+    "block_record_sub_6": {
+      "pairs": [
+        {
+          "ltable_id": 3505,
+          "rtable_id": 30346,
+          "label": 0,
+          "entity_a": "Song_Name: Elevator ( feat . Timbaland ); Artist_Name: Flo Rida; Album_Name: Mail On Sunday ( Deluxe Version ); Genre: Hip-Hop/Rap , Music , Dirty South; Price: $ 1.99; CopyRight: 2008 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:55; Released: 17-Mar-08",
+          "entity_b": "Song_Name: Money Right ( feat . Rick Ross & Brisco ) [ Explicit ]; Artist_Name: Flo Rida; Album_Name: Mail On Sunday [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2013 Warner Bros. . Records Inc.; Time: 3:17; Released: March 17 , 2008",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3506,
+          "rtable_id": 30327,
+          "label": 0,
+          "entity_a": "Song_Name: Money Right ( feat . Rick Ross & Brisco ); Artist_Name: Flo Rida; Album_Name: Mail On Sunday; Genre: Hip-Hop/Rap , Music , Pop , Dirty South; Price: $ 1.29; CopyRight: 2008 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:16; Released: 18-Mar-08",
+          "entity_b": "Song_Name: In The Ayer ( feat . will.I.am ); Artist_Name: Flo Rida; Album_Name: Mail On Sunday [ Clean ]; Genre: Rap & Hip-Hop , Southern Rap , Pop Rap; Price: $ 1.29; CopyRight: 2013 Warner Bros. . Records Inc.; Time: 3:40; Released: March 18 , 2008",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 6,
+      "parent_block": "record"
+    },
+    "block_record_sub_7": {
+      "pairs": [
+        {
+          "ltable_id": 3571,
+          "rtable_id": 53964,
+          "label": 0,
+          "entity_a": "Song_Name: Why You Up In Here ( feat . Ludacris , Git Fresh & Gucci Mane ); Artist_Name: Flo Rida; Album_Name: Only One Flo , Pt. 1; Genre: Hip-Hop/Rap , Music , Rap , Dirty South; Price: $ 1.29; CopyRight: 2010 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:36; Released: 24-Nov-10",
+          "entity_b": "Song_Name: Street Money ( feat . Rick Ross ) [ Explicit ]; Artist_Name: Flo Rida; Album_Name: Welcome to Flo Rida [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 0.99; CopyRight: 2015 CMG Records; Time: 3:57; Released: April 6 , 2015",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3610,
+          "rtable_id": 30322,
+          "label": 0,
+          "entity_a": "Song_Name: Money Right ( feat . Rick Ross & Brisco ); Artist_Name: Flo Rida; Album_Name: Mail On Sunday; Genre: Hip-Hop/Rap , Music , Pop , Dirty South; Price: $ 1.29; CopyRight: 2008 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:16; Released: 18-Mar-08",
+          "entity_b": "Song_Name: Roll ( feat . Sean Kingston ) [ Clean ]; Artist_Name: Flo Rida; Album_Name: Mail On Sunday [ Clean ]; Genre: Rap & Hip-Hop , Southern Rap , Pop Rap; Price: $ 1.29; CopyRight: 2013 Warner Bros. . Records Inc.; Time: 3:59; Released: March 18 , 2008",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 7,
+      "parent_block": "record"
+    },
+    "block_record_sub_8": {
+      "pairs": [
+        {
+          "ltable_id": 3611,
+          "rtable_id": 30333,
+          "label": 0,
+          "entity_a": "Song_Name: Money Right ( feat . Rick Ross & Brisco ); Artist_Name: Flo Rida; Album_Name: Mail On Sunday; Genre: Hip-Hop/Rap , Music , Pop , Dirty South; Price: $ 1.29; CopyRight: 2008 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States; Time: 3:16; Released: 18-Mar-08",
+          "entity_b": "Song_Name: American Superstar ( feat . Lil Wayne ) [ Explicit ]; Artist_Name: Flo Rida; Album_Name: Mail On Sunday [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: 2013 Warner Bros. . Records Inc.; Time: 3:42; Released: March 17 , 2008",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3762,
+          "rtable_id": 38431,
+          "label": 1,
+          "entity_a": "Song_Name: Brave Honest Beautiful ( feat . Meghan Trainor ); Artist_Name: Fifth Harmony; Album_Name: Reflection ( Deluxe ); Genre: Pop , Music , R&B / Soul , Dance , Teen Pop , Rock; Price: $ 1.29; CopyRight: 2014 , 2015 Simco Ltd. under exclusive license to Epic Records , a division of Sony Music Entertainment; Time: 3:28; Released: 30-Jan-15",
+          "entity_b": "Song_Name: Brave Honest Beautiful; Artist_Name: Fifth Harmony; Album_Name: Reflection ( Deluxe ); Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2012 Big Machine Records , LLC .; Time: 3:28; Released: January 30 , 2015",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 8,
+      "parent_block": "record"
+    },
+    "block_record_sub_9": {
+      "pairs": [
+        {
+          "ltable_id": 3771,
+          "rtable_id": 38442,
+          "label": 1,
+          "entity_a": "Song_Name: We Know; Artist_Name: Fifth Harmony; Album_Name: Reflection; Genre: Pop , Music , R&B / Soul , Teen Pop , Dance , Rock; Price: $ 1.29; CopyRight: 2014 , 2015 Simco Ltd. under exclusive license to Epic Records , a division of Sony Music Entertainment; Time: 2:57; Released: 30-Jan-15",
+          "entity_b": "Song_Name: We Know; Artist_Name: Fifth Harmony; Album_Name: Reflection; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2012 Big Machine Records , LLC .; Time: 2:57; Released: January 30 , 2015",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 3922,
+          "rtable_id": 43866,
+          "label": 0,
+          "entity_a": "Song_Name: Talk Dirty ( feat . 2 Chainz ) [ TJR Remix ]; Artist_Name: Jason Derulo; Album_Name: Talk Dirty ( feat . 2 Chainz ) [ TJR Remix ] - Single; Genre: Pop , Music , R&B / Soul , Rock , Dance , Contemporary R&B; Price: $ 1.29; CopyRight: 2014 Warner Bros. . Records Inc.; Time: 4:07; Released: 2-May-14",
+          "entity_b": "Song_Name: Kama Sutra ( feat . Kid Ink ); Artist_Name: Jason Derulo; Album_Name: Talk Dirty [ Clean ]; Genre: Pop; Price: $ 1.29; CopyRight: 2014 Warner Bros. . Records Inc.; Time: 3:36; Released: September 10 , 2013",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 9,
+      "parent_block": "record"
+    },
+    "block_record_sub_10": {
+      "pairs": [
+        {
+          "ltable_id": 4736,
+          "rtable_id": 54337,
+          "label": 0,
+          "entity_a": "Song_Name: Lick It ( Norman Doray Remix ); Artist_Name: Kaskade & Skrillex; Album_Name: Lick It ( Remixes ) - EP; Genre: Dance , Music , Electronic; Price: $ 1.29; CopyRight: 2012 Ultra Records , Inc.; Time: 6:14; Released: 17-Apr-12",
+          "entity_b": "Song_Name: Where Are ÌÏ Now ( with Justin Bieber ) [ Marshmello Remix ]; Artist_Name: Skrillex & Diplo; Album_Name: Where Are ÌÏ Now ( with Justin Bieber ) [ Remixes ]; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 OWSLA / Mad Decent / Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States . A Warner Music Group Company; Time: 3:26; Released: June 16 , 2015",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 5059,
+          "rtable_id": 34895,
+          "label": 0,
+          "entity_a": "Song_Name: Delirious ( feat . Tara McDonald ); Artist_Name: David Guetta; Album_Name: Pop Life ( Extended Version ) [ Bonus Version ]; Genre: Dance , Music , Rock , Pop , House , Electronic , Electronica , Adult Alternative; Price: $ 1.29; CopyRight: ‰ ãÑ 2007 Gum Records; Time: 4:31; Released: 18-Sep-07",
+          "entity_b": "Song_Name: It 's The Way You Love Me ( Feat . Kelly Rowland ; Continuous Mix Version ); Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2014 Swedish House Mafia Holdings Ltd ( BVI ) under exclusive license to Virgin Records Ltd; Time: 4:11; Released: August 21 , 2009",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 10,
+      "parent_block": "record"
+    },
+    "block_record_sub_11": {
+      "pairs": [
+        {
+          "ltable_id": 5074,
+          "rtable_id": 36946,
+          "label": 0,
+          "entity_a": "Song_Name: Love Is Gone ( Fred Rister & Joachim Garraud Remix ); Artist_Name: David Guetta; Album_Name: Pop Life ( Extended Version ) [ Bonus Version ]; Genre: Dance , Music , Rock , Pop , House , Electronic , Electronica , Adult Alternative; Price: $ 1.99; CopyRight: ‰ ãÑ 2007 Gum Records; Time: 3:42; Released: 18-Sep-07",
+          "entity_b": "Song_Name: We Found Love; Artist_Name: David Guetta; Album_Name: Pop for Your Weekend [ Explicit ]; Genre: Dance & Electronic , House; Price: $ 1.29; CopyRight: 2012 Blue Drum Records; Time: 3:35; Released: nan",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 5143,
+          "rtable_id": 43647,
+          "label": 1,
+          "entity_a": "Song_Name: Over My Dead Body; Artist_Name: Drake; Album_Name: Take Care ( Deluxe Version ); Genre: Hip-Hop/Rap , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2011 Cash Money Records Inc.; Time: 4:32; Released: 15-Nov-11",
+          "entity_b": "Song_Name: Over My Dead Body [ Clean ]; Artist_Name: Drake; Album_Name: Take Care ( Deluxe Edition ); Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2012 Cash Money Records Inc.; Time: 4:32; Released: March 20 , 2012",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 11,
+      "parent_block": "record"
+    },
+    "block_record_sub_12": {
+      "pairs": [
+        {
+          "ltable_id": 5146,
+          "rtable_id": 34093,
+          "label": 0,
+          "entity_a": "Song_Name: Crew Love ( feat . The Weeknd ); Artist_Name: Drake; Album_Name: Take Care ( Deluxe Version ); Genre: Hip-Hop/Rap , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2011 Cash Money Records Inc.; Time: 3:28; Released: 15-Nov-11",
+          "entity_b": "Song_Name: All Me [ feat . 2 Chainz ] [ Explicit ]; Artist_Name: Drake; Album_Name: Nothing Was The Same ( Deluxe ) [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2013 Cash Money Records Inc.; Time: 4:30; Released: September 24 , 2013",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 6621,
+          "rtable_id": 784,
+          "label": 0,
+          "entity_a": "Song_Name: Bad Blood ( Karaoke Version ); Artist_Name: Taylor Swift; Album_Name: Taylor Swift Karaoke : 1989; Genre: Pop , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2014 Big Machine Records , LLC; Time: 3:29; Released: 3-Mar-15",
+          "entity_b": "Song_Name: Bad Blood; Artist_Name: Taylor Swift; Album_Name: 1989; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Big Machine Records , LLC .; Time: 3:31; Released: October 27 , 2014",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 12,
+      "parent_block": "record"
+    },
+    "block_record_sub_13": {
+      "pairs": [
+        {
+          "ltable_id": 6881,
+          "rtable_id": 13600,
+          "label": 0,
+          "entity_a": "Song_Name: Cold Game ( feat . Latoiya Williams ); Artist_Name: Snoop Dogg & Latoiya Williams; Album_Name: Doggumentary; Genre: Hip-Hop/Rap , Music , Rock , Gangsta Rap , West Coast Rap; Price: $ 1.29; CopyRight: ‰ ãÑ 2011 Capitol Records , LLC . All rights reserved . Unauthorized reproduction is a violation of applicable laws . Manufactured by Capitol Records , LLC , 1750 North Vine Street , Hollywood , CA 90028 .; Time: 3:49; Released: 29-Mar-11",
+          "entity_b": "Song_Name: Toyz N Da Hood ( Feat . Bootsy Collins ) [ Explicit ]; Artist_Name: Snoop Dogg; Album_Name: Doggumentary [ Explicit ]; Genre: Rap & Hip-Hop , West Coast; Price: $ 1.29; CopyRight: ( C ) 2011 Capitol Records , LLC; Time: 2:40; Released: March 29 , 2011",
+          "block_id": "record"
+        },
+        {
+          "ltable_id": 6900,
+          "rtable_id": 10533,
+          "label": 0,
+          "entity_a": "Song_Name: Follow You Down ( feat . Bright Lights ); Artist_Name: Zedd; Album_Name: Clarity ( Deluxe Edition ); Genre: Dance , Music; Price: $ 1.29; CopyRight: ‰ ãÑ 2013 Interscope Records; Time: 5:47; Released: 24-Sep-13",
+          "entity_b": "Song_Name: Spectrum [ feat . Matthew Koma ]; Artist_Name: Zedd; Album_Name: Clarity; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2012 Interscope Records; Time: 4:03; Released: October 9 , 2012",
+          "block_id": "record"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "record",
+      "subblock_index": 13,
+      "parent_block": "record"
+    },
+    "block_4": {
+      "pairs": [
+        {
+          "ltable_id": 3926,
+          "rtable_id": 16397,
+          "label": 1,
+          "entity_a": "Song_Name: X2CU; Artist_Name: Jason Derulo; Album_Name: Everything Is 4; Genre: Pop , Music , Rock , R&B / Soul , Contemporary R&B , Dance; Price: $ 1.29; CopyRight: 2015 Warner Bros. . Records Inc.; Time: 5:13; Released: 1-Jun-15",
+          "entity_b": "Song_Name: X2CU; Artist_Name: Jason Derulo; Album_Name: Everything Is 4 [ Clean ]; Genre: Pop; Price: $ 1.29; CopyRight: 2011 Because Music; Time: 5:14; Released: June 1 , 2015",
+          "block_id": "4"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "4",
+      "subblock_index": null
+    },
+    "block_llc": {
+      "pairs": [
+        {
+          "ltable_id": 5748,
+          "rtable_id": 50409,
+          "label": 0,
+          "entity_a": "Song_Name: Party People ( feat . Jaren Johnston ); Artist_Name: Florida Georgia Line; Album_Name: Here 's To the Good Times ... This Is How We Roll ( Deluxe Version ); Genre: Country , Music , Urban Cowboy , Honky Tonk , Contemporary Country; Price: $ 1.29; CopyRight: ‰ ãÑ 2013 Big Machine Label Group , LLC; Time: 3:40; Released: 25-Nov-13",
+          "entity_b": "Song_Name: This Is How We Roll ( Remix ) [ feat . Luke Bryan ]; Artist_Name: Florida Georgia Line; Album_Name: This Is How We Roll ( Remix ); Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Big Machine Label Group , LLC; Time: 3:27; Released: June 4 , 2014",
+          "block_id": "llc"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "llc",
+      "subblock_index": null
+    },
+    "block_2014": {
+      "pairs": [
+        {
+          "ltable_id": 5726,
+          "rtable_id": 4470,
+          "label": 1,
+          "entity_a": "Song_Name: Anything Goes; Artist_Name: Florida Georgia Line; Album_Name: Anything Goes; Genre: Country , Music , Honky Tonk , Urban Cowboy , Contemporary Country; Price: $ 1.29; CopyRight: ‰ ãÑ 2014 Big Machine Label Group , LLC; Time: 3:39; Released: 14-Oct-14",
+          "entity_b": "Song_Name: Anything Goes; Artist_Name: Florida Georgia Line; Album_Name: Anything Goes; Genre: Country; Price: $ 1.29; CopyRight: ( C ) 2014 Republic Records , a Division of UMG Recordings , Inc. ( Republic Nashville ); Time: 3:38; Released: October 14 , 2014",
+          "block_id": "2014"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "2014",
+      "subblock_index": null
+    },
+    "block_for": {
+      "pairs": [
+        {
+          "ltable_id": 1156,
+          "rtable_id": 28014,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: What I did for Love ( feat . Emeli SandÌ © ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:27; Released: November 24 , 2014",
+          "block_id": "for"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "for",
+      "subblock_index": null
+    },
+    "block_p": {
+      "pairs": [
+        {
+          "ltable_id": 1946,
+          "rtable_id": 23456,
+          "label": 1,
+          "entity_a": "Song_Name: I Have Seen the Rain ( Featuring James T. Moore ); Artist_Name: P!nk featuring James T. Moore; Album_Name: I 'm Not Dead; Genre: Pop , Music , Electronic , R&B / Soul , Pop/Rock , Dance; Price: $ 0.99; CopyRight: 2006 RCA/JIVE Label Group , a unit of Sony Music Entertainment; Time: 3:29; Released: 4-Mar-06",
+          "entity_b": "Song_Name: I Have Seen The Rain ( Featuring James T. Moore ) ( Main Version ); Artist_Name: P!nk; Album_Name: I 'm Not Dead [ Explicit ]; Genre: Dance & Electronic , Pop , R&B; Price: $ 0.99; CopyRight: ( C ) 2009 Foo & Blu , LLC under exclusive License to Interscope Records; Time: 3:29; Released: April 4 , 2006",
+          "block_id": "p"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "p",
+      "subblock_index": null
+    },
+    "block_i": {
+      "pairs": [
+        {
+          "ltable_id": 1292,
+          "rtable_id": 34019,
+          "label": 0,
+          "entity_a": "Song_Name: I 'm a Machine ( feat . Crystal Nicole and Tyrese Gibson ); Artist_Name: David Guetta; Album_Name: Nothing But the Beat; Genre: Dance , Music , Rock , House , Electronic; Price: $ 1.29; CopyRight: 2011 What A Music Ltd , Licence exclusive Parlophone Music France; Time: 3:34; Released: 26-Aug-11",
+          "entity_b": "Song_Name: I Can Only Imagine ( Feat . Chris Brown & Lil Wayne ); Artist_Name: David Guetta; Album_Name: Nothing But The Beat; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2009 Andy Henningsen; Time: 3:29; Released: August 26 , 2011",
+          "block_id": "i"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "i",
+      "subblock_index": null
+    },
+    "block_credit": {
+      "pairs": [
+        {
+          "ltable_id": 3354,
+          "rtable_id": 17643,
+          "label": 1,
+          "entity_a": "Song_Name: Extra Extra Credit; Artist_Name: Wiz Khalifa; Album_Name: Flight School; Genre: Hip-Hop/Rap , Music; Price: $ 0.99; CopyRight: 2009 Rostrum Records; Time: 4:03; Released: 17-Apr-09",
+          "entity_b": "Song_Name: Extra Extra Credit [ Explicit ]; Artist_Name: Wiz Khalifa; Album_Name: Flight School [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 0.99; CopyRight: 2013 Mad Decent; Time: 4:03; Released: April 17 , 2009",
+          "block_id": "credit"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "credit",
+      "subblock_index": null
+    },
+    "block_deluxe_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 1164,
+          "rtable_id": 28001,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Listen ( feat . John Legend ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:46; Released: November 24 , 2014",
+          "block_id": "deluxe"
+        },
+        {
+          "ltable_id": 1301,
+          "rtable_id": 27982,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Lift me up ( feat . Nico & Vinz , Ladysmith Black Mambazo ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:58; Released: November 24 , 2014",
+          "block_id": "deluxe"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "deluxe",
+      "subblock_index": 0,
+      "parent_block": "deluxe"
+    },
+    "block_deluxe_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 2696,
+          "rtable_id": 17160,
+          "label": 0,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: For My Team ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ) [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 3:28; Released: September 25 , 2015",
+          "block_id": "deluxe"
+        },
+        {
+          "ltable_id": 2721,
+          "rtable_id": 17160,
+          "label": 0,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: For My Team ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ) [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 3:28; Released: September 25 , 2015",
+          "block_id": "deluxe"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "deluxe",
+      "subblock_index": 1,
+      "parent_block": "deluxe"
+    },
+    "block_deluxe_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 2731,
+          "rtable_id": 17160,
+          "label": 0,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: For My Team ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ) [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 3:28; Released: September 25 , 2015",
+          "block_id": "deluxe"
+        },
+        {
+          "ltable_id": 2742,
+          "rtable_id": 17181,
+          "label": 1,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: Whateva ( feat . Monty ) [ Explicit ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ) [ Explicit ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 5:11; Released: September 25 , 2015",
+          "block_id": "deluxe"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "deluxe",
+      "subblock_index": 2,
+      "parent_block": "deluxe"
+    },
+    "block_deluxe_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 2748,
+          "rtable_id": 17158,
+          "label": 0,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: Rewind ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ) [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 5:36; Released: September 25 , 2015",
+          "block_id": "deluxe"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "deluxe",
+      "subblock_index": 3,
+      "parent_block": "deluxe"
+    },
+    "block_live": {
+      "pairs": [
+        {
+          "ltable_id": 1548,
+          "rtable_id": 41583,
+          "label": 0,
+          "entity_a": "Song_Name: Second Chance ( Live Acoustic from Kansas City ); Artist_Name: Shinedown; Album_Name: Somewhere In the Stratosphere ( Live ); Genre: Rock , Music , Metal , Alternative , Hard Rock; Price: $ 1.29; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States .; Time: 5:06; Released: 18-Apr-11",
+          "entity_b": "Song_Name: Heroes ( Live Acoustic From Kansas City ); Artist_Name: Shinedown; Album_Name: Somewhere In The Stratosphere; Genre: Rock; Price: $ 1.29; CopyRight: ( C ) 2005 MCA Nashville; Time: 8:09; Released: April 18 , 2011",
+          "block_id": "live"
+        },
+        {
+          "ltable_id": 1583,
+          "rtable_id": 41583,
+          "label": 0,
+          "entity_a": "Song_Name: Second Chance ( Live Acoustic from Kansas City ); Artist_Name: Shinedown; Album_Name: Somewhere In the Stratosphere ( Live ); Genre: Rock , Music , Metal , Alternative , Hard Rock; Price: $ 1.29; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States .; Time: 5:06; Released: 18-Apr-11",
+          "entity_b": "Song_Name: Heroes ( Live Acoustic From Kansas City ); Artist_Name: Shinedown; Album_Name: Somewhere In The Stratosphere; Genre: Rock; Price: $ 1.29; CopyRight: ( C ) 2005 MCA Nashville; Time: 8:09; Released: April 18 , 2011",
+          "block_id": "live"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "live",
+      "subblock_index": null
+    },
+    "block_ltd": {
+      "pairs": [
+        {
+          "ltable_id": 4206,
+          "rtable_id": 27799,
+          "label": 0,
+          "entity_a": "Song_Name: Lights ( RAC Mix ); Artist_Name: Ellie Goulding; Album_Name: Lights , Pt. 2 ( The Remixes ) - EP; Genre: Dance , Music , Pop; Price: $ 1.29; CopyRight: 2011 Polydor Ltd. ( UK ); Time: 5:44; Released: 19-Jul-11",
+          "entity_b": "Song_Name: Lights ( Single Version ); Artist_Name: Ellie Goulding; Album_Name: Lights ( Amazon Exclusive Version ) [ + Digital Booklet ]; Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2011 Polydor Ltd. ( UK ); Time: 3:32; Released: March 8 , 2011",
+          "block_id": "ltd"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "ltd",
+      "subblock_index": null
+    },
+    "block_remix_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 337,
+          "rtable_id": 26104,
+          "label": 0,
+          "entity_a": "Song_Name: Get Free ( Andy C remix ); Artist_Name: Major Lazer; Album_Name: Get Free - Single; Genre: Electronic , Music , Dance , Rock , Electronica; Price: $ 1.29; CopyRight: 2013 Secretly Canadian / Mad Decent; Time: 5:31; Released: 27-Feb-13",
+          "entity_b": "Song_Name: Keep It Goin ' Louder ( Savage Skulls Remix ) [ Explicit ]; Artist_Name: Major Lazer; Album_Name: Keep It Goin ' Louder ( Maxi Single ) [ Explicit ]; Genre: Electronica , Dance & Electronic; Price: $ 0.99; CopyRight: ( C ) 2009 Downtown Music , LLC . Downtown Records is a trademark of Downtown Music , LLC .; Time: 5:03; Released: December 21 , 2009",
+          "block_id": "remix"
+        },
+        {
+          "ltable_id": 3554,
+          "rtable_id": 19790,
+          "label": 0,
+          "entity_a": "Song_Name: Turn Around ( 5,4,3,2,1 ) [ AK Remix ]; Artist_Name: Flo Rida; Album_Name: Turn Around ( 5,4,3,2,1 ) [ Remixes ]; Genre: Dance,Music,Hip-Hop / Rap , Dirty South , Rap , Electronic; Price: $ 1.29; CopyRight: 2011 Atlantic Recording Corporation for the United States and WEA International Inc. for the world outside of the United States .; Time: 5:09; Released: 19-Apr-11",
+          "entity_b": "Song_Name: Good Feeling ( Jaywalker Remix ); Artist_Name: Flo Rida; Album_Name: Good Feeling ( Remixes ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2009 MPL Tours Inc. under exclusive license to StarCon LLC d/b/a Hear MusicTM; Time: 4:51; Released: November 15 , 2011",
+          "block_id": "remix"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "remix",
+      "subblock_index": 0,
+      "parent_block": "remix"
+    },
+    "block_remix_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 4698,
+          "rtable_id": 30404,
+          "label": 0,
+          "entity_a": "Song_Name: Make It Bun Dem ( Alvin Risk Remix ); Artist_Name: Skrillex & Damian `` Jr. . Gong '' Marley; Album_Name: Make It Bun Dem After Hours ( Remixes ); Genre: Dance , Music , Electronic; Price: $ 1.29; CopyRight: 2012 OWSLA and Big Beat Records for the United States and WEA International for the world outside the United States .; Time: 3:58; Released: 28-Aug-12",
+          "entity_b": "Song_Name: Make It Bun Dem ( David Heartbreak Remix ); Artist_Name: Skrillex & Damian Jr Gong '' Marley ''; Album_Name: Make It Bun Dem After Hours EP; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 RGK; Time: 3:29; Released: August 28 , 2012",
+          "block_id": "remix"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "remix",
+      "subblock_index": 1,
+      "parent_block": "remix"
+    },
+    "block_in": {
+      "pairs": [
+        {
+          "ltable_id": 4547,
+          "rtable_id": 26140,
+          "label": 1,
+          "entity_a": "Song_Name: Billy; Artist_Name: Keith Urban; Album_Name: In the Ranch; Genre: Country , Music , Honky Tonk , Contemporary Country; Price: $ 1.29; CopyRight: 1997 Capitol Nashville; Time: 3:46; Released: 1997",
+          "entity_b": "Song_Name: Billy; Artist_Name: Keith Urban; Album_Name: Keith Urban In The Ranch; Genre: Country; Price: $ 1.29; CopyRight: ( c ) 1997 Capitol Nashville; Time: 3:46; Released: February 10 , 2004",
+          "block_id": "in"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "in",
+      "subblock_index": null
+    },
+    "block_the_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 1195,
+          "rtable_id": 28061,
+          "label": 0,
+          "entity_a": "Song_Name: The Whisperer ( feat . Sia ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance , Music , Electronic , House , Rock , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved; Time: 3:54; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Goodbye Friend ( feat . The Script ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:49; Released: November 24 , 2014",
+          "block_id": "the"
+        },
+        {
+          "ltable_id": 1292,
+          "rtable_id": 34023,
+          "label": 0,
+          "entity_a": "Song_Name: I 'm a Machine ( feat . Crystal Nicole and Tyrese Gibson ); Artist_Name: David Guetta; Album_Name: Nothing But the Beat; Genre: Dance , Music , Rock , House , Electronic; Price: $ 1.29; CopyRight: 2011 What A Music Ltd , Licence exclusive Parlophone Music France; Time: 3:34; Released: 26-Aug-11",
+          "entity_b": "Song_Name: Night Of Your Life ( Feat . Jennifer Hudson ); Artist_Name: David Guetta; Album_Name: Nothing But The Beat; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2009 Andy Henningsen; Time: 3:42; Released: August 26 , 2011",
+          "block_id": "the"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "the",
+      "subblock_index": 0,
+      "parent_block": "the"
+    },
+    "block_the_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 1299,
+          "rtable_id": 34005,
+          "label": 0,
+          "entity_a": "Song_Name: I 'm a Machine ( feat . Crystal Nicole and Tyrese Gibson ); Artist_Name: David Guetta; Album_Name: Nothing But the Beat; Genre: Dance , Music , Rock , House , Electronic; Price: $ 1.29; CopyRight: 2011 What A Music Ltd , Licence exclusive Parlophone Music France; Time: 3:34; Released: 26-Aug-11",
+          "entity_b": "Song_Name: Without You ( Feat . Usher ); Artist_Name: David Guetta; Album_Name: Nothing But The Beat; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2009 Andy Henningsen; Time: 3:28; Released: August 26 , 2011",
+          "block_id": "the"
+        },
+        {
+          "ltable_id": 2913,
+          "rtable_id": 21458,
+          "label": 1,
+          "entity_a": "Song_Name: Rashi ( Outro ); Artist_Name: Mark Ronson; Album_Name: Here Comes the Fuzz; Genre: Dance,Music,Hip-Hop / Rap , Alternative Rap,Hip-Hop , R&B / Soul , Soul , Electronic; Price: $ 0.99; CopyRight: 2003 Elektra Entertainment for the United States and WEA International Inc. for the world outside of the United States .; Time: 2:01; Released: 29-Aug-03",
+          "entity_b": "Song_Name: Rashi ( Outro ); Artist_Name: Mark Ronson; Album_Name: Here Comes The Fuzz [ Explicit ]; Genre: Dance & Electronic; Price: $ 0.99; CopyRight: ( c ) 2015 Karaoke Freaks; Time: 2:01; Released: August 29 , 2003",
+          "block_id": "the"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "the",
+      "subblock_index": 1,
+      "parent_block": "the"
+    },
+    "block_you": {
+      "pairs": [
+        {
+          "ltable_id": 470,
+          "rtable_id": 1872,
+          "label": 0,
+          "entity_a": "Song_Name: Goodbye to You ( feat . Dot Rotten ); Artist_Name: Ed Sheeran; Album_Name: 5; Genre: Pop , Music , Rock , Singer/Songwriter , Contemporary Singer/Songwriter , Adult Alternative; Price: $ 1.29; CopyRight: 2014 Warner Music UK LImited; Time: 5:30; Released: 23-Jun-14",
+          "entity_b": "Song_Name: You ( + Wiley ); Artist_Name: Ed Sheeran; Album_Name: 5; Genre: Pop; Price: $ 1.29; CopyRight: Dub Police Records; Time: 3:21; Released: June 23 , 2014",
+          "block_id": "you"
+        },
+        {
+          "ltable_id": 809,
+          "rtable_id": 29543,
+          "label": 0,
+          "entity_a": "Song_Name: Turn to You ( Mother 's Day Dedication ); Artist_Name: Justin Bieber; Album_Name: Turn to You ( Mother 's Day Dedication ) - Single; Genre: Pop , Music , Rock; Price: $ 1.29; CopyRight: 2012 The Island Def Jam Music Group; Time: 3:39; Released: 11-May-12",
+          "entity_b": "Song_Name: Love Me Like You Do ( Sax Instrumental Version ); Artist_Name: Justin Ward; Album_Name: Love Me Like You Do - Made Popular By Ellie Goulding; Genre: Pop; Price: $ 0.89; CopyRight: ( c ) 2015 Covered Records; Time: 3:16; Released: nan",
+          "block_id": "you"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "you",
+      "subblock_index": null
+    },
+    "block_feat_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 1155,
+          "rtable_id": 28069,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: I 'll Keep Loving you ( feat . Birdy & Jaymes Young ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:08; Released: November 24 , 2014",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 1156,
+          "rtable_id": 28068,
+          "label": 0,
+          "entity_a": "Song_Name: Dangerous ( feat . Sam Martin ) [ Robin Schulz Remix ] [ Radio Edit ]; Artist_Name: David Guetta; Album_Name: Listen ( Deluxe Version ); Genre: Dance , Music , Rock , House , Electronic , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved .; Time: 3:20; Released: 24-Nov-14",
+          "entity_b": "Song_Name: S.T.O.P ( feat . Ryan Tedder ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:34; Released: November 24 , 2014",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 0,
+      "parent_block": "feat"
+    },
+    "block_feat_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 1159,
+          "rtable_id": 36916,
+          "label": 0,
+          "entity_a": "Song_Name: Toyfriend ( feat . Wynter Gordon ) [ Continuous Mix Version ]; Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance , Music; Price: $ 1.29; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:51; Released: 21-Aug-09",
+          "entity_b": "Song_Name: Nothin ' On You [ Feat . Bruno Mars ]; Artist_Name: David Guetta; Album_Name: Pop Love; Genre: Dance & Electronic , House; Price: $ 1.29; CopyRight: 2012 Blue Drum Records; Time: 3:25; Released: nan",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 1194,
+          "rtable_id": 28049,
+          "label": 0,
+          "entity_a": "Song_Name: The Whisperer ( feat . Sia ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance , Music , Electronic , House , Rock , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved; Time: 3:54; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Listen ( feat . John Legend ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:46; Released: November 24 , 2014",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 1,
+      "parent_block": "feat"
+    },
+    "block_feat_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 1199,
+          "rtable_id": 27992,
+          "label": 0,
+          "entity_a": "Song_Name: The Whisperer ( feat . Sia ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance , Music , Electronic , House , Rock , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved; Time: 3:54; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Rise ( feat . Skylar Grey ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:55; Released: November 24 , 2014",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 1201,
+          "rtable_id": 27979,
+          "label": 0,
+          "entity_a": "Song_Name: The Whisperer ( feat . Sia ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance , Music , Electronic , House , Rock , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved; Time: 3:54; Released: 24-Nov-14",
+          "entity_b": "Song_Name: No Money no Love ( feat . Elliphant & Ms. Dynamite ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:57; Released: November 24 , 2014",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 2,
+      "parent_block": "feat"
+    },
+    "block_feat_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 1226,
+          "rtable_id": 28022,
+          "label": 0,
+          "entity_a": "Song_Name: The Whisperer ( feat . Sia ); Artist_Name: David Guetta; Album_Name: Listen; Genre: Dance , Music , Electronic , House , Rock , French Pop; Price: $ 1.29; CopyRight: 2014 What A Music Ltd. under exclusive license to Parlophone/Warner Music France , under exclusive license to Atlantic Recording Corporation for the United States . All rights reserved; Time: 3:54; Released: 24-Nov-14",
+          "entity_b": "Song_Name: Hey Mama ( feat . Nicki Minaj , Bebe Rexha & Afrojack ); Artist_Name: David Guetta; Album_Name: Listen ( Deluxe ); Genre: Dance & Electronic; Price: $ 1.29; CopyRight: 2015 If Moving Your Mine; Time: 3:12; Released: November 24 , 2014",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 1260,
+          "rtable_id": 31290,
+          "label": 0,
+          "entity_a": "Song_Name: Toyfriend ( feat . Wynter Gordon ) [ Continuous Mix Version ]; Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance , Music; Price: $ 1.29; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:51; Released: 21-Aug-09",
+          "entity_b": "Song_Name: Still Pimpin ' ( Album Version ( Explicit ) ) [ feat . Kamikazi ] [ Explicit ]; Artist_Name: David Banner; Album_Name: Mississippi-The Album ( Explicit Version ); Genre: Pop; Price: $ 0.99; CopyRight: ( C ) 2003 Universal Records , a Division of UMG Recordings , Inc.; Time: 7:11; Released: May 20 , 2003",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 3,
+      "parent_block": "feat"
+    },
+    "block_feat_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 1276,
+          "rtable_id": 31283,
+          "label": 0,
+          "entity_a": "Song_Name: Toyfriend ( feat . Wynter Gordon ) [ Continuous Mix Version ]; Artist_Name: David Guetta; Album_Name: One Love ( Deluxe Version ); Genre: Dance , Music; Price: $ 1.29; CopyRight: 2010 Gum Prod licence exclusive Parlophone Music France; Time: 2:51; Released: 21-Aug-09",
+          "entity_b": "Song_Name: Choose Me ( Album Version ( Edited ) ) [ feat . Sky ] [ Clean ]; Artist_Name: David Banner; Album_Name: Mississippi-The Album ( Explicit Version ); Genre: Pop; Price: $ 0.99; CopyRight: ( C ) 2003 Universal Records , a Division of UMG Recordings , Inc.; Time: 4:24; Released: May 20 , 2003",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 2293,
+          "rtable_id": 33133,
+          "label": 0,
+          "entity_a": "Song_Name: A+E ( feat . Kandaka Moore & Nikki Cislyn ); Artist_Name: Clean Bandit; Album_Name: New Eyes; Genre: Dance , Music , Electronic , Classical , Classical Crossover , Rock , House , Electronica; Price: $ 1.29; CopyRight: 2014 Warner Music UK Limited; Time: 4:06; Released: 2-Jun-14",
+          "entity_b": "Song_Name: Rather Be ( feat . Jess Glynne ); Artist_Name: Clean Bandit; Album_Name: New Eyes; Genre: Electronica , Dance & Electronic; Price: $ 1.29; CopyRight: ( C ) 2005 Rebel Records Llc; Time: 3:47; Released: June 2 , 2014",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 4,
+      "parent_block": "feat"
+    },
+    "block_feat_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 2718,
+          "rtable_id": 17189,
+          "label": 0,
+          "entity_a": "Song_Name: Whateva ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap ( Deluxe ); Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:11; Released: nan",
+          "entity_b": "Song_Name: My Way ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 3:32; Released: September 25 , 2015",
+          "block_id": "feat"
+        },
+        {
+          "ltable_id": 2734,
+          "rtable_id": 17185,
+          "label": 0,
+          "entity_a": "Song_Name: Rewind ( feat . Monty ); Artist_Name: Fetty Wap; Album_Name: Fetty Wap; Genre: Hip-Hop/Rap , Music , Rap; Price: Album Only; CopyRight: 2015 300 Entertainment/RGF Productions; Time: 5:36; Released: nan",
+          "entity_b": "Song_Name: Jugg ( feat . Monty ) [ Clean ]; Artist_Name: Fetty Wap; Album_Name: Fetty Wap [ Clean ]; Genre: Rap & Hip-Hop; Price: $ 1.29; CopyRight: ( C ) 2000 Mute Records Ltd. , a BMG Company , under exclusive license to INgrooves; Time: 3:20; Released: September 25 , 2015",
+          "block_id": "feat"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "feat",
+      "subblock_index": 5,
+      "parent_block": "feat"
+    },
+    "block_one": {
+      "pairs": [
+        {
+          "ltable_id": 4468,
+          "rtable_id": 31072,
+          "label": 1,
+          "entity_a": "Song_Name: Better Than Words; Artist_Name: One Direction; Album_Name: Midnight Memories; Genre: Pop , Music , Rock , Pop/Rock , Teen Pop , Dance; Price: $ 1.29; CopyRight: 2013 Simco Limited under exclusive license to Sony Music Entertainment UK Limited; Time: 3:27; Released: 25-Nov-13",
+          "entity_b": "Song_Name: Better Than Words; Artist_Name: One Direction; Album_Name: Midnight Memories ( Deluxe ); Genre: Pop; Price: $ 1.29; CopyRight: ( C ) 2014 Disney Enterprises , Inc.; Time: 3:28; Released: November 25 , 2013",
+          "block_id": "one"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "one",
+      "subblock_index": null
+    }
+  }
+}

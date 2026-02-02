@@ -1,0 +1,6 @@
+Method,Runtime (s),Total_Blocks,Unique_Entities,Candidate_Pairs,True_Matches_Found,RR (%),PC (%),PQ (%),F-measure (%)
+StandardBlocking,9.2417,3874,24624,11160644,193,80.2,100.0,0.0,89.01
+QGramsBlocking,12.7779,6704,24626,12495318,193,77.84,100.0,0.0,87.54
+ExtendedQGramsBlocking,13.305,8382,24624,11454647,193,79.68,100.0,0.0,88.69
+SuffixArraysBlocking,1.9838,5428,19127,89919,172,99.84,89.12,0.19,94.18
+ExtendedSuffixArraysBlocking,4.13,9968,16959,54871,159,99.9,82.38,0.29,90.3

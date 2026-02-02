@@ -1,0 +1,885 @@
+{
+  "metadata": {
+    "total_blocks_subblocks": 17,
+    "total_pairs": 91,
+    "created_at": "2026-01-02T18:28:57.668896"
+  },
+  "blocks": {
+    "block_ompany_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 29,
+          "rtable_id": 2582,
+          "label": 0,
+          "entity_a": "Beer_Name: Tongue Buckler - Imperial Red Ale; Brew_Factory_Name: Ballast Point Brewing Company; Style: American Amber / Red Ale; ABV: 10.00 %",
+          "entity_b": "Beer_Name: Worthy Eruption Imperial Red Ale; Brew_Factory_Name: Worthy Brewing Company; Style: American Strong Ale; ABV: 8 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 184,
+          "rtable_id": 1255,
+          "label": 0,
+          "entity_a": "Beer_Name: Smuttynose Kindest Find Imperial Red Ale; Brew_Factory_Name: Smuttynose Brewing Company; Style: American Amber / Red Ale; ABV: 8.50 %",
+          "entity_b": "Beer_Name: Ballast Point Tongue Buckler Imperial Red Ale - Bourbon Barrel Aged; Brew_Factory_Name: Ballast Point Brewing Company; Style: American Strong Ale; ABV: 10 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 271,
+          "rtable_id": 1410,
+          "label": 1,
+          "entity_a": "Beer_Name: Real McCoy Amber Ale; Brew_Factory_Name: Mammoth Brewing Company; Style: American Amber / Red Ale; ABV: 4.50 %",
+          "entity_b": "Beer_Name: Mammoth Real McCoy Amber Ale; Brew_Factory_Name: Mammoth Brewing Company; Style: Altbier; ABV: 4.50 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 487,
+          "rtable_id": 1519,
+          "label": 0,
+          "entity_a": "Beer_Name: Three Beavers Imperial Red Ale; Brew_Factory_Name: Howe Sound Inn & Brewing Company; Style: American Amber / Red Ale; ABV: 7.50 %",
+          "entity_b": "Beer_Name: Lavery Imperial Red Ale &#40; IRA &#41;; Brew_Factory_Name: Lavery Brewing Company; Style: American Strong Ale; ABV: 8.20 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 507,
+          "rtable_id": 716,
+          "label": 0,
+          "entity_a": "Beer_Name: Honey Amber Ale; Brew_Factory_Name: RJ Rockers Brewing Company; Style: American Amber / Red Ale; ABV: 5.80 %",
+          "entity_b": "Beer_Name: Heavy Seas Desert Island Series American Honey Amber Ale; Brew_Factory_Name: Heavy Seas Brewing Company; Style: Amber Ale; ABV: 4.90 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 982,
+          "rtable_id": 348,
+          "label": 0,
+          "entity_a": "Beer_Name: Sanibel Red Island Ale; Brew_Factory_Name: Point Ybel Brewing Company; Style: American Amber / Red Ale; ABV: 5.60 %",
+          "entity_b": "Beer_Name: Baranof Island Redoubt Red Ale; Brew_Factory_Name: Baranof Island Brewing Company; Style: Amber Ale; ABV: 6 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 2242,
+          "rtable_id": 1048,
+          "label": 1,
+          "entity_a": "Beer_Name: Big Red Balls; Brew_Factory_Name: Hillcrest Brewing Company; Style: American Amber / Red Ale; ABV: 8.00 %",
+          "entity_b": "Beer_Name: Hillcrest Big Red Balls; Brew_Factory_Name: Hillcrest Brewing Company; Style: Imperial IPA; ABV: 8 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 2494,
+          "rtable_id": 2565,
+          "label": 0,
+          "entity_a": "Beer_Name: Easy Amber Ale; Brew_Factory_Name: Scottsdale Beer Company; Style: American Amber / Red Ale; ABV: 5.70 %",
+          "entity_b": "Beer_Name: Upland Easy Chair Amber Ale; Brew_Factory_Name: Upland Brewing Company; Style: Amber Ale; ABV: 5.60 %",
+          "block_id": "ompany"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "ompany",
+      "subblock_index": 0,
+      "parent_block": "ompany"
+    },
+    "block_ompany_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 2558,
+          "rtable_id": 1284,
+          "label": 1,
+          "entity_a": "Beer_Name: Arrow Point Amber; Brew_Factory_Name: Bainbridge Island Brewing Company; Style: American Amber / Red Ale; ABV: 5.40 %",
+          "entity_b": "Beer_Name: Bainbridge Island Arrow Point Amber; Brew_Factory_Name: Bainbridge Island Brewing Company; Style: Amber Ale; ABV: 5.40 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 2633,
+          "rtable_id": 2143,
+          "label": 0,
+          "entity_a": "Beer_Name: Blue Bridge Amber Dry Hopped; Brew_Factory_Name: Galveston Island Brewing Company; Style: American Amber / Red Ale; ABV: 6.00 %",
+          "entity_b": "Beer_Name: Winthrop Double Dry Hopped Amber; Brew_Factory_Name: Winthrop Brewing Company; Style: Amber Ale; ABV: -",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 3079,
+          "rtable_id": 2048,
+          "label": 0,
+          "entity_a": "Beer_Name: Unite Red Rye Ale; Brew_Factory_Name: The Pike Brewing Company; Style: American Amber / Red Ale; ABV: 4.60 %",
+          "entity_b": "Beer_Name: Midnight Sun Unite Double Red Hot Ale &#40; 2015 &#41;; Brew_Factory_Name: Midnight Sun Brewing Company; Style: Amber Ale; ABV: 7.50 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 3098,
+          "rtable_id": 1638,
+          "label": 0,
+          "entity_a": "Beer_Name: Imperial Red Ale ( Spring Seasonal ); Brew_Factory_Name: Edge Brewing Company; Style: American Amber / Red Ale; ABV: 8.50 %",
+          "entity_b": "Beer_Name: Ballast Point Tongue Buckler Imperial Red Ale; Brew_Factory_Name: Ballast Point Brewing Company; Style: American Strong Ale; ABV: 10 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 3130,
+          "rtable_id": 1414,
+          "label": 0,
+          "entity_a": "Beer_Name: Ulysses Imperial Red Ale; Brew_Factory_Name: Barley 's Brewing Company; Style: American Amber / Red Ale; ABV: -",
+          "entity_b": "Beer_Name: Renegade Scarlett Letter Imperial Red Ale; Brew_Factory_Name: Renegade Brewing Company; Style: American Strong Ale; ABV: 8.50 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 3956,
+          "rtable_id": 2249,
+          "label": 0,
+          "entity_a": "Beer_Name: Ambleside Amber Ale; Brew_Factory_Name: Bridge Brewing Company; Style: American Amber / Red Ale; ABV: 5.30 %",
+          "entity_b": "Beer_Name: Bridge Ambleside Amber Ale - Pomegranate & Galena Hops; Brew_Factory_Name: Bridge Brewing Company; Style: Amber Ale; ABV: 5.30 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 4063,
+          "rtable_id": 2331,
+          "label": 1,
+          "entity_a": "Beer_Name: Thomas Hooker Old Marley Barleywine; Brew_Factory_Name: Thomas Hooker Brewing Company; Style: American Barleywine; ABV: 10.00 %",
+          "entity_b": "Beer_Name: Thomas Hooker Old Marley Barleywine; Brew_Factory_Name: Thomas Hooker Brewing Company; Style: Barley Wine; ABV: 10 %",
+          "block_id": "ompany"
+        },
+        {
+          "ltable_id": 4068,
+          "rtable_id": 2374,
+          "label": 0,
+          "entity_a": "Beer_Name: Pike Old Bawdy Barley Wine; Brew_Factory_Name: The Pike Brewing Company; Style: American Barleywine; ABV: 9.90 %",
+          "entity_b": "Beer_Name: Bristol Old No. 23 Barley Wine; Brew_Factory_Name: Bristol Brewing Company; Style: Barley Wine; ABV: 11.25 %",
+          "block_id": "ompany"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "ompany",
+      "subblock_index": 1,
+      "parent_block": "ompany"
+    },
+    "block_ompany_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 4203,
+          "rtable_id": 2425,
+          "label": 0,
+          "entity_a": "Beer_Name: Three Sheets Barleywine ( Syrah Barrel Aged ); Brew_Factory_Name: Ballast Point Brewing Company; Style: American Barleywine; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Tighthead Barrel Aged Old Kaya Dog Barleywine; Brew_Factory_Name: Tighthead Brewing Company; Style: Barley Wine; ABV: 10.30 %",
+          "block_id": "ompany"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "ompany",
+      "subblock_index": 2,
+      "parent_block": "ompany"
+    },
+    "block_amber_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 3,
+          "rtable_id": 439,
+          "label": 0,
+          "entity_a": "Beer_Name: Green Flash Hop Head Red Ale; Brew_Factory_Name: Green Flash Brewing Co. .; Style: American Amber / Red Ale; ABV: 8.10 %",
+          "entity_b": "Beer_Name: Bagby Hop Crop Red Ale; Brew_Factory_Name: Bagby Beer Company; Style: Amber Ale; ABV: 5.90 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 76,
+          "rtable_id": 2831,
+          "label": 0,
+          "entity_a": "Beer_Name: Green Lakes Organic Ale; Brew_Factory_Name: Deschutes Brewery; Style: American Amber / Red Ale; ABV: 5.20 %",
+          "entity_b": "Beer_Name: Deschutes Green Lakes Non-Organic Ale; Brew_Factory_Name: Deschutes Brewery; Style: Amber Ale; ABV: 6.40 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 113,
+          "rtable_id": 475,
+          "label": 0,
+          "entity_a": "Beer_Name: Alexander Keith 's Red Amber Ale; Brew_Factory_Name: Alexander Keith 's; Style: American Amber / Red Ale; ABV: 5.00 %",
+          "entity_b": "Beer_Name: Hollywood Beach Red Tide Amber Ale; Brew_Factory_Name: Hollywood Beach Brewing Company; Style: Amber Ale; ABV: 5.20 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 200,
+          "rtable_id": 559,
+          "label": 0,
+          "entity_a": "Beer_Name: Rock Bottom Red Ale; Brew_Factory_Name: Rock Bottom Restaurant & Brewery; Style: American Amber / Red Ale; ABV: 5.60 %",
+          "entity_b": "Beer_Name: Rock Bottom La Jolla Ragtop Red Ale; Brew_Factory_Name: Rock Bottom La Jolla; Style: Amber Ale; ABV: 5.40 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 262,
+          "rtable_id": 419,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Fox Amber Ale; Brew_Factory_Name: Rogue Ales; Style: American Amber / Red Ale; ABV: -",
+          "entity_b": "Beer_Name: Big Texan Texas Red Amber Ale; Brew_Factory_Name: Big Texan Brewery; Style: Amber Ale; ABV: 4.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 309,
+          "rtable_id": 418,
+          "label": 0,
+          "entity_a": "Beer_Name: Ruby Red American Ale; Brew_Factory_Name: Fat Bottom Brewing; Style: American Amber / Red Ale; ABV: 6.10 %",
+          "entity_b": "Beer_Name: Genesee Brew House American Red Ale; Brew_Factory_Name: Genesee Brewing Company &#40; North American Breweries &#41;; Style: Amber Ale; ABV: 5 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 525,
+          "rtable_id": 433,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Racer India Style Red Ale; Brew_Factory_Name: Central City Brewers + Distillers; Style: American Amber / Red Ale; ABV: 5.60 %",
+          "entity_b": "Beer_Name: Heist American Style Red Ale; Brew_Factory_Name: Heist Brewery; Style: Amber Ale; ABV: 4.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 563,
+          "rtable_id": 1177,
+          "label": 1,
+          "entity_a": "Beer_Name: Amber Waves Ale; Brew_Factory_Name: Capitol City Brewing; Style: American Amber / Red Ale; ABV: 5.40 %",
+          "entity_b": "Beer_Name: Capitol City Amber Waves Ale; Brew_Factory_Name: Capitol City Brewing Company; Style: Amber Ale; ABV: 5.60 %",
+          "block_id": "amber"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "amber",
+      "subblock_index": 0,
+      "parent_block": "amber"
+    },
+    "block_amber_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 862,
+          "rtable_id": 2906,
+          "label": 1,
+          "entity_a": "Beer_Name: Red Ale Priprioca; Brew_Factory_Name: Cervejaria AmazÃ ´ nia Ltda .; Style: American Amber / Red Ale; ABV: 6.00 %",
+          "entity_b": "Beer_Name: Amazon Beer Priprioca Red Ale; Brew_Factory_Name: Amazon Beer; Style: Amber Ale; ABV: 6 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1030,
+          "rtable_id": 679,
+          "label": 0,
+          "entity_a": "Beer_Name: Sierra Amber Ale; Brew_Factory_Name: Silver Peak Restaurant & Brewery; Style: American Amber / Red Ale; ABV: 4.50 %",
+          "entity_b": "Beer_Name: Sierra Andina Alpamayo Amber Ale; Brew_Factory_Name: Sierra Andina; Style: Amber Ale; ABV: 5.80 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1042,
+          "rtable_id": 55,
+          "label": 1,
+          "entity_a": "Beer_Name: Legends Of The Bay Giant 's Tomb; Brew_Factory_Name: Hockley Valley Brewing Co. .; Style: American Amber / Red Ale; ABV: 5.00 %",
+          "entity_b": "Beer_Name: Legends of the Bay Giant_s Tomb; Brew_Factory_Name: Hockley Valley Brewing & Malting Company; Style: Amber Ale; ABV: 5 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1251,
+          "rtable_id": 812,
+          "label": 0,
+          "entity_a": "Beer_Name: Big Red Ale; Brew_Factory_Name: Red Car Brewery and Restaurant; Style: American Amber / Red Ale; ABV: 5.70 %",
+          "entity_b": "Beer_Name: Big Bear Lake Sidewinder Red Ale; Brew_Factory_Name: Big Bear Lake Brewing Company; Style: Amber Ale; ABV: 8.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1471,
+          "rtable_id": 1165,
+          "label": 0,
+          "entity_a": "Beer_Name: Mount Washington Organic Amber Ale; Brew_Factory_Name: Peak Organic Brewing Company; Style: American Amber / Red Ale; ABV: -",
+          "entity_b": "Beer_Name: Outpost Mr. Grain Jeans Organic Amber Ale; Brew_Factory_Name: Lakefront Brewery; Style: Amber Ale; ABV: 5.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1479,
+          "rtable_id": 1563,
+          "label": 0,
+          "entity_a": "Beer_Name: Twisted Stick Amber Ale; Brew_Factory_Name: Portneuf Valley Brewing; Style: American Amber / Red Ale; ABV: -",
+          "entity_b": "Beer_Name: Sick N Twisted Pleasure Victim Amber Ale; Brew_Factory_Name: Sick N Twisted Brewing Company; Style: Amber Ale; ABV: 5.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1621,
+          "rtable_id": 548,
+          "label": 1,
+          "entity_a": "Beer_Name: Red Rocket Amber Ale; Brew_Factory_Name: Third Base Sports Bar & Brewery; Style: American Amber / Red Ale; ABV: 6.40 %",
+          "entity_b": "Beer_Name: Third Base Red Rocket Amber Ale; Brew_Factory_Name: Third Base Sports Bar & Brewery; Style: Amber Ale; ABV: 4.60 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1621,
+          "rtable_id": 2601,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Rocket Amber Ale; Brew_Factory_Name: Third Base Sports Bar & Brewery; Style: American Amber / Red Ale; ABV: 6.40 %",
+          "entity_b": "Beer_Name: Liberty Street Red Glare Amber Ale; Brew_Factory_Name: Liberty Street Brewing Company; Style: Amber Ale; ABV: 5.20 %",
+          "block_id": "amber"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "amber",
+      "subblock_index": 1,
+      "parent_block": "amber"
+    },
+    "block_amber_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 1661,
+          "rtable_id": 1163,
+          "label": 0,
+          "entity_a": "Beer_Name: Barrel Aged Imperial Red; Brew_Factory_Name: Hale 's Ales Brewery & Pub; Style: American Amber / Red Ale; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Intuition Barrel Aged Riverside Red; Brew_Factory_Name: Intuition Ale Works; Style: Amber Ale; ABV: 7.80 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1780,
+          "rtable_id": 685,
+          "label": 1,
+          "entity_a": "Beer_Name: Jazz Beer Tarraco Amber; Brew_Factory_Name: Tarraco Beer; Style: American Amber / Red Ale; ABV: 6.90 %",
+          "entity_b": "Beer_Name: Jazz Beer Tarraco Amber; Brew_Factory_Name: Ca l_Arenys - Cervezas Guineu; Style: Amber Ale; ABV: 6.90 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1842,
+          "rtable_id": 737,
+          "label": 1,
+          "entity_a": "Beer_Name: Heatwave Red Ale; Brew_Factory_Name: La Quinta Brewing Co. .; Style: American Amber / Red Ale; ABV: 6.00 %",
+          "entity_b": "Beer_Name: La Quinta Brewing Co. . Heatwave Red Ale; Brew_Factory_Name: La Quinta Brewing Co. .; Style: Amber Ale; ABV: 6 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 1900,
+          "rtable_id": 333,
+          "label": 0,
+          "entity_a": "Beer_Name: Main Street Amber Ale; Brew_Factory_Name: Fifty West Brewing Co; Style: American Amber / Red Ale; ABV: 4.60 %",
+          "entity_b": "Beer_Name: Thorn Street Smugglers Cove Agave Amber Ale; Brew_Factory_Name: Thorn Street Brewery; Style: Amber Ale; ABV: 6.20 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 2007,
+          "rtable_id": 203,
+          "label": 1,
+          "entity_a": "Beer_Name: Bushfire American Red; Brew_Factory_Name: Granite Falls Brewing Co. .; Style: American Amber / Red Ale; ABV: 5.00 %",
+          "entity_b": "Beer_Name: Granite Falls Bushfire American Red Ale; Brew_Factory_Name: Granite Falls Brewing Company; Style: Amber Ale; ABV: 5 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 2115,
+          "rtable_id": 77,
+          "label": 0,
+          "entity_a": "Beer_Name: Mountain City Amber Ale; Brew_Factory_Name: Tommyknocker Brewery; Style: American Amber / Red Ale; ABV: 5.40 %",
+          "entity_b": "Beer_Name: Colorado Mountain Ole 59er Amber Ale; Brew_Factory_Name: Colorado Mountain Brewery; Style: Amber Ale; ABV: 5.20 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 2115,
+          "rtable_id": 2673,
+          "label": 0,
+          "entity_a": "Beer_Name: Mountain City Amber Ale; Brew_Factory_Name: Tommyknocker Brewery; Style: American Amber / Red Ale; ABV: 5.40 %",
+          "entity_b": "Beer_Name: Fin City Jackspot Amber Ale; Brew_Factory_Name: Fin City Brewing Company; Style: Amber Ale; ABV: 5.80 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 2444,
+          "rtable_id": 1348,
+          "label": 0,
+          "entity_a": "Beer_Name: Buck And Ball Double Amber Ale; Brew_Factory_Name: Natty Greene 's Pub & Brewing Co. .; Style: American Amber / Red Ale; ABV: 6.80 %",
+          "entity_b": "Beer_Name: Fox and Hound Red Fox Amber Ale; Brew_Factory_Name: Anheuser-Busch InBev; Style: Amber Ale; ABV: 5.10 %",
+          "block_id": "amber"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "amber",
+      "subblock_index": 2,
+      "parent_block": "amber"
+    },
+    "block_amber_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 2596,
+          "rtable_id": 2124,
+          "label": 0,
+          "entity_a": "Beer_Name: Brass Ale Honey Amber; Brew_Factory_Name: Great Storm Brewing Co. .; Style: American Amber / Red Ale; ABV: 5.30 %",
+          "entity_b": "Beer_Name: Salty Nut Bee Transfixed Honey Amber Ale; Brew_Factory_Name: Salty Nut Brewery; Style: Amber Ale; ABV: 5.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3309,
+          "rtable_id": 716,
+          "label": 0,
+          "entity_a": "Beer_Name: Aqula American Amber Ale; Brew_Factory_Name: Bier Kaffee Aqula; Style: American Amber / Red Ale; ABV: 4.50 %",
+          "entity_b": "Beer_Name: Heavy Seas Desert Island Series American Honey Amber Ale; Brew_Factory_Name: Heavy Seas Brewing Company; Style: Amber Ale; ABV: 4.90 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3372,
+          "rtable_id": 1281,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Toad Amber Ale; Brew_Factory_Name: Blue Cat Brew Pub; Style: American Amber / Red Ale; ABV: 5.70 %",
+          "entity_b": "Beer_Name: Baird Red Rose Amber Ale; Brew_Factory_Name: Baird Brewing Co. .; Style: California Common; ABV: 5.40 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3381,
+          "rtable_id": 1859,
+          "label": 1,
+          "entity_a": "Beer_Name: Willoughby American Amber Ale; Brew_Factory_Name: Willoughby Brewing; Style: American Amber / Red Ale; ABV: 4.90 %",
+          "entity_b": "Beer_Name: Willoughby American Amber Ale; Brew_Factory_Name: Willoughby Brewing Co. .; Style: Amber Ale; ABV: 5.50 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3842,
+          "rtable_id": 1853,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Headed Slut Amber Ale; Brew_Factory_Name: Twisted K-8 Brewing Company; Style: American Amber / Red Ale; ABV: 6.50 %",
+          "entity_b": "Beer_Name: Blue Cat Red Toad Amber Ale; Brew_Factory_Name: Blue Cat Brew Pub; Style: Premium Bitter/ESB; ABV: 5.70 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3917,
+          "rtable_id": 2224,
+          "label": 1,
+          "entity_a": "Beer_Name: Honey Basil Amber; Brew_Factory_Name: Rude Hippo Brewing Company; Style: American Amber / Red Ale; ABV: 7.40 %",
+          "entity_b": "Beer_Name: Rude Hippo Honey Basil Amber; Brew_Factory_Name: 18th Street Brewery; Style: Amber Ale; ABV: 7.40 %",
+          "block_id": "amber"
+        },
+        {
+          "ltable_id": 3959,
+          "rtable_id": 447,
+          "label": 0,
+          "entity_a": "Beer_Name: Amber Ale With Spanish Orange; Brew_Factory_Name: Dangerous Man Brewing; Style: American Amber / Red Ale; ABV: 6.00 %",
+          "entity_b": "Beer_Name: Big Bear Mountain Orange Blossom Amber Ale; Brew_Factory_Name: Big Bear Mountain Brewery; Style: Fruit Beer; ABV: 4.50 %",
+          "block_id": "amber"
+        }
+      ],
+      "size": 7,
+      "is_subblock": true,
+      "original_block_id": "amber",
+      "subblock_index": 3,
+      "parent_block": "amber"
+    },
+    "block_brewin_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 309,
+          "rtable_id": 2621,
+          "label": 0,
+          "entity_a": "Beer_Name: Ruby Red American Ale; Brew_Factory_Name: Fat Bottom Brewing; Style: American Amber / Red Ale; ABV: 6.10 %",
+          "entity_b": "Beer_Name: Black Shirt American India Red Ale; Brew_Factory_Name: Black Shirt Brewing Company; Style: American Strong Ale; ABV: 7.09 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 492,
+          "rtable_id": 1635,
+          "label": 0,
+          "entity_a": "Beer_Name: Double Dragon Imperial Red Ale; Brew_Factory_Name: Phillips Brewing Company; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: Scuttlebutt Mateo Loco Imperial Red Ale; Brew_Factory_Name: Scuttlebutt Brewing Co. .; Style: American Strong Ale; ABV: 7.10 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 501,
+          "rtable_id": 216,
+          "label": 0,
+          "entity_a": "Beer_Name: Good Medicine Strong Red Ale; Brew_Factory_Name: Great Northern Brewing Co. / Black Star Draught House; Style: American Amber / Red Ale; ABV: 7.50 %",
+          "entity_b": "Beer_Name: Good People Stepchild Belgian India Red Ale; Brew_Factory_Name: Good People Brewing Company; Style: India Pale Ale &#40; IPA &#41;; ABV: 7.80 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 652,
+          "rtable_id": 1534,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Dread Imperial Red Ale; Brew_Factory_Name: Bitter Root Brewing; Style: American Amber / Red Ale; ABV: 8.24 %",
+          "entity_b": "Beer_Name: Two Brothers Revelry Imperial Red Ale; Brew_Factory_Name: Two Brothers Brewing Company; Style: American Strong Ale; ABV: 9.50 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 1755,
+          "rtable_id": 1635,
+          "label": 0,
+          "entity_a": "Beer_Name: Batch 200 _ `` Olympus Mons Imperial Red Ale; Brew_Factory_Name: Due South Brewing Co. .; Style: American Amber / Red Ale; ABV: 9.20 %",
+          "entity_b": "Beer_Name: Scuttlebutt Mateo Loco Imperial Red Ale; Brew_Factory_Name: Scuttlebutt Brewing Co. .; Style: American Strong Ale; ABV: 7.10 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 1904,
+          "rtable_id": 2681,
+          "label": 0,
+          "entity_a": "Beer_Name: Rocky Point Red Ale; Brew_Factory_Name: Revival Brewing Co. .; Style: American Amber / Red Ale; ABV: 5.50 %",
+          "entity_b": "Beer_Name: Alley Kat Rocky Mountain Red Ale &#40; The Cheesecake Cafe &#41;; Brew_Factory_Name: Alley Kat Brewing Company; Style: Irish Ale; ABV: -",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 2026,
+          "rtable_id": 1496,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Hopper ( Imperial Red Ale ); Brew_Factory_Name: Black Acre Brewing Co. .; Style: American Amber / Red Ale; ABV: 6.20 %",
+          "entity_b": "Beer_Name: Kinetic Infrared Imperial Red Ale; Brew_Factory_Name: Kinetic Brewing Company; Style: American Strong Ale; ABV: 9.30 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 2156,
+          "rtable_id": 1973,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Dirt Imperial Red Ale; Brew_Factory_Name: Wiley Roots Brewing Co; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: AleSmith YuleSmith &#40; Winter &#41; Imperial Red Ale; Brew_Factory_Name: AleSmith Brewing Company; Style: American Strong Ale; ABV: 8.50 %",
+          "block_id": "brewin"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "brewin",
+      "subblock_index": 0,
+      "parent_block": "brewin"
+    },
+    "block_brewin_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 2215,
+          "rtable_id": 1120,
+          "label": 0,
+          "entity_a": "Beer_Name: Rabbit Mountain Red Ale; Brew_Factory_Name: 300 Suns Brewing; Style: American Amber / Red Ale; ABV: 6.80 %",
+          "entity_b": "Beer_Name: Figueroa Mountain / Pizza Port Shark Lips Imperial Red Ale; Brew_Factory_Name: Figueroa Mountain Brewing; Style: American Strong Ale; ABV: 8 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 2316,
+          "rtable_id": 838,
+          "label": 0,
+          "entity_a": "Beer_Name: Brew Kahuna NW Red Ale; Brew_Factory_Name: Sky High Brewing; Style: American Amber / Red Ale; ABV: 5.20 %",
+          "entity_b": "Beer_Name: Brew Bus Detour Series : Rollin Dirty Red Ale - Wood Aged; Brew_Factory_Name: Cigar City Brewing; Style: Irish Ale; ABV: 5 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 3626,
+          "rtable_id": 90,
+          "label": 0,
+          "entity_a": "Beer_Name: Starlord 's Mixtape / Groot Drank Imperial Red Ale; Brew_Factory_Name: Charging Hippo Brewing Co. .; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: Lagunitas Imperial Red Ale; Brew_Factory_Name: Lagunitas Brewing Company &#40; Heineken &#41;; Style: American Strong Ale; ABV: 7.80 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 3626,
+          "rtable_id": 646,
+          "label": 0,
+          "entity_a": "Beer_Name: Starlord 's Mixtape / Groot Drank Imperial Red Ale; Brew_Factory_Name: Charging Hippo Brewing Co. .; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: 406 Imperial Red Ale; Brew_Factory_Name: 406 Brewing Company; Style: American Strong Ale; ABV: 9.20 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 3963,
+          "rtable_id": 980,
+          "label": 0,
+          "entity_a": "Beer_Name: Hop Around Imperial Red Ale; Brew_Factory_Name: Big Bay Brewing Co. .; Style: American Amber / Red Ale; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Kern River Dirty Hippie Imperial Red Ale; Brew_Factory_Name: Kern River Brewing; Style: American Strong Ale; ABV: 8 %",
+          "block_id": "brewin"
+        },
+        {
+          "ltable_id": 4117,
+          "rtable_id": 838,
+          "label": 0,
+          "entity_a": "Beer_Name: Old Guardian Barley Wine Style Ale - Red Wine Barrel Aged; Brew_Factory_Name: Stone Brewing Co. .; Style: American Barleywine; ABV: 11.20 %",
+          "entity_b": "Beer_Name: Brew Bus Detour Series : Rollin Dirty Red Ale - Wood Aged; Brew_Factory_Name: Cigar City Brewing; Style: Irish Ale; ABV: 5 %",
+          "block_id": "brewin"
+        }
+      ],
+      "size": 6,
+      "is_subblock": true,
+      "original_block_id": "brewin",
+      "subblock_index": 1,
+      "parent_block": "brewin"
+    },
+    "block_merica_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 3,
+          "rtable_id": 641,
+          "label": 0,
+          "entity_a": "Beer_Name: Green Flash Hop Head Red Ale; Brew_Factory_Name: Green Flash Brewing Co. .; Style: American Amber / Red Ale; ABV: 8.10 %",
+          "entity_b": "Beer_Name: Iron Horse Fresh Hop Imperial Red Ale; Brew_Factory_Name: Iron Horse Brewery; Style: American Strong Ale; ABV: -",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 29,
+          "rtable_id": 2883,
+          "label": 0,
+          "entity_a": "Beer_Name: Tongue Buckler - Imperial Red Ale; Brew_Factory_Name: Ballast Point Brewing Company; Style: American Amber / Red Ale; ABV: 10.00 %",
+          "entity_b": "Beer_Name: Three Heads Buffalo Soul Jah Imperial Red Ale; Brew_Factory_Name: Custom Brewcrafters; Style: American Strong Ale; ABV: 9.20 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 184,
+          "rtable_id": 1679,
+          "label": 0,
+          "entity_a": "Beer_Name: Smuttynose Kindest Find Imperial Red Ale; Brew_Factory_Name: Smuttynose Brewing Company; Style: American Amber / Red Ale; ABV: 8.50 %",
+          "entity_b": "Beer_Name: Brannon_s Deputation Imperial Red Ale; Brew_Factory_Name: Brannon_s Pub and Brewery; Style: American Strong Ale; ABV: 8.79 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 184,
+          "rtable_id": 1889,
+          "label": 0,
+          "entity_a": "Beer_Name: Smuttynose Kindest Find Imperial Red Ale; Brew_Factory_Name: Smuttynose Brewing Company; Style: American Amber / Red Ale; ABV: 8.50 %",
+          "entity_b": "Beer_Name: Rock Bottom Orland Park King of Hearts Imperial Red Ale; Brew_Factory_Name: Rock Bottom Orland Park; Style: American Strong Ale; ABV: 7.60 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 285,
+          "rtable_id": 411,
+          "label": 0,
+          "entity_a": "Beer_Name: Lavery Imperial Red Ale; Brew_Factory_Name: Lavery Brewing Company; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: Laurelwood Organic Deranger Imperial Red Ale; Brew_Factory_Name: Laurelwood Public House & Brewery; Style: American Strong Ale; ABV: 8.60 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 285,
+          "rtable_id": 1551,
+          "label": 0,
+          "entity_a": "Beer_Name: Lavery Imperial Red Ale; Brew_Factory_Name: Lavery Brewing Company; Style: American Amber / Red Ale; ABV: 8.20 %",
+          "entity_b": "Beer_Name: Ale Mania Imperial Red Ale; Brew_Factory_Name: Ale Mania &#40; Fritz Ale &#41;; Style: American Strong Ale; ABV: 9.50 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 696,
+          "rtable_id": 1496,
+          "label": 0,
+          "entity_a": "Beer_Name: BJ 's Imperial Red Ale; Brew_Factory_Name: BJ 's Restaurant & Brewhouse; Style: American Amber / Red Ale; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Kinetic Infrared Imperial Red Ale; Brew_Factory_Name: Kinetic Brewing Company; Style: American Strong Ale; ABV: 9.30 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 833,
+          "rtable_id": 2728,
+          "label": 0,
+          "entity_a": "Beer_Name: Buffalo Soul Jah Imperial Red Ale; Brew_Factory_Name: Three Heads Brewing; Style: American Amber / Red Ale; ABV: 9.20 %",
+          "entity_b": "Beer_Name: Pizza Port Rhino Chaser Imperial Red Ale; Brew_Factory_Name: Pizza Port &#40; Ocean Beach &#41;; Style: American Strong Ale; ABV: 9.50 %",
+          "block_id": "merica"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "merica",
+      "subblock_index": 0,
+      "parent_block": "merica"
+    },
+    "block_merica_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 1178,
+          "rtable_id": 1255,
+          "label": 0,
+          "entity_a": "Beer_Name: Brewmaster 's Reserve Imperial Red Ale; Brew_Factory_Name: BJ 's Chicago Pizza & Brewery Inc. .; Style: American Amber / Red Ale; ABV: 9.20 %",
+          "entity_b": "Beer_Name: Ballast Point Tongue Buckler Imperial Red Ale - Bourbon Barrel Aged; Brew_Factory_Name: Ballast Point Brewing Company; Style: American Strong Ale; ABV: 10 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 1218,
+          "rtable_id": 1445,
+          "label": 0,
+          "entity_a": "Beer_Name: Bourbon Barrel Aged Horus Imperial Red; Brew_Factory_Name: Elevator Brewery & Draught Haus; Style: American Amber / Red Ale; ABV: 12.00 %",
+          "entity_b": "Beer_Name: Riverbend Barrel Aged Right Said Red; Brew_Factory_Name: Riverbend Brewing & Sports Pub; Style: American Strong Ale; ABV: 9.20 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 1661,
+          "rtable_id": 1428,
+          "label": 0,
+          "entity_a": "Beer_Name: Barrel Aged Imperial Red; Brew_Factory_Name: Hale 's Ales Brewery & Pub; Style: American Amber / Red Ale; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Kettle House Bourbon Barrel Road Rash Imperial Red Ale; Brew_Factory_Name: Kettle House Brewing Company; Style: American Strong Ale; ABV: 13 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 2026,
+          "rtable_id": 1679,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Hopper ( Imperial Red Ale ); Brew_Factory_Name: Black Acre Brewing Co. .; Style: American Amber / Red Ale; ABV: 6.20 %",
+          "entity_b": "Beer_Name: Brannon_s Deputation Imperial Red Ale; Brew_Factory_Name: Brannon_s Pub and Brewery; Style: American Strong Ale; ABV: 8.79 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 2155,
+          "rtable_id": 1261,
+          "label": 0,
+          "entity_a": "Beer_Name: Clifford 's Big Red Ale; Brew_Factory_Name: Funky Buddha Brewery; Style: American Amber / Red Ale; ABV: 9.70 %",
+          "entity_b": "Beer_Name: Big Time Lift Ticket American Red Ale; Brew_Factory_Name: Big Time Brewery; Style: India Pale Ale &#40; IPA &#41;; ABV: 7 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 2155,
+          "rtable_id": 2948,
+          "label": 0,
+          "entity_a": "Beer_Name: Clifford 's Big Red Ale; Brew_Factory_Name: Funky Buddha Brewery; Style: American Amber / Red Ale; ABV: 9.70 %",
+          "entity_b": "Beer_Name: Big Island Red Giant Ale; Brew_Factory_Name: Big Island Brewhaus; Style: American Strong Ale; ABV: 6.50 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 2972,
+          "rtable_id": 218,
+          "label": 0,
+          "entity_a": "Beer_Name: Imperial Moustache Red Ale; Brew_Factory_Name: Salty Nut Brewery; Style: American Amber / Red Ale; ABV: 6.00 %",
+          "entity_b": "Beer_Name: Phillips Double Dragon Imperial Red Ale; Brew_Factory_Name: Phillips Brewing Co. .; Style: American Strong Ale; ABV: 8.20 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 3185,
+          "rtable_id": 1551,
+          "label": 0,
+          "entity_a": "Beer_Name: Sledgehammer Imperial Red Ale; Brew_Factory_Name: Cambridge Brewing Company; Style: American Amber / Red Ale; ABV: 7.75 %",
+          "entity_b": "Beer_Name: Ale Mania Imperial Red Ale; Brew_Factory_Name: Ale Mania &#40; Fritz Ale &#41;; Style: American Strong Ale; ABV: 9.50 %",
+          "block_id": "merica"
+        }
+      ],
+      "size": 8,
+      "is_subblock": true,
+      "original_block_id": "merica",
+      "subblock_index": 1,
+      "parent_block": "merica"
+    },
+    "block_merica_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 3402,
+          "rtable_id": 1889,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Shedman 's Imperial Amber Ale; Brew_Factory_Name: 57 Brew Pub & Bistro; Style: American Amber / Red Ale; ABV: 7.60 %",
+          "entity_b": "Beer_Name: Rock Bottom Orland Park King of Hearts Imperial Red Ale; Brew_Factory_Name: Rock Bottom Orland Park; Style: American Strong Ale; ABV: 7.60 %",
+          "block_id": "merica"
+        },
+        {
+          "ltable_id": 3963,
+          "rtable_id": 63,
+          "label": 0,
+          "entity_a": "Beer_Name: Hop Around Imperial Red Ale; Brew_Factory_Name: Big Bay Brewing Co. .; Style: American Amber / Red Ale; ABV: 9.00 %",
+          "entity_b": "Beer_Name: Marble Imperial Red Ale; Brew_Factory_Name: Marble Brewery; Style: American Strong Ale; ABV: 9 %",
+          "block_id": "merica"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "merica",
+      "subblock_index": 2,
+      "parent_block": "merica"
+    },
+    "block_red": {
+      "pairs": [
+        {
+          "ltable_id": 525,
+          "rtable_id": 2972,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Racer India Style Red Ale; Brew_Factory_Name: Central City Brewers + Distillers; Style: American Amber / Red Ale; ABV: 5.60 %",
+          "entity_b": "Beer_Name: GoodLife Redside India Red Ale; Brew_Factory_Name: GoodLife Brewing Company; Style: India Pale Ale &#40; IPA &#41;; ABV: 6 %",
+          "block_id": "red"
+        },
+        {
+          "ltable_id": 1024,
+          "rtable_id": 37,
+          "label": 0,
+          "entity_a": "Beer_Name: Rocket City Red; Brew_Factory_Name: Straight To Ale; Style: American Amber / Red Ale; ABV: 5.00 %",
+          "entity_b": "Beer_Name: Sawdust City Red Rocket Coffee Spiced Stout; Brew_Factory_Name: Sawdust City Brewing Company; Style: Spice/Herb/Vegetable; ABV: 5.20 %",
+          "block_id": "red"
+        },
+        {
+          "ltable_id": 2572,
+          "rtable_id": 221,
+          "label": 0,
+          "entity_a": "Beer_Name: Red Rock Opie Red Ale; Brew_Factory_Name: Red Rock Brewing Company; Style: American Amber / Red Ale; ABV: 4.00 %",
+          "entity_b": "Beer_Name: Council Rock Sleeping Lion Red Ale; Brew_Factory_Name: Council Rock Brewery; Style: Irish Ale; ABV: 6 %",
+          "block_id": "red"
+        }
+      ],
+      "size": 3,
+      "is_subblock": false,
+      "original_block_id": "red",
+      "subblock_index": null
+    },
+    "block_ale": {
+      "pairs": [
+        {
+          "ltable_id": 406,
+          "rtable_id": 2071,
+          "label": 0,
+          "entity_a": "Beer_Name: Tongue Buckler ( Bourbon Barrel Aged ); Brew_Factory_Name: Ballast Point Brewing Company; Style: American Amber / Red Ale; ABV: 10.00 %",
+          "entity_b": "Beer_Name: 23rd Street Pumpkin Ale Bourbon Barrel Aged; Brew_Factory_Name: 23rd Street Brewery; Style: Specialty Grain; ABV: -",
+          "block_id": "ale"
+        },
+        {
+          "ltable_id": 4161,
+          "rtable_id": 2409,
+          "label": 1,
+          "entity_a": "Beer_Name: Centurion Barleywine Ale; Brew_Factory_Name: Golden City Brewery; Style: American Barleywine; ABV: -",
+          "entity_b": "Beer_Name: Golden City Centurion Barleywine Ale; Brew_Factory_Name: Golden City Brewery; Style: Barley Wine; ABV: 11.20 %",
+          "block_id": "ale"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "ale",
+      "subblock_index": null
+    },
+    "block_rewery": {
+      "pairs": [
+        {
+          "ltable_id": 4027,
+          "rtable_id": 2510,
+          "label": 0,
+          "entity_a": "Beer_Name: Lower De Boom Barleywine; Brew_Factory_Name: 21st Amendment Brewery; Style: American Barleywine; ABV: 11.50 %",
+          "entity_b": "Beer_Name: 21st Amendment Bourbon Barrel Lower da Boom Barleywine; Brew_Factory_Name: 21st Amendment Brewery; Style: Barley Wine; ABV: 9.50 %",
+          "block_id": "rewery"
+        },
+        {
+          "ltable_id": 4168,
+          "rtable_id": 2381,
+          "label": 0,
+          "entity_a": "Beer_Name: Elevator Barrel Aged Barley Wine ( Bar Bar ); Brew_Factory_Name: Elevator Brewery & Draught Haus; Style: American Barleywine; ABV: 11.00 %",
+          "entity_b": "Beer_Name: Hopworks Bourbon Aged Noggin Floggin Barley Wine; Brew_Factory_Name: Hopworks Urban Brewery; Style: Barley Wine; ABV: 9.50 %",
+          "block_id": "rewery"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "rewery",
+      "subblock_index": null
+    },
+    "block_the": {
+      "pairs": [
+        {
+          "ltable_id": 4181,
+          "rtable_id": 2300,
+          "label": 0,
+          "entity_a": "Beer_Name: Inception Series - Runnin ' With The Devil; Brew_Factory_Name: Nebraska Brewing Company; Style: American Barleywine; ABV: 11.90 %",
+          "entity_b": "Beer_Name: 18th Street Deal With the Devil Pale Ale; Brew_Factory_Name: 18th Street Brewery; Style: Imperial IPA; ABV: 8.50 %",
+          "block_id": "the"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "the",
+      "subblock_index": null
+    },
+    "block_barrel": {
+      "pairs": [
+        {
+          "ltable_id": 1218,
+          "rtable_id": 2463,
+          "label": 0,
+          "entity_a": "Beer_Name: Bourbon Barrel Aged Horus Imperial Red; Brew_Factory_Name: Elevator Brewery & Draught Haus; Style: American Amber / Red Ale; ABV: 12.00 %",
+          "entity_b": "Beer_Name: Lompoc Bourbon Barrel Aged Old Tavern Rat; Brew_Factory_Name: Lompoc Brewing; Style: Barley Wine; ABV: 9.70 %",
+          "block_id": "barrel"
+        },
+        {
+          "ltable_id": 1219,
+          "rtable_id": 2470,
+          "label": 0,
+          "entity_a": "Beer_Name: Bulleit Bourbon Barrel Aged G'Knight; Brew_Factory_Name: Oskar Blues Grill & Brew; Style: American Amber / Red Ale; ABV: 8.70 %",
+          "entity_b": "Beer_Name: Figure Eight Bourbon Barrel Aged Jumbo Love; Brew_Factory_Name: Figure Eight Brewing; Style: Barley Wine; ABV: -",
+          "block_id": "barrel"
+        },
+        {
+          "ltable_id": 4256,
+          "rtable_id": 1825,
+          "label": 0,
+          "entity_a": "Beer_Name: Frost Quake Bourbon Barrel Aged Barley Wine; Brew_Factory_Name: Wellington County Brewery; Style: American Barleywine; ABV: 9.80 %",
+          "entity_b": "Beer_Name: Lompoc Bourbon Barrel Aged Proletariat Red Ale; Brew_Factory_Name: Lompoc Brewing; Style: Amber Ale; ABV: 6.40 %",
+          "block_id": "barrel"
+        }
+      ],
+      "size": 3,
+      "is_subblock": false,
+      "original_block_id": "barrel",
+      "subblock_index": null
+    }
+  }
+}

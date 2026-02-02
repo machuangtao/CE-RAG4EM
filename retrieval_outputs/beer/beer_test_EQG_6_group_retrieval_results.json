@@ -1,0 +1,2529 @@
+{
+  "metadata": {
+    "created_at": "2025-12-22T11:23:33.605914",
+    "total_blocks": 20,
+    "last_updated": "2025-12-22T11:43:14.925051"
+  },
+  "blocks": {
+    "block_ompany_sub_0": {
+      "relevant_qids": [
+        {
+          "QID": "Q808329",
+          "similarity_score": 0.721575,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q103349965",
+          "similarity_score": 0.6892262,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q146470",
+          "similarity_score": 0.7204321,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q52353",
+          "similarity_score": 0.71678334,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q746028",
+          "similarity_score": 0.70957536,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q111181146",
+          "similarity_score": 0.7087956,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2227418",
+          "similarity_score": 0.7080242,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7359507",
+          "similarity_score": 0.7076432,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2932900",
+          "similarity_score": 0.7067135,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q282",
+          "similarity_score": 0.70598316,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7201098,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.7143055,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.71089125,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.709885,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.70533085,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.7002367,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.69099784,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6907727,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6856242,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9057",
+          "similarity_score": 0.67497694,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_ompany_sub_1": {
+      "relevant_qids": [
+        {
+          "QID": "Q4967500",
+          "similarity_score": 0.7313608,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q103349965",
+          "similarity_score": 0.7122389,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q4705320",
+          "similarity_score": 0.7098393,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2271859",
+          "similarity_score": 0.7047477,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q11994509",
+          "similarity_score": 0.70359206,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.7033785,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7305495",
+          "similarity_score": 0.6922663,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5223103",
+          "similarity_score": 0.6902791,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5694667",
+          "similarity_score": 0.68887866,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2950371",
+          "similarity_score": 0.6843493,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7043954,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.68963444,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6757393,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.66567767,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6611464,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.66074616,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.65263295,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9440",
+          "similarity_score": 0.6512103,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6473695,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2270",
+          "similarity_score": 0.6471646,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_ompany_sub_2": {
+      "relevant_qids": [
+        {
+          "QID": "Q808329",
+          "similarity_score": 0.7694886,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7300841",
+          "similarity_score": 0.6515854,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q21286736",
+          "similarity_score": 0.71770215,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5210797",
+          "similarity_score": 0.7112477,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q18636801",
+          "similarity_score": 0.70723486,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q26506149",
+          "similarity_score": 0.705702,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4863348",
+          "similarity_score": 0.70555407,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2271859",
+          "similarity_score": 0.7048179,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4996749",
+          "similarity_score": 0.703373,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q6844182",
+          "similarity_score": 0.70242965,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.71975315,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6957036,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.69429183,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6876924,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6861504,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6838206,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.68202853,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9440",
+          "similarity_score": 0.6502062,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.6493572,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.64925027,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_0": {
+      "relevant_qids": [
+        {
+          "QID": "Q5602559",
+          "similarity_score": 0.7502221,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.7211151,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7359507",
+          "similarity_score": 0.7145001,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q17084221",
+          "similarity_score": 0.7113184,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q80035",
+          "similarity_score": 0.7046232,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2511816",
+          "similarity_score": 0.6992779,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7300841",
+          "similarity_score": 0.6964312,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q208385",
+          "similarity_score": 0.6962796,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2725773",
+          "similarity_score": 0.6952892,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q51482",
+          "similarity_score": 0.6949864,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2665",
+          "similarity_score": 0.69249034,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.68983775,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.67646796,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6699191,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6657828,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9440",
+          "similarity_score": 0.660572,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6486803,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P665",
+          "similarity_score": 0.64544284,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.64361656,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P462",
+          "similarity_score": 0.6403466,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_1": {
+      "relevant_qids": [
+        {
+          "QID": "Q2271859",
+          "similarity_score": 0.72721136,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q21286736",
+          "similarity_score": 0.72335875,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q83376",
+          "similarity_score": 0.7232641,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q22236253",
+          "similarity_score": 0.7184744,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4743169",
+          "similarity_score": 0.7180779,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7359507",
+          "similarity_score": 0.71708393,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1158765",
+          "similarity_score": 0.7118513,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5763631",
+          "similarity_score": 0.71049964,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2316009",
+          "similarity_score": 0.7048714,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7300841",
+          "similarity_score": 0.703528,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2905",
+          "similarity_score": 0.72790444,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.7205999,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.69994575,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.6991527,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.69444096,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.68834364,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.68124795,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6809832,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.66852313,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.6627626,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_2": {
+      "relevant_qids": [
+        {
+          "QID": "Q19702679",
+          "similarity_score": 0.7268172,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q4743169",
+          "similarity_score": 0.7095513,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2271859",
+          "similarity_score": 0.70424664,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q21286736",
+          "similarity_score": 0.6968156,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q83376",
+          "similarity_score": 0.6967934,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q17084221",
+          "similarity_score": 0.6932445,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q65711597",
+          "similarity_score": 0.69306004,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4705320",
+          "similarity_score": 0.6921732,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q17035715",
+          "similarity_score": 0.69203997,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1158765",
+          "similarity_score": 0.6915295,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7036289,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.7013209,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6838793,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6825267,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.67991436,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.6765455,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6683462,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6598338,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6541594,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6285",
+          "similarity_score": 0.65151054,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_3": {
+      "relevant_qids": [
+        {
+          "QID": "Q19702679",
+          "similarity_score": 0.7316332,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q4735474",
+          "similarity_score": 0.71527123,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7521483",
+          "similarity_score": 0.7139794,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q16997466",
+          "similarity_score": 0.70765126,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5447883",
+          "similarity_score": 0.70565283,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1158765",
+          "similarity_score": 0.7013035,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7092632",
+          "similarity_score": 0.69906336,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1419043",
+          "similarity_score": 0.6896205,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q15940735",
+          "similarity_score": 0.686225,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q719893",
+          "similarity_score": 0.6807795,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.6645683,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2199",
+          "similarity_score": 0.66414714,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.66183853,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6606718,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6594256,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6564806,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.65623575,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2128",
+          "similarity_score": 0.6540324,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6458261,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P8582",
+          "similarity_score": 0.6444348,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_4": {
+      "relevant_qids": [
+        {
+          "QID": "Q1543214",
+          "similarity_score": 0.7146913,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q44",
+          "similarity_score": 0.7146745,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q115467057",
+          "similarity_score": 0.7073719,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q808329",
+          "similarity_score": 0.70527,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q16951485",
+          "similarity_score": 0.7051034,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q14713879",
+          "similarity_score": 0.70279247,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2426064",
+          "similarity_score": 0.70067513,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2578026",
+          "similarity_score": 0.6988176,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1162763",
+          "similarity_score": 0.6955949,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4868885",
+          "similarity_score": 0.6951665,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.72673976,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.7078683,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6995097,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.68701535,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.68049973,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7093",
+          "similarity_score": 0.6790321,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.67723703,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6660552,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P12932",
+          "similarity_score": 0.6648451,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P5456",
+          "similarity_score": 0.6633075,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_amber_sub_5": {
+      "relevant_qids": [
+        {
+          "QID": "Q1815615",
+          "similarity_score": 0.6827955,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q65711597",
+          "similarity_score": 0.6750749,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4735474",
+          "similarity_score": 0.6711165,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4929504",
+          "similarity_score": 0.6703605,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2739309",
+          "similarity_score": 0.6642906,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5216059",
+          "similarity_score": 0.6641427,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7106902",
+          "similarity_score": 0.6627853,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2897064",
+          "similarity_score": 0.6621214,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2316009",
+          "similarity_score": 0.6609173,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q32834982",
+          "similarity_score": 0.6589719,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6285",
+          "similarity_score": 0.64554,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.64393973,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2202",
+          "similarity_score": 0.6411842,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2203",
+          "similarity_score": 0.6401044,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9440",
+          "similarity_score": 0.62980455,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6280522,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6261969,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6155335,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6077138,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2199",
+          "similarity_score": 0.6074407,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_americmerica_sub_0": {
+      "relevant_qids": [
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.74262583,
+          "rrf_score": 0.0392156862745098,
+          "source": "Vector Search, Keyword Search"
+        },
+        {
+          "QID": "Q942393",
+          "similarity_score": 0.71984226,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q808329",
+          "similarity_score": 0.71537524,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q17037243",
+          "similarity_score": 0.7118398,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5223265",
+          "similarity_score": 0.70687395,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2511816",
+          "similarity_score": 0.7065917,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q14713879",
+          "similarity_score": 0.7040812,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q22236253",
+          "similarity_score": 0.7023726,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5602559",
+          "similarity_score": 0.69999266,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2932900",
+          "similarity_score": 0.6998705,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7134934,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.698853,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.69860137,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6977423,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.684675,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.67362535,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6706598,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.665625,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6636195,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6285",
+          "similarity_score": 0.6523448,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_americmerica_sub_1": {
+      "relevant_qids": [
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.7336265,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q103349965",
+          "similarity_score": 0.7312902,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q7359507",
+          "similarity_score": 0.73212683,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7305221",
+          "similarity_score": 0.72350377,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q980404",
+          "similarity_score": 0.72215533,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7305495",
+          "similarity_score": 0.7180317,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2168133",
+          "similarity_score": 0.71384126,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7300841",
+          "similarity_score": 0.71330255,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5968519",
+          "similarity_score": 0.71113473,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q51482",
+          "similarity_score": 0.7104317,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2905",
+          "similarity_score": 0.72708714,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7270196,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.71760285,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.7056362,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.69752926,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6842782,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6687447,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.6651285,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6510155,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10785",
+          "similarity_score": 0.6416546,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_americmerica_sub_2": {
+      "relevant_qids": [
+        {
+          "QID": "Q5447883",
+          "similarity_score": 0.7172793,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4863348",
+          "similarity_score": 0.7159633,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q6555438",
+          "similarity_score": 0.7152566,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q22236253",
+          "similarity_score": 0.7145357,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5763631",
+          "similarity_score": 0.71000063,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q16974641",
+          "similarity_score": 0.7038083,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5694667",
+          "similarity_score": 0.7014356,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q980404",
+          "similarity_score": 0.70061237,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1975036",
+          "similarity_score": 0.6989419,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q942393",
+          "similarity_score": 0.69788545,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.7192012,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.7054014,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.70498395,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.7038151,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.69735837,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.6787374,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6717682,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6601769,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6508242,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6481572,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_americmerica_sub_3": {
+      "relevant_qids": [
+        {
+          "QID": "Q1813698",
+          "similarity_score": 0.7211482,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q103349965",
+          "similarity_score": 0.67886233,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q6844182",
+          "similarity_score": 0.7073126,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q44",
+          "similarity_score": 0.7064578,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q21286736",
+          "similarity_score": 0.70385003,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.70145667,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1543214",
+          "similarity_score": 0.69472384,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4705320",
+          "similarity_score": 0.69411755,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1888522",
+          "similarity_score": 0.6930169,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5599065",
+          "similarity_score": 0.69191855,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6088",
+          "similarity_score": 0.70609164,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.6796434,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6780361,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.67725486,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6762892,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.665756,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.65187556,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.64935637,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2658",
+          "similarity_score": 0.6394209,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6387569,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_americmerica_sub_4": {
+      "relevant_qids": [
+        {
+          "QID": "Q6473070",
+          "similarity_score": 0.71128744,
+          "rrf_score": 0.0392156862745098,
+          "source": "Vector Search, Keyword Search"
+        },
+        {
+          "QID": "Q2646636",
+          "similarity_score": 0.70060694,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5763631",
+          "similarity_score": 0.70009303,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2226531",
+          "similarity_score": 0.6994456,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2301199",
+          "similarity_score": 0.6971201,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4033654",
+          "similarity_score": 0.6952511,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5769794",
+          "similarity_score": 0.69439054,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q3787016",
+          "similarity_score": 0.6941242,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q6742801",
+          "similarity_score": 0.689538,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1975036",
+          "similarity_score": 0.68725276,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2665",
+          "similarity_score": 0.68667066,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.68042105,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.6735918,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.668709,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.6672429,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.66477954,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6570418,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6560936,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6450316,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7320",
+          "similarity_score": 0.6400813,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_brewin": {
+      "relevant_qids": [
+        {
+          "QID": "Q33076576",
+          "similarity_score": 0.71060455,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1543214",
+          "similarity_score": 0.70142376,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q20981508",
+          "similarity_score": 0.7006376,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q44",
+          "similarity_score": 0.69450915,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q887730",
+          "similarity_score": 0.6885873,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7302072",
+          "similarity_score": 0.6869504,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q281",
+          "similarity_score": 0.6834957,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q942393",
+          "similarity_score": 0.6825199,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q55739163",
+          "similarity_score": 0.67866266,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q13516752",
+          "similarity_score": 0.6753106,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2665",
+          "similarity_score": 0.7018467,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.69171274,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6900006,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.68649924,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.68435943,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.6636795,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.6487576,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.64698565,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7411",
+          "similarity_score": 0.64004654,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P665",
+          "similarity_score": 0.63321996,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_red": {
+      "relevant_qids": [
+        {
+          "QID": "Q55597285",
+          "similarity_score": 0.73406005,
+          "rrf_score": 0.03812636165577342,
+          "source": "Vector Search, Keyword Search"
+        },
+        {
+          "QID": "Q83376",
+          "similarity_score": 0.71961594,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7303890",
+          "similarity_score": 0.7054874,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q51482",
+          "similarity_score": 0.7032925,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2629803",
+          "similarity_score": 0.6932387,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q638290",
+          "similarity_score": 0.6884335,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q26186666",
+          "similarity_score": 0.68838704,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1163791",
+          "similarity_score": 0.68506086,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q36275",
+          "similarity_score": 0.68498373,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7201184",
+          "similarity_score": 0.6847269,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P6089",
+          "similarity_score": 0.7094074,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.69518876,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6891736,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.67184526,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.6691371,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.66439635,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P5174",
+          "similarity_score": 0.66404116,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6782",
+          "similarity_score": 0.6627501,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P465",
+          "similarity_score": 0.6580205,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6601",
+          "similarity_score": 0.65439004,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_ale": {
+      "relevant_qids": [
+        {
+          "QID": "Q543127",
+          "similarity_score": 0.7010809,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q4997755",
+          "similarity_score": 0.68672925,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q61126718",
+          "similarity_score": 0.68374944,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4943998",
+          "similarity_score": 0.68022203,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q687397",
+          "similarity_score": 0.67383313,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q887730",
+          "similarity_score": 0.67279303,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q44",
+          "similarity_score": 0.6714108,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2892812",
+          "similarity_score": 0.6704564,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q8037240",
+          "similarity_score": 0.66971236,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q16953010",
+          "similarity_score": 0.66633725,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2665",
+          "similarity_score": 0.661941,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2102",
+          "similarity_score": 0.65914667,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.65872884,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.65794873,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.6550396,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.6541598,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6533971,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.65002793,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.64326876,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7411",
+          "similarity_score": 0.63844514,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_brewerrewery": {
+      "relevant_qids": [
+        {
+          "QID": "Q2924000",
+          "similarity_score": 0.6970234,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q747216",
+          "similarity_score": 0.6809249,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q17512299",
+          "similarity_score": 0.6807456,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2296868",
+          "similarity_score": 0.68024594,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5663611",
+          "similarity_score": 0.67962015,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q15109862",
+          "similarity_score": 0.6784416,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q11994509",
+          "similarity_score": 0.67825496,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2066778",
+          "similarity_score": 0.6759452,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q11688589",
+          "similarity_score": 0.6751314,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q942393",
+          "similarity_score": 0.67481375,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2665",
+          "similarity_score": 0.68939286,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P12691",
+          "similarity_score": 0.6662302,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.66222626,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.66057736,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9242",
+          "similarity_score": 0.649892,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.6489467,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2905",
+          "similarity_score": 0.6450025,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.63914347,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P12932",
+          "similarity_score": 0.639025,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6341055,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_the": {
+      "relevant_qids": [
+        {
+          "QID": "Q61366122",
+          "similarity_score": 0.687832,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5166417",
+          "similarity_score": 0.679986,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q51633939",
+          "similarity_score": 0.66780734,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5267103",
+          "similarity_score": 0.66506267,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q7848501",
+          "similarity_score": 0.66224587,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q3797124",
+          "similarity_score": 0.6622112,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q31825288",
+          "similarity_score": 0.66049767,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q3282152",
+          "similarity_score": 0.6593853,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q1922681",
+          "similarity_score": 0.6586132,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q14688672",
+          "similarity_score": 0.65775126,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P1218",
+          "similarity_score": 0.6219661,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P11939",
+          "similarity_score": 0.61983806,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P12570",
+          "similarity_score": 0.6129167,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P1219",
+          "similarity_score": 0.6110064,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10889",
+          "similarity_score": 0.6091542,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P4977",
+          "similarity_score": 0.607775,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7398",
+          "similarity_score": 0.6074978,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P1217",
+          "similarity_score": 0.60732394,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P7741",
+          "similarity_score": 0.6061079,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P12142",
+          "similarity_score": 0.6055941,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    },
+    "block_barrel": {
+      "relevant_qids": [
+        {
+          "QID": "Q4996749",
+          "similarity_score": 0.7347702,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q543127",
+          "similarity_score": 0.690529,
+          "rrf_score": 0.0196078431372549,
+          "source": "Keyword Search"
+        },
+        {
+          "QID": "Q2511816",
+          "similarity_score": 0.7272126,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q4801383",
+          "similarity_score": 0.72526634,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q94567",
+          "similarity_score": 0.72079575,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q5447883",
+          "similarity_score": 0.71783996,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q526314",
+          "similarity_score": 0.7141055,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q2678853",
+          "similarity_score": 0.71399534,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q361957",
+          "similarity_score": 0.70289123,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "QID": "Q217825",
+          "similarity_score": 0.70220006,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        }
+      ],
+      "relevant_pids": [
+        {
+          "PID": "P2905",
+          "similarity_score": 0.69854236,
+          "rrf_score": 0.0196078431372549,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6088",
+          "similarity_score": 0.69779664,
+          "rrf_score": 0.019230769230769232,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P10172",
+          "similarity_score": 0.6936865,
+          "rrf_score": 0.018867924528301886,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2665",
+          "similarity_score": 0.6848242,
+          "rrf_score": 0.018518518518518517,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P3002",
+          "similarity_score": 0.67181385,
+          "rrf_score": 0.01818181818181818,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P2904",
+          "similarity_score": 0.663887,
+          "rrf_score": 0.017857142857142856,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P4305",
+          "similarity_score": 0.6586586,
+          "rrf_score": 0.017543859649122806,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P6089",
+          "similarity_score": 0.6585685,
+          "rrf_score": 0.017241379310344827,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9031",
+          "similarity_score": 0.65738153,
+          "rrf_score": 0.01694915254237288,
+          "source": "Vector Search"
+        },
+        {
+          "PID": "P9056",
+          "similarity_score": 0.654547,
+          "rrf_score": 0.016666666666666666,
+          "source": "Vector Search"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,2420 @@
+{
+  "metadata": {
+    "total_blocks_subblocks": 101,
+    "total_pairs": 189,
+    "created_at": "2026-01-05T19:44:26.310824"
+  },
+  "blocks": {
+    "block_of": {
+      "pairs": [
+        {
+          "ltable_id": 0,
+          "rtable_id": 170,
+          "label": 0,
+          "entity_a": "name: ` arnie morton \\ 's of chicago '; addr: ' 435 s. la cienega blv . '; city: ` los angeles '; phone: 310/246 -1501; type: american; class: 0",
+          "entity_b": "name: ` morton \\ 's of chicago ( atlanta ) '; addr: ' 303 peachtree st. ne '; city: atlanta; phone: 404-577-4366; type: steakhouses; class: 704",
+          "block_id": "of"
+        },
+        {
+          "ltable_id": 83,
+          "rtable_id": 301,
+          "label": 1,
+          "entity_a": "name: ` heera of india '; addr: ' 595 piedmont ave. rio shopping mall '; city: atlanta; phone: 404/876 -4408; type: asian; class: 83",
+          "entity_b": "name: ` heera of india '; addr: ' 595 piedmont ave. '; city: atlanta; phone: 404-876-4408; type: indian; class: 83",
+          "block_id": "of"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "of",
+      "subblock_index": null
+    },
+    "block_erican_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 23,
+          "rtable_id": 252,
+          "label": 0,
+          "entity_a": "name: '21 club '; addr: '21 w. 52nd st. '; city: ` new york '; phone: 212/582 -7200; type: american; class: 23",
+          "entity_b": "name: ` four seasons '; addr: '99 e. 52nd st. '; city: ` new york city '; phone: 212-754-9494; type: ` american ( new ) '; class: 34",
+          "block_id": "erican"
+        },
+        {
+          "ltable_id": 36,
+          "rtable_id": 254,
+          "label": 1,
+          "entity_a": "name: ` gramercy tavern '; addr: '42 e. 20th st. between park ave. s and broadway '; city: ` new york '; phone: 212/477 -0777; type: american; class: 36",
+          "entity_b": "name: ` gramercy tavern '; addr: '42 e. 20th st. '; city: ` new york city '; phone: 212-477-0777; type: ` american ( new ) '; class: 36",
+          "block_id": "erican"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "erican",
+      "subblock_index": 0,
+      "parent_block": "erican"
+    },
+    "block_erican_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 76,
+          "rtable_id": 26,
+          "label": 0,
+          "entity_a": "name: ` bone \\ 's '; addr: ' 3130 piedmont road '; city: atlanta; phone: 404/237 -2663; type: american; class: 76",
+          "entity_b": "name: ` joe \\ 's '; addr: ' 1023 abbot kinney blvd. '; city: venice; phone: 310-399-5811; type: ` american ( new ) '; class: 560",
+          "block_id": "erican"
+        },
+        {
+          "ltable_id": 96,
+          "rtable_id": 314,
+          "label": 1,
+          "entity_a": "name: boulevard; addr: ' 1 mission st. '; city: ` san francisco '; phone: 415/543 -6084; type: american; class: 96",
+          "entity_b": "name: boulevard; addr: ' 1 mission st. '; city: ` san francisco '; phone: 415-543-6084; type: ` american ( new ) '; class: 96",
+          "block_id": "erican"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "erican",
+      "subblock_index": 1,
+      "parent_block": "erican"
+    },
+    "block_erican_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 190,
+          "rtable_id": 241,
+          "label": 0,
+          "entity_a": "name: ` ben benson \\ 's '; addr: ' 123 w. 52nd st. '; city: ` new york '; phone: 212/581 -8888; type: american; class: 187",
+          "entity_b": "name: '21 club '; addr: '21 w. 52nd st. '; city: ` new york city '; phone: 212-582-7200; type: ` american ( new ) '; class: 23",
+          "block_id": "erican"
+        },
+        {
+          "ltable_id": 436,
+          "rtable_id": 314,
+          "label": 0,
+          "entity_a": "name: ` center stage plaza hotel '; addr: ' 1 main st. '; city: ` las vegas '; phone: 702/386 -2512; type: american; class: 436",
+          "entity_b": "name: boulevard; addr: ' 1 mission st. '; city: ` san francisco '; phone: 415-543-6084; type: ` american ( new ) '; class: 96",
+          "block_id": "erican"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "erican",
+      "subblock_index": 2,
+      "parent_block": "erican"
+    },
+    "block_s_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 22,
+          "rtable_id": 240,
+          "label": 1,
+          "entity_a": "name: ` yujean kang \\ 's gourmet chinese cuisine '; addr: '67 n. raymond ave. '; city: ` los angeles '; phone: 818/585 -0855; type: asian; class: 22",
+          "entity_b": "name: ` yujean kang \\ 's '; addr: '67 n. raymond ave. '; city: pasadena; phone: 818-585-0855; type: chinese; class: 22",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 28,
+          "rtable_id": 246,
+          "label": 1,
+          "entity_a": "name: ` carmine \\ 's '; addr: ' 2450 broadway between 90th and 91st sts . '; city: ` new york '; phone: 212/362 -2200; type: italian; class: 28",
+          "entity_b": "name: ` carmine \\ 's '; addr: ' 2450 broadway '; city: ` new york city '; phone: 212-362-2200; type: italian; class: 28",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 0,
+      "parent_block": "s"
+    },
+    "block_s_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 42,
+          "rtable_id": 275,
+          "label": 0,
+          "entity_a": "name: ` les celebrites '; addr: ' 160 central park s '; city: ` new york '; phone: 212/484 -5113; type: french; class: 42",
+          "entity_b": "name: ` san domenico '; addr: ' 240 central park s. '; city: ` new york city '; phone: 212-265-5959; type: italian; class: 57",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 57,
+          "rtable_id": 275,
+          "label": 1,
+          "entity_a": "name: ` san domenico '; addr: ' 240 central park s '; city: ` new york '; phone: 212/265 -5959; type: italian; class: 57",
+          "entity_b": "name: ` san domenico '; addr: ' 240 central park s. '; city: ` new york city '; phone: 212-265-5959; type: italian; class: 57",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 1,
+      "parent_block": "s"
+    },
+    "block_s_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 67,
+          "rtable_id": 136,
+          "label": 0,
+          "entity_a": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -8899; type: asian; class: 67",
+          "entity_b": "name: ` spago ( las vegas ) '; addr: ' 3500 las vegas blvd. s. '; city: ` las vegas '; phone: 702-369-6300; type: californian; class: 670",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 67,
+          "rtable_id": 190,
+          "label": 0,
+          "entity_a": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -8899; type: asian; class: 67",
+          "entity_b": "name: ` cha cha cha \\ 's '; addr: ' 1805 haight st. '; city: ` san francisco '; phone: 415-386-5758; type: caribbean; class: 725",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 2,
+      "parent_block": "s"
+    },
+    "block_s_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 67,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -8899; type: asian; class: 67",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 68,
+          "rtable_id": 123,
+          "label": 0,
+          "entity_a": "name: ` coyote cafe '; addr: ' 3799 las vegas blvd. s '; city: ` las vegas '; phone: 702/891 -7349; type: southwestern; class: 68",
+          "entity_b": "name: ` buccaneer bay club '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7350; type: continental; class: 657",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 3,
+      "parent_block": "s"
+    },
+    "block_s_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 68,
+          "rtable_id": 136,
+          "label": 0,
+          "entity_a": "name: ` coyote cafe '; addr: ' 3799 las vegas blvd. s '; city: ` las vegas '; phone: 702/891 -7349; type: southwestern; class: 68",
+          "entity_b": "name: ` spago ( las vegas ) '; addr: ' 3500 las vegas blvd. s. '; city: ` las vegas '; phone: 702-369-6300; type: californian; class: 670",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 68,
+          "rtable_id": 139,
+          "label": 0,
+          "entity_a": "name: ` coyote cafe '; addr: ' 3799 las vegas blvd. s '; city: ` las vegas '; phone: 702/891 -7349; type: southwestern; class: 68",
+          "entity_b": "name: ` sterling brunch '; addr: ' 3645 las vegas blvd. s. '; city: ` las vegas '; phone: 702-739-4651; type: eclectic; class: 673",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 4,
+      "parent_block": "s"
+    },
+    "block_s_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 68,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: ` coyote cafe '; addr: ' 3799 las vegas blvd. s '; city: ` las vegas '; phone: 702/891 -7349; type: southwestern; class: 68",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 70,
+          "rtable_id": 130,
+          "label": 0,
+          "entity_a": "name: ` palace court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: continental; class: 70",
+          "entity_b": "name: ` michael \\ 's ( las vegas ) '; addr: ' 3595 las vegas blvd. s. '; city: ` las vegas '; phone: 702-737-7111; type: continental; class: 664",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 5,
+      "parent_block": "s"
+    },
+    "block_s_sub_6": {
+      "pairs": [
+        {
+          "ltable_id": 70,
+          "rtable_id": 133,
+          "label": 0,
+          "entity_a": "name: ` palace court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: continental; class: 70",
+          "entity_b": "name: ` morton \\ 's of chicago ( las vegas ) '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-893-0703; type: steakhouses; class: 667",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 70,
+          "rtable_id": 136,
+          "label": 0,
+          "entity_a": "name: ` palace court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: continental; class: 70",
+          "entity_b": "name: ` spago ( las vegas ) '; addr: ' 3500 las vegas blvd. s. '; city: ` las vegas '; phone: 702-369-6300; type: californian; class: 670",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 6,
+      "parent_block": "s"
+    },
+    "block_s_sub_7": {
+      "pairs": [
+        {
+          "ltable_id": 70,
+          "rtable_id": 140,
+          "label": 0,
+          "entity_a": "name: ` palace court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: continental; class: 70",
+          "entity_b": "name: ` tre visi '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7331; type: italian; class: 674",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 70,
+          "rtable_id": 285,
+          "label": 0,
+          "entity_a": "name: ` palace court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: continental; class: 70",
+          "entity_b": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-8899; type: chinese; class: 67",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 7,
+      "parent_block": "s"
+    },
+    "block_s_sub_8": {
+      "pairs": [
+        {
+          "ltable_id": 72,
+          "rtable_id": 131,
+          "label": 0,
+          "entity_a": "name: ` steak house '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: ` steak houses '; class: 72",
+          "entity_b": "name: ` monte carlo '; addr: ' 3145 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-4524; type: ` french ( new ) '; class: 665",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 72,
+          "rtable_id": 132,
+          "label": 0,
+          "entity_a": "name: ` steak house '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: ` steak houses '; class: 72",
+          "entity_b": "name: moongate; addr: ' 3400 las vegas blvd. s. '; city: ` las vegas '; phone: 702-791-7352; type: chinese; class: 666",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 8,
+      "parent_block": "s"
+    },
+    "block_s_sub_9": {
+      "pairs": [
+        {
+          "ltable_id": 72,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: ` steak house '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: ` steak houses '; class: 72",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 121,
+          "rtable_id": 52,
+          "label": 0,
+          "entity_a": "name: ` ca \\ ` brea '; addr: ' 346 s. la brea ave. '; city: ` los angeles '; phone: 213/938 -2863; type: italian; class: 118",
+          "entity_b": "name: ` pink \\ 's famous chili dogs '; addr: ' 709 n. la brea ave. '; city: la; phone: 213-931-4223; type: ` hot dogs '; class: 586",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 9,
+      "parent_block": "s"
+    },
+    "block_s_sub_10": {
+      "pairs": [
+        {
+          "ltable_id": 121,
+          "rtable_id": 222,
+          "label": 0,
+          "entity_a": "name: ` ca \\ ` brea '; addr: ' 346 s. la brea ave. '; city: ` los angeles '; phone: 213/938 -2863; type: italian; class: 118",
+          "entity_b": "name: campanile; addr: ' 624 s. la brea ave. '; city: ` los angeles '; phone: 213-938-1447; type: californian; class: 4",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 125,
+          "rtable_id": 40,
+          "label": 0,
+          "entity_a": "name: ` canter \\ 's '; addr: ' 419 n. fairfax ave. '; city: ` los angeles '; phone: 213/651 -2030 .; type: american; class: 122",
+          "entity_b": "name: ` mani \\ 's bakery & espresso bar '; addr: ' 519 s. fairfax ave. '; city: la; phone: 213-938-8800; type: desserts; class: 574",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 10,
+      "parent_block": "s"
+    },
+    "block_s_sub_11": {
+      "pairs": [
+        {
+          "ltable_id": 170,
+          "rtable_id": 64,
+          "label": 0,
+          "entity_a": "name: ` tommy tang \\ 's '; addr: ' 7313 melrose ave. '; city: ` los angeles '; phone: 213/937 -5733; type: asian; class: 167",
+          "entity_b": "name: ` tommy \\ 's '; addr: ' 2575 beverly blvd. '; city: la; phone: 213-389-9060; type: hamburgers; class: 598",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 202,
+          "rtable_id": 275,
+          "label": 0,
+          "entity_a": "name: ` cafe botanica '; addr: ' 160 central park s '; city: ` new york '; phone: 212/484 -5120; type: french; class: 200",
+          "entity_b": "name: ` san domenico '; addr: ' 240 central park s. '; city: ` new york city '; phone: 212-265-5959; type: italian; class: 57",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 11,
+      "parent_block": "s"
+    },
+    "block_s_sub_12": {
+      "pairs": [
+        {
+          "ltable_id": 358,
+          "rtable_id": 324,
+          "label": 0,
+          "entity_a": "name: ` teresa \\ 's '; addr: ' 103 1st ave. between 6th and 7th sts . '; city: ` new york '; phone: 212/228 -0604; type: ` east european '; class: 358",
+          "entity_b": "name: ` masa \\ 's '; addr: ' 648 bush st. '; city: ` san francisco '; phone: 415-989-7154; type: ` french ( new ) '; class: 106",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 424,
+          "rtable_id": 123,
+          "label": 0,
+          "entity_a": "name: ` bally \\ 's big kitchen '; addr: ' 3645 las vegas blvd. s '; city: ` las vegas '; phone: 702/739 -4111; type: buffets; class: 424",
+          "entity_b": "name: ` buccaneer bay club '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7350; type: continental; class: 657",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 12,
+      "parent_block": "s"
+    },
+    "block_s_sub_13": {
+      "pairs": [
+        {
+          "ltable_id": 424,
+          "rtable_id": 125,
+          "label": 0,
+          "entity_a": "name: ` bally \\ 's big kitchen '; addr: ' 3645 las vegas blvd. s '; city: ` las vegas '; phone: 702/739 -4111; type: buffets; class: 424",
+          "entity_b": "name: 'em eril \\ 's new orleans fish house '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7374; type: seafood; class: 659",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 427,
+          "rtable_id": 125,
+          "label": 0,
+          "entity_a": "name: ` bertolini \\ 's '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/735 -4663; type: italian; class: 427",
+          "entity_b": "name: 'em eril \\ 's new orleans fish house '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7374; type: seafood; class: 659",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 13,
+      "parent_block": "s"
+    },
+    "block_s_sub_14": {
+      "pairs": [
+        {
+          "ltable_id": 427,
+          "rtable_id": 133,
+          "label": 0,
+          "entity_a": "name: ` bertolini \\ 's '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/735 -4663; type: italian; class: 427",
+          "entity_b": "name: ` morton \\ 's of chicago ( las vegas ) '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-893-0703; type: steakhouses; class: 667",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 429,
+          "rtable_id": 128,
+          "label": 0,
+          "entity_a": "name: bistro; addr: ' 3400 las vegas blvd. s '; city: ` las vegas '; phone: 702/791 -7111; type: continental; class: 429",
+          "entity_b": "name: ` madame ching \\ 's '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7111; type: asian; class: 662",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 14,
+      "parent_block": "s"
+    },
+    "block_s_sub_15": {
+      "pairs": [
+        {
+          "ltable_id": 429,
+          "rtable_id": 131,
+          "label": 0,
+          "entity_a": "name: bistro; addr: ' 3400 las vegas blvd. s '; city: ` las vegas '; phone: 702/791 -7111; type: continental; class: 429",
+          "entity_b": "name: ` monte carlo '; addr: ' 3145 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-4524; type: ` french ( new ) '; class: 665",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 429,
+          "rtable_id": 285,
+          "label": 0,
+          "entity_a": "name: bistro; addr: ' 3400 las vegas blvd. s '; city: ` las vegas '; phone: 702/791 -7111; type: continental; class: 429",
+          "entity_b": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-8899; type: chinese; class: 67",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 15,
+      "parent_block": "s"
+    },
+    "block_s_sub_16": {
+      "pairs": [
+        {
+          "ltable_id": 431,
+          "rtable_id": 123,
+          "label": 0,
+          "entity_a": "name: ` bugsy \\ 's diner '; addr: ' 3555 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -3111; type: ` coffee shops/diners '; class: 431",
+          "entity_b": "name: ` buccaneer bay club '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7350; type: continental; class: 657",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 431,
+          "rtable_id": 128,
+          "label": 0,
+          "entity_a": "name: ` bugsy \\ 's diner '; addr: ' 3555 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -3111; type: ` coffee shops/diners '; class: 431",
+          "entity_b": "name: ` madame ching \\ 's '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7111; type: asian; class: 662",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 16,
+      "parent_block": "s"
+    },
+    "block_s_sub_17": {
+      "pairs": [
+        {
+          "ltable_id": 431,
+          "rtable_id": 140,
+          "label": 0,
+          "entity_a": "name: ` bugsy \\ 's diner '; addr: ' 3555 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -3111; type: ` coffee shops/diners '; class: 431",
+          "entity_b": "name: ` tre visi '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7331; type: italian; class: 674",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 431,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: ` bugsy \\ 's diner '; addr: ' 3555 las vegas blvd. s '; city: ` las vegas '; phone: 702/733 -3111; type: ` coffee shops/diners '; class: 431",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 17,
+      "parent_block": "s"
+    },
+    "block_s_sub_18": {
+      "pairs": [
+        {
+          "ltable_id": 433,
+          "rtable_id": 123,
+          "label": 0,
+          "entity_a": "name: ` cafe roma '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: ` coffee shops/diners '; class: 433",
+          "entity_b": "name: ` buccaneer bay club '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7350; type: continental; class: 657",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 433,
+          "rtable_id": 130,
+          "label": 0,
+          "entity_a": "name: ` cafe roma '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: ` coffee shops/diners '; class: 433",
+          "entity_b": "name: ` michael \\ 's ( las vegas ) '; addr: ' 3595 las vegas blvd. s. '; city: ` las vegas '; phone: 702-737-7111; type: continental; class: 664",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 18,
+      "parent_block": "s"
+    },
+    "block_s_sub_19": {
+      "pairs": [
+        {
+          "ltable_id": 433,
+          "rtable_id": 131,
+          "label": 0,
+          "entity_a": "name: ` cafe roma '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: ` coffee shops/diners '; class: 433",
+          "entity_b": "name: ` monte carlo '; addr: ' 3145 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-4524; type: ` french ( new ) '; class: 665",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 433,
+          "rtable_id": 139,
+          "label": 0,
+          "entity_a": "name: ` cafe roma '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7547; type: ` coffee shops/diners '; class: 433",
+          "entity_b": "name: ` sterling brunch '; addr: ' 3645 las vegas blvd. s. '; city: ` las vegas '; phone: 702-739-4651; type: eclectic; class: 673",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 19,
+      "parent_block": "s"
+    },
+    "block_s_sub_20": {
+      "pairs": [
+        {
+          "ltable_id": 437,
+          "rtable_id": 130,
+          "label": 0,
+          "entity_a": "name: ` circus circus '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: buffets; class: 437",
+          "entity_b": "name: ` michael \\ 's ( las vegas ) '; addr: ' 3595 las vegas blvd. s. '; city: ` las vegas '; phone: 702-737-7111; type: continental; class: 664",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 437,
+          "rtable_id": 136,
+          "label": 0,
+          "entity_a": "name: ` circus circus '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: buffets; class: 437",
+          "entity_b": "name: ` spago ( las vegas ) '; addr: ' 3500 las vegas blvd. s. '; city: ` las vegas '; phone: 702-369-6300; type: californian; class: 670",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 20,
+      "parent_block": "s"
+    },
+    "block_s_sub_21": {
+      "pairs": [
+        {
+          "ltable_id": 438,
+          "rtable_id": 133,
+          "label": 0,
+          "entity_a": "name: 'em press court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7888; type: asian; class: 438",
+          "entity_b": "name: ` morton \\ 's of chicago ( las vegas ) '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-893-0703; type: steakhouses; class: 667",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 438,
+          "rtable_id": 140,
+          "label": 0,
+          "entity_a": "name: 'em press court '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7888; type: asian; class: 438",
+          "entity_b": "name: ` tre visi '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7331; type: italian; class: 674",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 21,
+      "parent_block": "s"
+    },
+    "block_s_sub_22": {
+      "pairs": [
+        {
+          "ltable_id": 444,
+          "rtable_id": 131,
+          "label": 0,
+          "entity_a": "name: ` margarita \\ 's mexican cantina '; addr: ' 3120 las vegas blvd. s '; city: ` las vegas '; phone: 702/794 -8200; type: mexican; class: 444",
+          "entity_b": "name: ` monte carlo '; addr: ' 3145 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-4524; type: ` french ( new ) '; class: 665",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 446,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: mikado; addr: ' 3400 las vegas blvd. s '; city: ` las vegas '; phone: 702/791 -7111; type: asian; class: 446",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 22,
+      "parent_block": "s"
+    },
+    "block_s_sub_23": {
+      "pairs": [
+        {
+          "ltable_id": 448,
+          "rtable_id": 125,
+          "label": 0,
+          "entity_a": "name: ` ralph \\ 's diner '; addr: ' 3000 las vegas blvd. s '; city: ` las vegas '; phone: 702/732 -6330; type: ` coffee shops/diners '; class: 448",
+          "entity_b": "name: 'em eril \\ 's new orleans fish house '; addr: ' 3799 las vegas blvd. s. '; city: ` las vegas '; phone: 702-891-7374; type: seafood; class: 659",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 448,
+          "rtable_id": 128,
+          "label": 0,
+          "entity_a": "name: ` ralph \\ 's diner '; addr: ' 3000 las vegas blvd. s '; city: ` las vegas '; phone: 702/732 -6330; type: ` coffee shops/diners '; class: 448",
+          "entity_b": "name: ` madame ching \\ 's '; addr: ' 3300 las vegas blvd. s. '; city: ` las vegas '; phone: 702-894-7111; type: asian; class: 662",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 23,
+      "parent_block": "s"
+    },
+    "block_s_sub_24": {
+      "pairs": [
+        {
+          "ltable_id": 448,
+          "rtable_id": 133,
+          "label": 0,
+          "entity_a": "name: ` ralph \\ 's diner '; addr: ' 3000 las vegas blvd. s '; city: ` las vegas '; phone: 702/732 -6330; type: ` coffee shops/diners '; class: 448",
+          "entity_b": "name: ` morton \\ 's of chicago ( las vegas ) '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-893-0703; type: steakhouses; class: 667",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 448,
+          "rtable_id": 288,
+          "label": 0,
+          "entity_a": "name: ` ralph \\ 's diner '; addr: ' 3000 las vegas blvd. s '; city: ` las vegas '; phone: 702/732 -6330; type: ` coffee shops/diners '; class: 448",
+          "entity_b": "name: ` palace court '; addr: ' 3570 las vegas blvd. s. '; city: ` las vegas '; phone: 702-731-7110; type: ` french ( new ) '; class: 70",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 24,
+      "parent_block": "s"
+    },
+    "block_s_sub_25": {
+      "pairs": [
+        {
+          "ltable_id": 449,
+          "rtable_id": 130,
+          "label": 0,
+          "entity_a": "name: ` the bacchanal '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7525; type: ` only in las vegas '; class: 449",
+          "entity_b": "name: ` michael \\ 's ( las vegas ) '; addr: ' 3595 las vegas blvd. s. '; city: ` las vegas '; phone: 702-737-7111; type: continental; class: 664",
+          "block_id": "s"
+        },
+        {
+          "ltable_id": 449,
+          "rtable_id": 285,
+          "label": 0,
+          "entity_a": "name: ` the bacchanal '; addr: ' 3570 las vegas blvd. s '; city: ` las vegas '; phone: 702/731 -7525; type: ` only in las vegas '; class: 449",
+          "entity_b": "name: ` chin \\ 's '; addr: ' 3200 las vegas blvd. s. '; city: ` las vegas '; phone: 702-733-8899; type: chinese; class: 67",
+          "block_id": "s"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 25,
+      "parent_block": "s"
+    },
+    "block_s_sub_26": {
+      "pairs": [
+        {
+          "ltable_id": 498,
+          "rtable_id": 55,
+          "label": 0,
+          "entity_a": "name: ` moose \\ 's '; addr: ' 1652 stockton st. '; city: ` san francisco '; phone: 415/989 -7800; type: mediterranean; class: 498",
+          "entity_b": "name: ` rae \\ 's '; addr: ' 2901 pico blvd. '; city: ` santa monica '; phone: 310-828-7937; type: diners; class: 589",
+          "block_id": "s"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "s",
+      "subblock_index": 26,
+      "parent_block": "s"
+    },
+    "block_ienega": {
+      "pairs": [
+        {
+          "ltable_id": 133,
+          "rtable_id": 229,
+          "label": 0,
+          "entity_a": "name: ` drai \\ 's '; addr: ' 730 n. la cienega blvd. '; city: ` los angeles '; phone: 310/358 -8585; type: french; class: 130",
+          "entity_b": "name: ` l \\ ` orangerie '; addr: ' 903 n. la cienega blvd. '; city: ` w. hollywood '; phone: 310-652-9770; type: ` french ( classic ) '; class: 11",
+          "block_id": "ienega"
+        },
+        {
+          "ltable_id": 136,
+          "rtable_id": 232,
+          "label": 0,
+          "entity_a": "name: ` ed debevic \\ 's '; addr: ' 134 n. la cienega '; city: ` los angeles '; phone: 310/659 -1952; type: american; class: 133",
+          "entity_b": "name: matsuhisa; addr: ' 129 n. la cienega blvd. '; city: ` beverly hills '; phone: 310-659-9639; type: seafood; class: 14",
+          "block_id": "ienega"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "ienega",
+      "subblock_index": null
+    },
+    "block_la": {
+      "pairs": [
+        {
+          "ltable_id": 39,
+          "rtable_id": 257,
+          "label": 1,
+          "entity_a": "name: ` la caravelle '; addr: '33 w. 55th st. '; city: ` new york '; phone: 212/586 -4252; type: french; class: 39",
+          "entity_b": "name: ` la caravelle '; addr: '33 w. 55th st. '; city: ` new york city '; phone: 212-586-4252; type: ` french ( classic ) '; class: 39",
+          "block_id": "la"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "la",
+      "subblock_index": null
+    },
+    "block_ngeles_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 6,
+          "rtable_id": 230,
+          "label": 0,
+          "entity_a": "name: citrus; addr: ' 6703 melrose ave. '; city: ` los angeles '; phone: 213/857 -0034; type: californian; class: 6",
+          "entity_b": "name: ` le chardonnay ( los angeles ) '; addr: ' 8284 melrose ave. '; city: ` los angeles '; phone: 213-655-8880; type: ` french bistro '; class: 12",
+          "block_id": "ngeles"
+        },
+        {
+          "ltable_id": 16,
+          "rtable_id": 224,
+          "label": 0,
+          "entity_a": "name: patina; addr: ' 5955 melrose ave. '; city: ` los angeles '; phone: 213/467 -1108; type: californian; class: 16",
+          "entity_b": "name: citrus; addr: ' 6703 melrose ave. '; city: ` los angeles '; phone: 213-857-0034; type: californian; class: 6",
+          "block_id": "ngeles"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ngeles",
+      "subblock_index": 0,
+      "parent_block": "ngeles"
+    },
+    "block_ngeles_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 131,
+          "rtable_id": 233,
+          "label": 0,
+          "entity_a": "name: dive !; addr: ' 10250 santa monica blvd. '; city: ` los angeles '; phone: 310/788 -; type: ` dive american '; class: 128",
+          "entity_b": "name: ` palm the ( los angeles ) '; addr: ' 9001 santa monica blvd. '; city: ` w. hollywood '; phone: 310-550-8811; type: steakhouses; class: 15",
+          "block_id": "ngeles"
+        },
+        {
+          "ltable_id": 135,
+          "rtable_id": 230,
+          "label": 0,
+          "entity_a": "name: eclipse; addr: ' 8800 melrose ave. '; city: ` los angeles '; phone: 310/724 -5959; type: californian; class: 132",
+          "entity_b": "name: ` le chardonnay ( los angeles ) '; addr: ' 8284 melrose ave. '; city: ` los angeles '; phone: 213-655-8880; type: ` french bistro '; class: 12",
+          "block_id": "ngeles"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ngeles",
+      "subblock_index": 1,
+      "parent_block": "ngeles"
+    },
+    "block_ngeles_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 142,
+          "rtable_id": 59,
+          "label": 0,
+          "entity_a": "name: ` il fornaio cucina italiana '; addr: ' 301 n. beverly dr. '; city: ` los angeles '; phone: 310/550 -8330; type: italian; class: 139",
+          "entity_b": "name: ` ruth \\ 's chris steak house ( los angeles ) '; addr: ' 224 s. beverly dr. '; city: ` beverly hills '; phone: 310-859-8744; type: steakhouses; class: 593",
+          "block_id": "ngeles"
+        },
+        {
+          "ltable_id": 146,
+          "rtable_id": 238,
+          "label": 0,
+          "entity_a": "name: joss; addr: ' 9255 sunset blvd. '; city: ` los angeles '; phone: 310/276 -1886; type: asian; class: 143",
+          "entity_b": "name: ` spago ( los angeles ) '; addr: ' 8795 sunset blvd. '; city: ` w. hollywood '; phone: 310-652-4025; type: californian; class: 20",
+          "block_id": "ngeles"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ngeles",
+      "subblock_index": 2,
+      "parent_block": "ngeles"
+    },
+    "block_ngeles_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 148,
+          "rtable_id": 238,
+          "label": 0,
+          "entity_a": "name: ` le dome '; addr: ' 8720 sunset blvd. '; city: ` los angeles '; phone: 310/659 -6919; type: french; class: 145",
+          "entity_b": "name: ` spago ( los angeles ) '; addr: ' 8795 sunset blvd. '; city: ` w. hollywood '; phone: 310-652-4025; type: californian; class: 20",
+          "block_id": "ngeles"
+        },
+        {
+          "ltable_id": 170,
+          "rtable_id": 224,
+          "label": 0,
+          "entity_a": "name: ` tommy tang \\ 's '; addr: ' 7313 melrose ave. '; city: ` los angeles '; phone: 213/937 -5733; type: asian; class: 167",
+          "entity_b": "name: citrus; addr: ' 6703 melrose ave. '; city: ` los angeles '; phone: 213-857-0034; type: californian; class: 6",
+          "block_id": "ngeles"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ngeles",
+      "subblock_index": 3,
+      "parent_block": "ngeles"
+    },
+    "block_ventur_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 1,
+          "rtable_id": 61,
+          "label": 0,
+          "entity_a": "name: ` art \\ 's delicatessen '; addr: ' 12224 ventura blvd. '; city: ` studio city '; phone: 818/762 -1221; type: american; class: 1",
+          "entity_b": "name: ` sushi nozawa '; addr: ' 11288 ventura blvd. '; city: ` studio city '; phone: 818-508-7017; type: japanese; class: 595",
+          "block_id": "ventur"
+        },
+        {
+          "ltable_id": 3,
+          "rtable_id": 236,
+          "label": 0,
+          "entity_a": "name: ` cafe bizou '; addr: ' 14016 ventura blvd. '; city: ` sherman oaks '; phone: 818/788 -3536; type: french; class: 3",
+          "entity_b": "name: ` pinot bistro '; addr: ' 12969 ventura blvd. '; city: ` studio city '; phone: 818-990-0500; type: ` french bistro '; class: 18",
+          "block_id": "ventur"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ventur",
+      "subblock_index": 0,
+      "parent_block": "ventur"
+    },
+    "block_ventur_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 159,
+          "rtable_id": 46,
+          "label": 0,
+          "entity_a": "name: posto; addr: ' 14928 ventura blvd. '; city: ` sherman oaks '; phone: 818/784 -4400; type: italian; class: 156",
+          "entity_b": "name: ` mulberry st. '; addr: ' 17040 ventura blvd. '; city: encino; phone: 818-906-8881; type: pizza; class: 580",
+          "block_id": "ventur"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "ventur",
+      "subblock_index": 1,
+      "parent_block": "ventur"
+    },
+    "block_blvd_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 7,
+          "rtable_id": 238,
+          "label": 0,
+          "entity_a": "name: fenix; addr: ' 8358 sunset blvd. west '; city: hollywood; phone: 213/848 -6677; type: american; class: 7",
+          "entity_b": "name: ` spago ( los angeles ) '; addr: ' 8795 sunset blvd. '; city: ` w. hollywood '; phone: 310-652-4025; type: californian; class: 20",
+          "block_id": "blvd"
+        },
+        {
+          "ltable_id": 15,
+          "rtable_id": 3,
+          "label": 0,
+          "entity_a": "name: ` the palm '; addr: ' 9001 santa monica blvd. '; city: ` los angeles '; phone: 310/550 -8811; type: american; class: 15",
+          "entity_b": "name: ` belvedere the '; addr: ' 9882 little santa monica blvd. '; city: ` beverly hills '; phone: 310-788-2306; type: ` pacific new wave '; class: 537",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 0,
+      "parent_block": "blvd"
+    },
+    "block_blvd_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 131,
+          "rtable_id": 3,
+          "label": 0,
+          "entity_a": "name: dive !; addr: ' 10250 santa monica blvd. '; city: ` los angeles '; phone: 310/788 -; type: ` dive american '; class: 128",
+          "entity_b": "name: ` belvedere the '; addr: ' 9882 little santa monica blvd. '; city: ` beverly hills '; phone: 310-788-2306; type: ` pacific new wave '; class: 537",
+          "block_id": "blvd"
+        },
+        {
+          "ltable_id": 131,
+          "rtable_id": 34,
+          "label": 0,
+          "entity_a": "name: dive !; addr: ' 10250 santa monica blvd. '; city: ` los angeles '; phone: 310/788 -; type: ` dive american '; class: 128",
+          "entity_b": "name: ` la cachette '; addr: ' 10506 little santa monica blvd. '; city: ` century city '; phone: 310-470-4992; type: ` french ( new ) '; class: 568",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 1,
+      "parent_block": "blvd"
+    },
+    "block_blvd_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 143,
+          "rtable_id": 0,
+          "label": 0,
+          "entity_a": "name: ` jack sprat \\ 's grill '; addr: ' 10668 w. pico blvd. '; city: ` los angeles '; phone: 310/837 -6662; type: ` health food '; class: 140",
+          "entity_b": "name: ` apple pan the '; addr: ' 10801 w. pico blvd. '; city: ` west la '; phone: 310-475-3585; type: american; class: 534",
+          "block_id": "blvd"
+        },
+        {
+          "ltable_id": 143,
+          "rtable_id": 39,
+          "label": 0,
+          "entity_a": "name: ` jack sprat \\ 's grill '; addr: ' 10668 w. pico blvd. '; city: ` los angeles '; phone: 310/837 -6662; type: ` health food '; class: 140",
+          "entity_b": "name: ` main course the '; addr: ' 10509 w. pico blvd. '; city: ` rancho park '; phone: 310-475-7564; type: american; class: 573",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 2,
+      "parent_block": "blvd"
+    },
+    "block_blvd_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 146,
+          "rtable_id": 225,
+          "label": 0,
+          "entity_a": "name: joss; addr: ' 9255 sunset blvd. '; city: ` los angeles '; phone: 310/276 -1886; type: asian; class: 143",
+          "entity_b": "name: ` fenix at the argyle '; addr: ' 8358 sunset blvd. '; city: ` w. hollywood '; phone: 213-848-6677; type: ` french ( new ) '; class: 7",
+          "block_id": "blvd"
+        },
+        {
+          "ltable_id": 147,
+          "rtable_id": 23,
+          "label": 0,
+          "entity_a": "name: ` le colonial '; addr: ' 8783 beverly blvd. '; city: ` los angeles '; phone: 310/289 -0660; type: asian; class: 144",
+          "entity_b": "name: ` jan \\ 's family restaurant '; addr: ' 8424 beverly blvd. '; city: la; phone: 213-651-2866; type: ` coffee shops '; class: 557",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 3,
+      "parent_block": "blvd"
+    },
+    "block_blvd_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 147,
+          "rtable_id": 33,
+          "label": 0,
+          "entity_a": "name: ` le colonial '; addr: ' 8783 beverly blvd. '; city: ` los angeles '; phone: 310/289 -0660; type: asian; class: 144",
+          "entity_b": "name: ` koo koo roo '; addr: ' 8393 w. beverly blvd. '; city: la; phone: 213-655-9045; type: chicken; class: 567",
+          "block_id": "blvd"
+        },
+        {
+          "ltable_id": 148,
+          "rtable_id": 17,
+          "label": 0,
+          "entity_a": "name: ` le dome '; addr: ' 8720 sunset blvd. '; city: ` los angeles '; phone: 310/659 -6919; type: french; class: 145",
+          "entity_b": "name: ` duke \\ 's '; addr: ' 8909 sunset blvd. '; city: ` w. hollywood '; phone: 310-652-3100; type: ` coffee shops '; class: 551",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 4,
+      "parent_block": "blvd"
+    },
+    "block_blvd_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 148,
+          "rtable_id": 225,
+          "label": 0,
+          "entity_a": "name: ` le dome '; addr: ' 8720 sunset blvd. '; city: ` los angeles '; phone: 310/659 -6919; type: french; class: 145",
+          "entity_b": "name: ` fenix at the argyle '; addr: ' 8358 sunset blvd. '; city: ` w. hollywood '; phone: 213-848-6677; type: ` french ( new ) '; class: 7",
+          "block_id": "blvd"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "blvd",
+      "subblock_index": 5,
+      "parent_block": "blvd"
+    },
+    "block_califo": {
+      "pairs": [
+        {
+          "ltable_id": 519,
+          "rtable_id": 195,
+          "label": 0,
+          "entity_a": "name: ` tadich grill '; addr: ' 240 california st. '; city: ` san francisco '; phone: 415/391 -2373; type: seafood; class: 519",
+          "entity_b": "name: 'em erald garden restaurant '; addr: ' 1550 california st. '; city: ` san francisco '; phone: 415-673-1155; type: vietnamese; class: 730",
+          "block_id": "califo"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "califo",
+      "subblock_index": null
+    },
+    "block_rd_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 73,
+          "rtable_id": 291,
+          "label": 1,
+          "entity_a": "name: tillerman; addr: ' 2245 e. flamingo rd. '; city: ` las vegas '; phone: 702/731 -4036; type: seafood; class: 73",
+          "entity_b": "name: 'till erman the '; addr: ' 2245 e. flamingo rd. '; city: ` las vegas '; phone: 702-731-4036; type: steakhouses; class: 73",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 74,
+          "rtable_id": 292,
+          "label": 1,
+          "entity_a": "name: abruzzi; addr: ' 2355 peachtree rd. . peachtree battle shopping center '; city: atlanta; phone: 404/261 -8186; type: italian; class: 74",
+          "entity_b": "name: abruzzi; addr: ' 2355 peachtree rd. ne '; city: atlanta; phone: 404-261-8186; type: italian; class: 74",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 0,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 75,
+          "rtable_id": 293,
+          "label": 1,
+          "entity_a": "name: bacchanalia; addr: ' 3125 piedmont rd. . near peachtree rd. '; city: atlanta; phone: 404/365 -0410; type: international; class: 75",
+          "entity_b": "name: bacchanalia; addr: ' 3125 piedmont rd. '; city: atlanta; phone: 404-365-0410; type: californian; class: 75",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 82,
+          "rtable_id": 141,
+          "label": 0,
+          "entity_a": "name: ` hedgerose heights inn '; addr: ' 490 e. paces ferry rd. '; city: atlanta; phone: 404/233 -7673; type: international; class: 82",
+          "entity_b": "name: ' 103 west '; addr: ' 103 w. paces ferry rd. '; city: atlanta; phone: 404-233-5993; type: continental; class: 675",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 1,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 82,
+          "rtable_id": 177,
+          "label": 0,
+          "entity_a": "name: ` hedgerose heights inn '; addr: ' 490 e. paces ferry rd. '; city: atlanta; phone: 404/233 -7673; type: international; class: 82",
+          "entity_b": "name: riviera; addr: ' 519 e. paces ferry rd. '; city: atlanta; phone: 404-262-7112; type: mediterranean; class: 712",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 82,
+          "rtable_id": 300,
+          "label": 1,
+          "entity_a": "name: ` hedgerose heights inn '; addr: ' 490 e. paces ferry rd. '; city: atlanta; phone: 404/233 -7673; type: international; class: 82",
+          "entity_b": "name: ` hedgerose heights inn the '; addr: ' 490 e. paces ferry rd. ne '; city: atlanta; phone: 404-233-7673; type: continental; class: 82",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 2,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 89,
+          "rtable_id": 175,
+          "label": 0,
+          "entity_a": "name: ` cafe ritz-carlton buckhead '; addr: ' 3434 peachtree rd. '; city: atlanta; phone: 404/237 -2700; type: ` ext 6108 international '; class: 89",
+          "entity_b": "name: ` palm the ( atlanta ) '; addr: ' 3391 peachtree rd. ne '; city: atlanta; phone: 404-814-1955; type: steakhouses; class: 709",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 89,
+          "rtable_id": 184,
+          "label": 0,
+          "entity_a": "name: ` cafe ritz-carlton buckhead '; addr: ' 3434 peachtree rd. '; city: atlanta; phone: 404/237 -2700; type: ` ext 6108 international '; class: 89",
+          "entity_b": "name: ` white house restaurant '; addr: ' 3172 peachtree rd. ne '; city: atlanta; phone: 404-237-7601; type: diners; class: 719",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 3,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 89,
+          "rtable_id": 292,
+          "label": 0,
+          "entity_a": "name: ` cafe ritz-carlton buckhead '; addr: ' 3434 peachtree rd. '; city: atlanta; phone: 404/237 -2700; type: ` ext 6108 international '; class: 89",
+          "entity_b": "name: abruzzi; addr: ' 2355 peachtree rd. ne '; city: atlanta; phone: 404-261-8186; type: italian; class: 74",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 90,
+          "rtable_id": 148,
+          "label": 0,
+          "entity_a": "name: ` dining room ritz-carlton buckhead '; addr: ' 3434 peachtree rd. '; city: atlanta; phone: 404/237 -2700; type: international; class: 90",
+          "entity_b": "name: ` brookhaven cafe '; addr: ' 4274 peachtree rd. '; city: atlanta; phone: 404-231-5907; type: vegetarian; class: 682",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 4,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 90,
+          "rtable_id": 295,
+          "label": 0,
+          "entity_a": "name: ` dining room ritz-carlton buckhead '; addr: ' 3434 peachtree rd. '; city: atlanta; phone: 404/237 -2700; type: international; class: 90",
+          "entity_b": "name: ` brasserie le coze '; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404-266-1440; type: ` french bistro '; class: 77",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 92,
+          "rtable_id": 148,
+          "label": 0,
+          "entity_a": "name: toulouse; addr: ' b peachtree rd. '; city: atlanta; phone: 404/351 -9533; type: french; class: 92",
+          "entity_b": "name: ` brookhaven cafe '; addr: ' 4274 peachtree rd. '; city: atlanta; phone: 404-231-5907; type: vegetarian; class: 682",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 5,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_6": {
+      "pairs": [
+        {
+          "ltable_id": 92,
+          "rtable_id": 308,
+          "label": 0,
+          "entity_a": "name: toulouse; addr: ' b peachtree rd. '; city: atlanta; phone: 404/351 -9533; type: french; class: 92",
+          "entity_b": "name: ` ritz-carlton dining room ( buckhead ) '; addr: ' 3434 peachtree rd. ne '; city: atlanta; phone: 404-237-2700; type: ` american ( new ) '; class: 90",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 393,
+          "rtable_id": 175,
+          "label": 0,
+          "entity_a": "name: ` dante \\ 's down the hatch buckhead '; addr: ' 3380 peachtree rd. '; city: atlanta; phone: 404/266 -1600; type: continental; class: 393",
+          "entity_b": "name: ` palm the ( atlanta ) '; addr: ' 3391 peachtree rd. ne '; city: atlanta; phone: 404-814-1955; type: steakhouses; class: 709",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 6,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_7": {
+      "pairs": [
+        {
+          "ltable_id": 393,
+          "rtable_id": 299,
+          "label": 0,
+          "entity_a": "name: ` dante \\ 's down the hatch buckhead '; addr: ' 3380 peachtree rd. '; city: atlanta; phone: 404/266 -1600; type: continental; class: 393",
+          "entity_b": "name: ` georgia grille '; addr: ' 2290 peachtree rd. '; city: atlanta; phone: 404-352-3517; type: southwestern; class: 81",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 393,
+          "rtable_id": 310,
+          "label": 0,
+          "entity_a": "name: ` dante \\ 's down the hatch buckhead '; addr: ' 3380 peachtree rd. '; city: atlanta; phone: 404/266 -1600; type: continental; class: 393",
+          "entity_b": "name: toulouse; addr: ' 293-b peachtree rd. '; city: atlanta; phone: 404-351-9533; type: ` french ( new ) '; class: 92",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 7,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_8": {
+      "pairs": [
+        {
+          "ltable_id": 405,
+          "rtable_id": 172,
+          "label": 0,
+          "entity_a": "name: ` luna si '; addr: ' 1931 peachtree rd. '; city: atlanta; phone: 404/355 -5993; type: continental; class: 405",
+          "entity_b": "name: nava; addr: ' 3060 peachtree rd. '; city: atlanta; phone: 404-240-1984; type: southwestern; class: 706",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 405,
+          "rtable_id": 295,
+          "label": 0,
+          "entity_a": "name: ` luna si '; addr: ' 1931 peachtree rd. '; city: atlanta; phone: 404/355 -5993; type: continental; class: 405",
+          "entity_b": "name: ` brasserie le coze '; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404-266-1440; type: ` french bistro '; class: 77",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 8,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_9": {
+      "pairs": [
+        {
+          "ltable_id": 405,
+          "rtable_id": 299,
+          "label": 0,
+          "entity_a": "name: ` luna si '; addr: ' 1931 peachtree rd. '; city: atlanta; phone: 404/355 -5993; type: continental; class: 405",
+          "entity_b": "name: ` georgia grille '; addr: ' 2290 peachtree rd. '; city: atlanta; phone: 404-352-3517; type: southwestern; class: 81",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 405,
+          "rtable_id": 308,
+          "label": 0,
+          "entity_a": "name: ` luna si '; addr: ' 1931 peachtree rd. '; city: atlanta; phone: 404/355 -5993; type: continental; class: 405",
+          "entity_b": "name: ` ritz-carlton dining room ( buckhead ) '; addr: ' 3434 peachtree rd. ne '; city: atlanta; phone: 404-237-2700; type: ` american ( new ) '; class: 90",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 9,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_10": {
+      "pairs": [
+        {
+          "ltable_id": 410,
+          "rtable_id": 295,
+          "label": 0,
+          "entity_a": "name: palisades; addr: ' 1829 peachtree rd. '; city: atlanta; phone: 404/350 -6755; type: continental; class: 410",
+          "entity_b": "name: ` brasserie le coze '; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404-266-1440; type: ` french bistro '; class: 77",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 410,
+          "rtable_id": 310,
+          "label": 0,
+          "entity_a": "name: palisades; addr: ' 1829 peachtree rd. '; city: atlanta; phone: 404/350 -6755; type: continental; class: 410",
+          "entity_b": "name: toulouse; addr: ' 293-b peachtree rd. '; city: atlanta; phone: 404-351-9533; type: ` french ( new ) '; class: 92",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 10,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_11": {
+      "pairs": [
+        {
+          "ltable_id": 422,
+          "rtable_id": 292,
+          "label": 0,
+          "entity_a": "name: tomtom; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404/264 -1163; type: continental; class: 422",
+          "entity_b": "name: abruzzi; addr: ' 2355 peachtree rd. ne '; city: atlanta; phone: 404-261-8186; type: italian; class: 74",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 422,
+          "rtable_id": 295,
+          "label": 0,
+          "entity_a": "name: tomtom; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404/264 -1163; type: continental; class: 422",
+          "entity_b": "name: ` brasserie le coze '; addr: ' 3393 peachtree rd. '; city: atlanta; phone: 404-266-1440; type: ` french bistro '; class: 77",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 11,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_12": {
+      "pairs": [
+        {
+          "ltable_id": 425,
+          "rtable_id": 126,
+          "label": 0,
+          "entity_a": "name: ` bamboo garden '; addr: ' 4850 flamingo rd. '; city: ` las vegas '; phone: 702/871 -3262; type: asian; class: 425",
+          "entity_b": "name: ` fiore rotisserie & grille '; addr: ' 3700 w. flamingo rd. '; city: ` las vegas '; phone: 702-252-7702; type: italian; class: 660",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 432,
+          "rtable_id": 291,
+          "label": 0,
+          "entity_a": "name: ` cafe michelle '; addr: ' 1350 e. flamingo rd. '; city: ` las vegas '; phone: 702/735 -8686; type: american; class: 432",
+          "entity_b": "name: 'till erman the '; addr: ' 2245 e. flamingo rd. '; city: ` las vegas '; phone: 702-731-4036; type: steakhouses; class: 73",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 12,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_13": {
+      "pairs": [
+        {
+          "ltable_id": 443,
+          "rtable_id": 124,
+          "label": 0,
+          "entity_a": "name: ` mandarin court '; addr: ' 1510 e. flamingo rd. '; city: ` las vegas '; phone: 702/737 -1234; type: asian; class: 443",
+          "entity_b": "name: ` buzio \\ 's in the rio '; addr: ' 3700 w. flamingo rd. '; city: ` las vegas '; phone: 702-252-7697; type: seafood; class: 658",
+          "block_id": "rd"
+        },
+        {
+          "ltable_id": 443,
+          "rtable_id": 126,
+          "label": 0,
+          "entity_a": "name: ` mandarin court '; addr: ' 1510 e. flamingo rd. '; city: ` las vegas '; phone: 702/737 -1234; type: asian; class: 443",
+          "entity_b": "name: ` fiore rotisserie & grille '; addr: ' 3700 w. flamingo rd. '; city: ` las vegas '; phone: 702-252-7702; type: italian; class: 660",
+          "block_id": "rd"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 13,
+      "parent_block": "rd"
+    },
+    "block_rd_sub_14": {
+      "pairs": [
+        {
+          "ltable_id": 451,
+          "rtable_id": 126,
+          "label": 0,
+          "entity_a": "name: ` viva mercado \\ 's '; addr: ' 6182 w. flamingo rd. '; city: ` las vegas '; phone: 702/871 -8826; type: mexican; class: 451",
+          "entity_b": "name: ` fiore rotisserie & grille '; addr: ' 3700 w. flamingo rd. '; city: ` las vegas '; phone: 702-252-7702; type: italian; class: 660",
+          "block_id": "rd"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "rd",
+      "subblock_index": 14,
+      "parent_block": "rd"
+    },
+    "block_french_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 41,
+          "rtable_id": 260,
+          "label": 0,
+          "entity_a": "name: ` le bernardin '; addr: ' 155 w. 51st st. '; city: ` new york '; phone: 212/489 -1515; type: french; class: 41",
+          "entity_b": "name: ` les celebrites '; addr: ' 155 w. 58th st. '; city: ` new york city '; phone: 212-484-5113; type: ` french ( classic ) '; class: 42",
+          "block_id": "french"
+        },
+        {
+          "ltable_id": 79,
+          "rtable_id": 297,
+          "label": 1,
+          "entity_a": "name: ciboulette; addr: ' 1529 piedmont ave. '; city: atlanta; phone: 404/874 -7600; type: french; class: 79",
+          "entity_b": "name: ` ciboulette restaurant '; addr: ' 1529 piedmont ave. '; city: atlanta; phone: 404-874-7600; type: ` french ( new ) '; class: 79",
+          "block_id": "french"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "french",
+      "subblock_index": 0,
+      "parent_block": "french"
+    },
+    "block_french_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 100,
+          "rtable_id": 318,
+          "label": 1,
+          "entity_a": "name: ` fleur de lys '; addr: ' 777 sutter st. '; city: ` san francisco '; phone: 415/673 -7779; type: french; class: 100",
+          "entity_b": "name: ` fleur de lys '; addr: ' 777 sutter st. '; city: ` san francisco '; phone: 415-673-7779; type: ` french ( new ) '; class: 100",
+          "block_id": "french"
+        },
+        {
+          "ltable_id": 101,
+          "rtable_id": 319,
+          "label": 1,
+          "entity_a": "name: fringale; addr: ' 570 4th st. '; city: ` san francisco '; phone: 415/543 -0573; type: french; class: 101",
+          "entity_b": "name: fringale; addr: ' 570 fourth st. '; city: ` san francisco '; phone: 415-543-0573; type: ` french bistro '; class: 101",
+          "block_id": "french"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "french",
+      "subblock_index": 1,
+      "parent_block": "french"
+    },
+    "block_french_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 273,
+          "rtable_id": 260,
+          "label": 0,
+          "entity_a": "name: ` jean lafitte '; addr: '68 w. 58th st. '; city: ` new york '; phone: 212/751 -2323; type: french; class: 272",
+          "entity_b": "name: ` les celebrites '; addr: ' 155 w. 58th st. '; city: ` new york city '; phone: 212-484-5113; type: ` french ( classic ) '; class: 42",
+          "block_id": "french"
+        },
+        {
+          "ltable_id": 292,
+          "rtable_id": 89,
+          "label": 0,
+          "entity_a": "name: ` le perigord '; addr: ' 405 e. 52nd st. '; city: ` new york '; phone: 212/755 -6244; type: french; class: 291",
+          "entity_b": "name: ` la grenouille '; addr: ' 3 e. 52nd st. '; city: ` new york city '; phone: 212-752-1495; type: ` french ( classic ) '; class: 623",
+          "block_id": "french"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "french",
+      "subblock_index": 2,
+      "parent_block": "french"
+    },
+    "block_french_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 459,
+          "rtable_id": 319,
+          "label": 0,
+          "entity_a": "name: bizou; addr: ' 598 fourth st. '; city: ` san francisco '; phone: 415/543 -2222; type: french; class: 459",
+          "entity_b": "name: fringale; addr: ' 570 fourth st. '; city: ` san francisco '; phone: 415-543-0573; type: ` french bistro '; class: 101",
+          "block_id": "french"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "french",
+      "subblock_index": 3,
+      "parent_block": "french"
+    },
+    "block_cafe": {
+      "pairs": [
+        {
+          "ltable_id": 27,
+          "rtable_id": 245,
+          "label": 1,
+          "entity_a": "name: ` cafe des artistes '; addr: ' 1 w. 67th st. '; city: ` new york '; phone: 212/877 -3500; type: continental; class: 27",
+          "entity_b": "name: ` cafe des artistes '; addr: ' 1 w. 67th st. '; city: ` new york city '; phone: 212-877-3500; type: ` french ( classic ) '; class: 27",
+          "block_id": "cafe"
+        },
+        {
+          "ltable_id": 108,
+          "rtable_id": 326,
+          "label": 1,
+          "entity_a": "name: ` plumpjack cafe '; addr: ' 3201 fillmore st. '; city: ` san francisco '; phone: 415/563 -4755; type: mediterranean; class: 108",
+          "entity_b": "name: ` plumpjack cafe '; addr: ' 3127 fillmore st. '; city: ` san francisco '; phone: 415-563-4755; type: ` american ( new ) '; class: 108",
+          "block_id": "cafe"
+        }
+      ],
+      "size": 2,
+      "is_subblock": false,
+      "original_block_id": "cafe",
+      "subblock_index": null
+    },
+    "block_ave_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 6,
+          "rtable_id": 62,
+          "label": 0,
+          "entity_a": "name: citrus; addr: ' 6703 melrose ave. '; city: ` los angeles '; phone: 213/857 -0034; type: californian; class: 6",
+          "entity_b": "name: ` sweet lady jane '; addr: ' 8360 melrose ave. '; city: la; phone: 213-653-7145; type: desserts; class: 596",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 16,
+          "rtable_id": 62,
+          "label": 0,
+          "entity_a": "name: patina; addr: ' 5955 melrose ave. '; city: ` los angeles '; phone: 213/467 -1108; type: californian; class: 16",
+          "entity_b": "name: ` sweet lady jane '; addr: ' 8360 melrose ave. '; city: la; phone: 213-653-7145; type: desserts; class: 596",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 0,
+      "parent_block": "ave"
+    },
+    "block_ave_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 58,
+          "rtable_id": 276,
+          "label": 1,
+          "entity_a": "name: ` second avenue deli '; addr: ' 156 2nd ave. at 10th st. '; city: ` new york '; phone: 212/677 -0606; type: delicatessen; class: 58",
+          "entity_b": "name: ` second avenue deli '; addr: ' 156 second ave. '; city: ` new york city '; phone: 212-677-0606; type: delis; class: 58",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 79,
+          "rtable_id": 301,
+          "label": 0,
+          "entity_a": "name: ciboulette; addr: ' 1529 piedmont ave. '; city: atlanta; phone: 404/874 -7600; type: french; class: 79",
+          "entity_b": "name: ` heera of india '; addr: ' 595 piedmont ave. '; city: atlanta; phone: 404-876-4408; type: indian; class: 83",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 1,
+      "parent_block": "ave"
+    },
+    "block_ave_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 84,
+          "rtable_id": 302,
+          "label": 1,
+          "entity_a": "name: ` indigo coastal grill '; addr: ' 1397 n. highland ave. '; city: atlanta; phone: 404/876 -0676; type: caribbean; class: 84",
+          "entity_b": "name: ` indigo coastal grill '; addr: ' 1397 n. highland ave. '; city: atlanta; phone: 404-876-0676; type: eclectic; class: 84",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 86,
+          "rtable_id": 156,
+          "label": 0,
+          "entity_a": "name: ` mary mac \\ 's tea room '; addr: ' 224 ponce de leon ave. '; city: atlanta; phone: 404/876 -1800; type: southern; class: 86",
+          "entity_b": "name: eats; addr: ' 600 ponce de leon ave. '; city: atlanta; phone: 404-888-9149; type: italian; class: 690",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 2,
+      "parent_block": "ave"
+    },
+    "block_ave_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 111,
+          "rtable_id": 189,
+          "label": 0,
+          "entity_a": "name: ` rose pistola '; addr: ' 532 columbus ave. '; city: ` san francisco '; phone: 415/399 -0499; type: italian; class: 111",
+          "entity_b": "name: ` campo santo '; addr: ' 240 columbus ave. '; city: ` san francisco '; phone: 415-433-9623; type: mexican; class: 724",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 170,
+          "rtable_id": 62,
+          "label": 0,
+          "entity_a": "name: ` tommy tang \\ 's '; addr: ' 7313 melrose ave. '; city: ` los angeles '; phone: 213/937 -5733; type: asian; class: 167",
+          "entity_b": "name: ` sweet lady jane '; addr: ' 8360 melrose ave. '; city: la; phone: 213-653-7145; type: desserts; class: 596",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 3,
+      "parent_block": "ave"
+    },
+    "block_ave_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 379,
+          "rtable_id": 164,
+          "label": 0,
+          "entity_a": "name: abbey; addr: ' 163 ponce de leon ave. '; city: atlanta; phone: 404/876 -8532; type: international; class: 379",
+          "entity_b": "name: ` java jive '; addr: ' 790 ponce de leon ave. '; city: atlanta; phone: 404-876-6161; type: ` coffee shops '; class: 698",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 379,
+          "rtable_id": 304,
+          "label": 0,
+          "entity_a": "name: abbey; addr: ' 163 ponce de leon ave. '; city: atlanta; phone: 404/876 -8532; type: international; class: 379",
+          "entity_b": "name: ` mary mac \\ 's tea room '; addr: ' 224 ponce de leon ave. '; city: atlanta; phone: 404-876-1800; type: southern/soul; class: 86",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 4,
+      "parent_block": "ave"
+    },
+    "block_ave_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 406,
+          "rtable_id": 65,
+          "label": 0,
+          "entity_a": "name: ` mambo restaurante cubano '; addr: ' 1402 n. highland ave. '; city: atlanta; phone: 404/874 -2626; type: caribbean; class: 406",
+          "entity_b": "name: ` uncle bill \\ 's pancake house '; addr: ' 1305 highland ave. '; city: ` manhattan beach '; phone: 310-545-5177; type: diners; class: 599",
+          "block_id": "ave"
+        },
+        {
+          "ltable_id": 447,
+          "rtable_id": 129,
+          "label": 0,
+          "entity_a": "name: pamplemousse; addr: ' 400 e. sahara ave. '; city: ` las vegas '; phone: 702/733 -2066; type: continental; class: 447",
+          "entity_b": "name: ` mayflower cuisinier '; addr: ' 4750 w. sahara ave. '; city: ` las vegas '; phone: 702-870-8432; type: chinese; class: 663",
+          "block_id": "ave"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "ave",
+      "subblock_index": 5,
+      "parent_block": "ave"
+    },
+    "block_on": {
+      "pairs": [
+        {
+          "ltable_id": 165,
+          "rtable_id": 223,
+          "label": 0,
+          "entity_a": "name: ` schatzi on main '; addr: ' 3110 main st. '; city: ` los angeles '; phone: 310/399 -4800; type: continental; class: 162",
+          "entity_b": "name: ` chinois on main '; addr: ' 2709 main st. '; city: ` santa monica '; phone: 310-392-9025; type: ` pacific new wave '; class: 5",
+          "block_id": "on"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "on",
+      "subblock_index": null
+    },
+    "block_st_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 25,
+          "rtable_id": 109,
+          "label": 0,
+          "entity_a": "name: aureole; addr: '34 e. 61st st. '; city: ` new york '; phone: ' 212 / 319-1660 '; type: american; class: 25",
+          "entity_b": "name: sushisay; addr: '38 e. 51st st. '; city: ` new york city '; phone: 212-755-1780; type: japanese; class: 643",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 32,
+          "rtable_id": 251,
+          "label": 0,
+          "entity_a": "name: dawat; addr: ' 210 e. 58th st. '; city: ` new york '; phone: 212/355 -7555; type: asian; class: 32",
+          "entity_b": "name: felidia; addr: ' 243 e. 58th st. '; city: ` new york city '; phone: 212-758-1479; type: italian; class: 33",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 0,
+      "parent_block": "st"
+    },
+    "block_st_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 32,
+          "rtable_id": 260,
+          "label": 0,
+          "entity_a": "name: dawat; addr: ' 210 e. 58th st. '; city: ` new york '; phone: 212/355 -7555; type: asian; class: 32",
+          "entity_b": "name: ` les celebrites '; addr: ' 155 w. 58th st. '; city: ` new york city '; phone: 212-484-5113; type: ` french ( classic ) '; class: 42",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 32,
+          "rtable_id": 261,
+          "label": 0,
+          "entity_a": "name: dawat; addr: ' 210 e. 58th st. '; city: ` new york '; phone: 212/355 -7555; type: asian; class: 32",
+          "entity_b": "name: ` lespinasse ( new york city ) '; addr: ' 2 e. 55th st. '; city: ` new york city '; phone: 212-339-6719; type: asian; class: 43",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 1,
+      "parent_block": "st"
+    },
+    "block_st_sub_2": {
+      "pairs": [
+        {
+          "ltable_id": 37,
+          "rtable_id": 255,
+          "label": 1,
+          "entity_a": "name: ` island spice '; addr: ' 402 w. 44th st. '; city: ` new york '; phone: 212/765 -1737; type: ` tel caribbean '; class: 37",
+          "entity_b": "name: ` island spice '; addr: ' 402 w. 44th st. '; city: ` new york city '; phone: 212-765-1737; type: caribbean; class: 37",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 38,
+          "rtable_id": 256,
+          "label": 1,
+          "entity_a": "name: ` jo jo '; addr: ' 160 e. 64th st. '; city: ` new york '; phone: 212/223 -5656; type: american; class: 38",
+          "entity_b": "name: ` jo jo '; addr: ' 160 e. 64th st. '; city: ` new york city '; phone: 212-223-5656; type: ` french bistro '; class: 38",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 2,
+      "parent_block": "st"
+    },
+    "block_st_sub_3": {
+      "pairs": [
+        {
+          "ltable_id": 39,
+          "rtable_id": 261,
+          "label": 0,
+          "entity_a": "name: ` la caravelle '; addr: '33 w. 55th st. '; city: ` new york '; phone: 212/586 -4252; type: french; class: 39",
+          "entity_b": "name: ` lespinasse ( new york city ) '; addr: ' 2 e. 55th st. '; city: ` new york city '; phone: 212-339-6719; type: asian; class: 43",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 44,
+          "rtable_id": 251,
+          "label": 0,
+          "entity_a": "name: lutece; addr: ' 249 e. 50th st. '; city: ` new york '; phone: 212/752 -2225; type: french; class: 44",
+          "entity_b": "name: felidia; addr: ' 243 e. 58th st. '; city: ` new york city '; phone: 212-758-1479; type: italian; class: 33",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 3,
+      "parent_block": "st"
+    },
+    "block_st_sub_4": {
+      "pairs": [
+        {
+          "ltable_id": 46,
+          "rtable_id": 250,
+          "label": 0,
+          "entity_a": "name: march; addr: ' 405 e. 58th st. '; city: ` new york '; phone: 212/754 -6272; type: american; class: 46",
+          "entity_b": "name: dawat; addr: ' 210 e. 58th st. '; city: ` new york city '; phone: 212-355-7555; type: indian; class: 32",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 46,
+          "rtable_id": 260,
+          "label": 0,
+          "entity_a": "name: march; addr: ' 405 e. 58th st. '; city: ` new york '; phone: 212/754 -6272; type: american; class: 46",
+          "entity_b": "name: ` les celebrites '; addr: ' 155 w. 58th st. '; city: ` new york city '; phone: 212-484-5113; type: ` french ( classic ) '; class: 42",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 4,
+      "parent_block": "st"
+    },
+    "block_st_sub_5": {
+      "pairs": [
+        {
+          "ltable_id": 50,
+          "rtable_id": 242,
+          "label": 0,
+          "entity_a": "name: oceana; addr: '55 e. 54th st. '; city: ` new york '; phone: 212/759 -5941; type: seafood; class: 50",
+          "entity_b": "name: aquavit; addr: '13 w. 54th st. '; city: ` new york city '; phone: 212-307-7311; type: scandinavian; class: 24",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 50,
+          "rtable_id": 278,
+          "label": 0,
+          "entity_a": "name: oceana; addr: '55 e. 54th st. '; city: ` new york '; phone: 212/759 -5941; type: seafood; class: 50",
+          "entity_b": "name: ` shun lee palace '; addr: ' 155 e. 55th st. '; city: ` new york city '; phone: 212-371-8844; type: chinese; class: 60",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 5,
+      "parent_block": "st"
+    },
+    "block_st_sub_6": {
+      "pairs": [
+        {
+          "ltable_id": 60,
+          "rtable_id": 257,
+          "label": 0,
+          "entity_a": "name: ` shun lee west '; addr: '43 w. 65th st. '; city: ` new york '; phone: 212/371 -8844; type: asian; class: 60",
+          "entity_b": "name: ` la caravelle '; addr: '33 w. 55th st. '; city: ` new york city '; phone: 212-586-4252; type: ` french ( classic ) '; class: 39",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 71,
+          "rtable_id": 127,
+          "label": 0,
+          "entity_a": "name: ` second street grille '; addr: ' 200 e. fremont st. '; city: ` las vegas '; phone: 702/385 -3232; type: seafood; class: 71",
+          "entity_b": "name: ` hugo \\ 's cellar '; addr: ' 202 e. fremont st. '; city: ` las vegas '; phone: 702-385-4011; type: continental; class: 661",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 6,
+      "parent_block": "st"
+    },
+    "block_st_sub_7": {
+      "pairs": [
+        {
+          "ltable_id": 71,
+          "rtable_id": 138,
+          "label": 0,
+          "entity_a": "name: ` second street grille '; addr: ' 200 e. fremont st. '; city: ` las vegas '; phone: 702/385 -3232; type: seafood; class: 71",
+          "entity_b": "name: ` stefano \\ 's '; addr: ' 129 fremont st. '; city: ` las vegas '; phone: 702-385-7111; type: italian; class: 672",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 71,
+          "rtable_id": 289,
+          "label": 1,
+          "entity_a": "name: ` second street grille '; addr: ' 200 e. fremont st. '; city: ` las vegas '; phone: 702/385 -3232; type: seafood; class: 71",
+          "entity_b": "name: ` second street grill '; addr: ' 200 e. fremont st. '; city: ` las vegas '; phone: 702-385-6277; type: ` pacific rim '; class: 71",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 7,
+      "parent_block": "st"
+    },
+    "block_st_sub_8": {
+      "pairs": [
+        {
+          "ltable_id": 96,
+          "rtable_id": 193,
+          "label": 0,
+          "entity_a": "name: boulevard; addr: ' 1 mission st. '; city: ` san francisco '; phone: 415/543 -6084; type: american; class: 96",
+          "entity_b": "name: ` dusit thai '; addr: ' 3221 mission st. '; city: ` san francisco '; phone: 415-826-4639; type: thai; class: 728",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 98,
+          "rtable_id": 328,
+          "label": 0,
+          "entity_a": "name: ` campton place '; addr: ' 340 stockton st. '; city: ` san francisco '; phone: 415/955 -5555; type: american; class: 98",
+          "entity_b": "name: ` ritz-carlton dining room ( san francisco ) '; addr: ' 600 stockton st. '; city: ` san francisco '; phone: 415-296-7465; type: ` french ( new ) '; class: 110",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 8,
+      "parent_block": "st"
+    },
+    "block_st_sub_9": {
+      "pairs": [
+        {
+          "ltable_id": 107,
+          "rtable_id": 325,
+          "label": 1,
+          "entity_a": "name: ` mifune japan center kintetsu building '; addr: ' 1737 post st. '; city: ` san francisco '; phone: 415/922 -0337; type: asian; class: 107",
+          "entity_b": "name: mifune; addr: ' 1737 post st. '; city: ` san francisco '; phone: 415-922-0337; type: japanese; class: 107",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 119,
+          "rtable_id": 82,
+          "label": 0,
+          "entity_a": "name: ` border grill '; addr: ' 4th st. '; city: ` los angeles '; phone: 310/451 -1655; type: mexican; class: 116",
+          "entity_b": "name: ` jackson diner '; addr: ' 37-03 74th st. '; city: queens; phone: 718-672-1232; type: indian; class: 616",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 9,
+      "parent_block": "st"
+    },
+    "block_st_sub_10": {
+      "pairs": [
+        {
+          "ltable_id": 156,
+          "rtable_id": 215,
+          "label": 0,
+          "entity_a": "name: ` pacific dining car '; addr: ' 6th st. '; city: ` los angeles '; phone: 213/483 -6000; type: american; class: 153",
+          "entity_b": "name: ` tu lan '; addr: ' 8 sixth st. '; city: ` san francisco '; phone: 415-626-0927; type: vietnamese; class: 750",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 190,
+          "rtable_id": 89,
+          "label": 0,
+          "entity_a": "name: ` ben benson \\ 's '; addr: ' 123 w. 52nd st. '; city: ` new york '; phone: 212/581 -8888; type: american; class: 187",
+          "entity_b": "name: ` la grenouille '; addr: ' 3 e. 52nd st. '; city: ` new york city '; phone: 212-752-1495; type: ` french ( classic ) '; class: 623",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 10,
+      "parent_block": "st"
+    },
+    "block_st_sub_11": {
+      "pairs": [
+        {
+          "ltable_id": 197,
+          "rtable_id": 251,
+          "label": 0,
+          "entity_a": "name: bruno; addr: ' 240 e. 58th st. '; city: ` new york '; phone: 212/688 -4190; type: italian; class: 195",
+          "entity_b": "name: felidia; addr: ' 243 e. 58th st. '; city: ` new york city '; phone: 212-758-1479; type: italian; class: 33",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 197,
+          "rtable_id": 270,
+          "label": 0,
+          "entity_a": "name: bruno; addr: ' 240 e. 58th st. '; city: ` new york '; phone: 212/688 -4190; type: italian; class: 195",
+          "entity_b": "name: petrossian; addr: ' 182 w. 58th st. '; city: ` new york city '; phone: 212-245-2214; type: russian; class: 52",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 11,
+      "parent_block": "st"
+    },
+    "block_st_sub_12": {
+      "pairs": [
+        {
+          "ltable_id": 249,
+          "rtable_id": 207,
+          "label": 0,
+          "entity_a": "name: follonico; addr: ' 6 w. 24th st. '; city: ` new york '; phone: 212/691 -6359; type: italian; class: 247",
+          "entity_b": "name: ` roosevelt tamale parlor '; addr: ' 2817 24th st. '; city: ` san francisco '; phone: 415-550-9213; type: mexican; class: 742",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 274,
+          "rtable_id": 271,
+          "label": 0,
+          "entity_a": "name: ` jewel of india '; addr: '15 w. 44th st. '; city: ` new york '; phone: 212/869 -5544; type: asian; class: 273",
+          "entity_b": "name: picholine; addr: '35 w. 64th st. '; city: ` new york city '; phone: 212-724-8585; type: mediterranean; class: 53",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 12,
+      "parent_block": "st"
+    },
+    "block_st_sub_13": {
+      "pairs": [
+        {
+          "ltable_id": 276,
+          "rtable_id": 107,
+          "label": 0,
+          "entity_a": "name: ` joe allen '; addr: ' 326 w. 46th st. '; city: ` new york '; phone: 212/581 -6464; type: american; class: 275",
+          "entity_b": "name: ` sparks steak house '; addr: ' 210 e. 46th st. '; city: ` new york city '; phone: 212-687-4855; type: steakhouses; class: 641",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 287,
+          "rtable_id": 120,
+          "label": 0,
+          "entity_a": "name: ` le colonial '; addr: ' 149 e. 57th st. '; city: ` new york '; phone: ' 212 / 752-0808 '; type: asian; class: 286",
+          "entity_b": "name: yama; addr: ' 122 e. 17th st. '; city: ` new york city '; phone: 212-475-0969; type: japanese; class: 654",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 13,
+      "parent_block": "st"
+    },
+    "block_st_sub_14": {
+      "pairs": [
+        {
+          "ltable_id": 309,
+          "rtable_id": 256,
+          "label": 0,
+          "entity_a": "name: ` monkey bar '; addr: '60 e. 54th st. '; city: ` new york '; phone: 212/838 -2600; type: american; class: 308",
+          "entity_b": "name: ` jo jo '; addr: ' 160 e. 64th st. '; city: ` new york city '; phone: 212-223-5656; type: ` french bistro '; class: 38",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 309,
+          "rtable_id": 258,
+          "label": 0,
+          "entity_a": "name: ` monkey bar '; addr: '60 e. 54th st. '; city: ` new york '; phone: 212/838 -2600; type: american; class: 308",
+          "entity_b": "name: ` la cote basque '; addr: '60 w. 55th st. '; city: ` new york city '; phone: 212-688-6525; type: ` french ( classic ) '; class: 40",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 14,
+      "parent_block": "st"
+    },
+    "block_st_sub_15": {
+      "pairs": [
+        {
+          "ltable_id": 326,
+          "rtable_id": 107,
+          "label": 0,
+          "entity_a": "name: ` pen & pencil '; addr: ' 205 e. 45th st. '; city: ` new york '; phone: 212/682 -8660; type: american; class: 325",
+          "entity_b": "name: ` sparks steak house '; addr: ' 210 e. 46th st. '; city: ` new york city '; phone: 212-687-4855; type: steakhouses; class: 641",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 326,
+          "rtable_id": 278,
+          "label": 0,
+          "entity_a": "name: ` pen & pencil '; addr: ' 205 e. 45th st. '; city: ` new york '; phone: 212/682 -8660; type: american; class: 325",
+          "entity_b": "name: ` shun lee palace '; addr: ' 155 e. 55th st. '; city: ` new york city '; phone: 212-371-8844; type: chinese; class: 60",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 15,
+      "parent_block": "st"
+    },
+    "block_st_sub_16": {
+      "pairs": [
+        {
+          "ltable_id": 356,
+          "rtable_id": 257,
+          "label": 0,
+          "entity_a": "name: ` tang pavillion '; addr: '65 w. 55th st. '; city: ` new york '; phone: 212/956 -6888; type: asian; class: 356",
+          "entity_b": "name: ` la caravelle '; addr: '33 w. 55th st. '; city: ` new york city '; phone: 212-586-4252; type: ` french ( classic ) '; class: 39",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 386,
+          "rtable_id": 142,
+          "label": 0,
+          "entity_a": "name: bistango; addr: ' 1100 peachtree st. '; city: atlanta; phone: 404/724 -0901; type: mediterranean; class: 386",
+          "entity_b": "name: ` alon \\ 's at the terrace '; addr: ' 659 peachtree st. '; city: atlanta; phone: 404-724-0444; type: sandwiches; class: 676",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 16,
+      "parent_block": "st"
+    },
+    "block_st_sub_17": {
+      "pairs": [
+        {
+          "ltable_id": 386,
+          "rtable_id": 330,
+          "label": 0,
+          "entity_a": "name: bistango; addr: ' 1100 peachtree st. '; city: atlanta; phone: 404/724 -0901; type: mediterranean; class: 386",
+          "entity_b": "name: ` ritz-carlton cafe ( atlanta ) '; addr: ' 181 peachtree st. '; city: atlanta; phone: 404-659-0400; type: ` american ( new ) '; class: 711",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 428,
+          "rtable_id": 137,
+          "label": 0,
+          "entity_a": "name: ` binion \\ 's coffee shop '; addr: ' 128 fremont st. '; city: ` las vegas '; phone: 702/382 -1600; type: ` coffee shops/diners '; class: 428",
+          "entity_b": "name: ` steakhouse the '; addr: ' 128 e. fremont st. '; city: ` las vegas '; phone: 702-382-1600; type: steakhouses; class: 671",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 17,
+      "parent_block": "st"
+    },
+    "block_st_sub_18": {
+      "pairs": [
+        {
+          "ltable_id": 440,
+          "rtable_id": 127,
+          "label": 0,
+          "entity_a": "name: ` golden nugget hotel '; addr: ' 129 e. fremont st. '; city: ` las vegas '; phone: 702/385 -7111; type: buffets; class: 440",
+          "entity_b": "name: ` hugo \\ 's cellar '; addr: ' 202 e. fremont st. '; city: ` las vegas '; phone: 702-385-4011; type: continental; class: 661",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 442,
+          "rtable_id": 289,
+          "label": 0,
+          "entity_a": "name: ` lillie langtry \\ 's '; addr: ' 129 e. fremont st. '; city: ` las vegas '; phone: 702/385 -7111; type: asian; class: 442",
+          "entity_b": "name: ` second street grill '; addr: ' 200 e. fremont st. '; city: ` las vegas '; phone: 702-385-6277; type: ` pacific rim '; class: 71",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 18,
+      "parent_block": "st"
+    },
+    "block_st_sub_19": {
+      "pairs": [
+        {
+          "ltable_id": 459,
+          "rtable_id": 72,
+          "label": 0,
+          "entity_a": "name: bizou; addr: ' 598 fourth st. '; city: ` san francisco '; phone: 415/543 -2222; type: french; class: 459",
+          "entity_b": "name: ` corner bistro '; addr: ' 331 w. fourth st. '; city: ` new york city '; phone: 212-242-9502; type: hamburgers; class: 606",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 492,
+          "rtable_id": 312,
+          "label": 0,
+          "entity_a": "name: ` le soleil '; addr: ' 133 clement st. '; city: ` san francisco '; phone: 415/668 -4848; type: asian; class: 492",
+          "entity_b": "name: ` alain rondelli '; addr: ' 126 clement st. '; city: ` san francisco '; phone: 415-387-0408; type: ` french ( new ) '; class: 94",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 19,
+      "parent_block": "st"
+    },
+    "block_st_sub_20": {
+      "pairs": [
+        {
+          "ltable_id": 494,
+          "rtable_id": 193,
+          "label": 0,
+          "entity_a": "name: manora; addr: ' 3226 mission st. '; city: ` san francisco '; phone: 415/861 -6224; type: asian; class: 494",
+          "entity_b": "name: ` dusit thai '; addr: ' 3221 mission st. '; city: ` san francisco '; phone: 415-826-4639; type: thai; class: 728",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 501,
+          "rtable_id": 214,
+          "label": 0,
+          "entity_a": "name: oritalia; addr: ' 1915 fillmore st. '; city: ` san francisco '; phone: 415/346 -1333; type: italian; class: 501",
+          "entity_b": "name: ` trio cafe '; addr: ' 1870 fillmore st. '; city: ` san francisco '; phone: 415-563-2248; type: american; class: 749",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 20,
+      "parent_block": "st"
+    },
+    "block_st_sub_21": {
+      "pairs": [
+        {
+          "ltable_id": 502,
+          "rtable_id": 325,
+          "label": 0,
+          "entity_a": "name: ` pacific pan pacific hotel '; addr: ' 500 post st. '; city: ` san francisco '; phone: 415/929 -2087; type: french; class: 502",
+          "entity_b": "name: mifune; addr: ' 1737 post st. '; city: ` san francisco '; phone: 415-922-0337; type: japanese; class: 107",
+          "block_id": "st"
+        },
+        {
+          "ltable_id": 502,
+          "rtable_id": 327,
+          "label": 0,
+          "entity_a": "name: ` pacific pan pacific hotel '; addr: ' 500 post st. '; city: ` san francisco '; phone: 415/929 -2087; type: french; class: 502",
+          "entity_b": "name: postrio; addr: ' 545 post st. '; city: ` san francisco '; phone: 415-776-7825; type: californian; class: 109",
+          "block_id": "st"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "st",
+      "subblock_index": 21,
+      "parent_block": "st"
+    },
+    "block_ntinen": {
+      "pairs": [
+        {
+          "ltable_id": 384,
+          "rtable_id": 300,
+          "label": 0,
+          "entity_a": "name: ` beesley \\ 's of buckhead '; addr: ' 260 e. paces ferry road '; city: atlanta; phone: 404/264 -1334; type: continental; class: 384",
+          "entity_b": "name: ` hedgerose heights inn the '; addr: ' 490 e. paces ferry rd. ne '; city: atlanta; phone: 404-233-7673; type: continental; class: 82",
+          "block_id": "ntinen"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "ntinen",
+      "subblock_index": null
+    },
+    "block_broadw_sub_0": {
+      "pairs": [
+        {
+          "ltable_id": 468,
+          "rtable_id": 80,
+          "label": 0,
+          "entity_a": "name: ` des alpes '; addr: ' 732 broadway '; city: ` san francisco '; phone: 415/788 -9900; type: french; class: 468",
+          "entity_b": "name: ` gray \\ 's papaya '; addr: ' 2090 broadway '; city: ` new york city '; phone: 212-799-0243; type: ` hot dogs '; class: 614",
+          "block_id": "broadw"
+        },
+        {
+          "ltable_id": 468,
+          "rtable_id": 88,
+          "label": 0,
+          "entity_a": "name: ` des alpes '; addr: ' 732 broadway '; city: ` san francisco '; phone: 415/788 -9900; type: french; class: 468",
+          "entity_b": "name: ` la caridad '; addr: ' 2199 broadway '; city: ` new york city '; phone: 212-874-2780; type: cuban; class: 622",
+          "block_id": "broadw"
+        }
+      ],
+      "size": 2,
+      "is_subblock": true,
+      "original_block_id": "broadw",
+      "subblock_index": 0,
+      "parent_block": "broadw"
+    },
+    "block_broadw_sub_1": {
+      "pairs": [
+        {
+          "ltable_id": 479,
+          "rtable_id": 267,
+          "label": 0,
+          "entity_a": "name: helmand; addr: ' 430 broadway '; city: ` san francisco '; phone: 415/362 -0641; type: ` greek and middle eastern '; class: 479",
+          "entity_b": "name: montrachet; addr: ' 239 w. broadway '; city: ` new york city '; phone: 212-219-2777; type: ` french bistro '; class: 49",
+          "block_id": "broadw"
+        }
+      ],
+      "size": 1,
+      "is_subblock": true,
+      "original_block_id": "broadw",
+      "subblock_index": 1,
+      "parent_block": "broadw"
+    },
+    "block_ribbea": {
+      "pairs": [
+        {
+          "ltable_id": 127,
+          "rtable_id": 190,
+          "label": 0,
+          "entity_a": "name: ` cha cha cha '; addr: ' 656 n. virgil ave. '; city: ` los angeles '; phone: 213/664 -7723; type: caribbean; class: 124",
+          "entity_b": "name: ` cha cha cha \\ 's '; addr: ' 1805 haight st. '; city: ` san francisco '; phone: 415-386-5758; type: caribbean; class: 725",
+          "block_id": "ribbea"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "ribbea",
+      "subblock_index": null
+    },
+    "block_steak": {
+      "pairs": [
+        {
+          "ltable_id": 72,
+          "rtable_id": 107,
+          "label": 0,
+          "entity_a": "name: ` steak house '; addr: ' 2880 las vegas blvd. s '; city: ` las vegas '; phone: 702/734 -0410; type: ` steak houses '; class: 72",
+          "entity_b": "name: ` sparks steak house '; addr: ' 210 e. 46th st. '; city: ` new york city '; phone: 212-687-4855; type: steakhouses; class: 641",
+          "block_id": "steak"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "steak",
+      "subblock_index": null
+    },
+    "block_atlant": {
+      "pairs": [
+        {
+          "ltable_id": 405,
+          "rtable_id": 330,
+          "label": 0,
+          "entity_a": "name: ` luna si '; addr: ' 1931 peachtree rd. '; city: atlanta; phone: 404/355 -5993; type: continental; class: 405",
+          "entity_b": "name: ` ritz-carlton cafe ( atlanta ) '; addr: ' 181 peachtree st. '; city: atlanta; phone: 404-659-0400; type: ` american ( new ) '; class: 711",
+          "block_id": "atlant"
+        }
+      ],
+      "size": 1,
+      "is_subblock": false,
+      "original_block_id": "atlant",
+      "subblock_index": null
+    }
+  }
+}
