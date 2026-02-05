@@ -22,7 +22,7 @@ async def _http_get_json(
     params: Optional[Dict[str, Any]] = None,
 ) -> Any:
     """Perform a GET and return JSON."""
-    headers = {"User-Agent": "KG-RAG/1.0 (https://github.com/KG-RAG4EM/rag-em) aiohttp/3.8.0"}
+    headers = {"User-Agent": "CE-RAG/1.0 (https://github.com/CE-RAG4EM) aiohttp/3.8.0"}
     max_retries = 3
     backoff_base = 0.5
     for attempt in range(1, max_retries + 1):

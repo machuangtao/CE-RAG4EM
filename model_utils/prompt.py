@@ -51,11 +51,3 @@ class EntityMatchPrompt:
     def get_messages(self) -> List[Dict[str, str]]:
         """Return all user messages."""
         return self.messages
-
-# a = EntityMatchPrompt("hello, world")
-# a.set_entities("I am here ")
-# a.set_few_shots("I am python")
-# a.set_few_shots("I am python+++")
-# a.set_rag_context("I am java ")
-# a.set_rag_context("I am java+++ ")
-# print(a.messages)

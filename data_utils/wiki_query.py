@@ -13,8 +13,6 @@ load_dotenv()
 
 wikidata_vector_database_url = "https://wd-vectordb.wmcloud.org"
 wikidata_api_url = "https://www.wikidata.org/w/api.php"
-wikidata_vector_database_api_key = os.getenv("WD_VECTORDB_API_KEY")
-assert wikidata_vector_database_api_key, "The key of wikidata_vector_database is empty"
 
 class RateLimiter:
     def __init__(self, max_calls: int, period: float):
@@ -69,7 +67,7 @@ async def _http_get_json(
     """Perform a GET and return JSON."""
     max_retries = 3
     backoff_base = 0.5
-    headers = {"User-Agent": "KG-RAG/1.0 (https://github.com/KG-RAG4EM/rag-em) aiohttp/3.8.0"}
+    headers = {"User-Agent": "CE-RAG/1.0 (https://github.com/CE-RAG4EM) aiohttp/3.8.0"}
     for attempt in range(1, max_retries + 1):
         try:
             async with session.get(url, params=params, headers=headers) as response:
