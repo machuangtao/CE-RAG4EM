@@ -78,14 +78,15 @@ python blocking_pair_generation.py -d abt -p test
 python batch_retrieval.py -d abt -p test -b QG -maxb 6
 
 # Step 3: Run CE-RAG for knowledge-augmented inference for entity matching
-python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b Q -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6
 ```
 
 **Key Arguments:**
 - `-d`: Dataset to use (abt, amgo, beer, dbac, dbgo, foza, itam, waam, wdc)
 - `-p`: Data partition (train, test, valid)
 - `-m`: LLM model to use (gpt-4o-mini, qwen3-4b, etc.)
-- `-maxb`: Number of top retrieved contexts to use
+- `-b`: Blocking method to use (SB, QG, EQG, SA, ESA)
+- `-maxb`: Maximum blocking size to process for batch retreival and inference
 
 
 ## Usage Examples
@@ -100,7 +101,7 @@ context_config = {
 }
 
 # Setep 2: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b Q -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6
 ```
 
 ### Example 2: RAG4EM with Top-1 QID triple and Gemini-2.0-flash-lite
@@ -114,7 +115,7 @@ context_config = {
 }
 
 # Setep 2: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m gemini-2.0-flash-lite -b Q -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gemini-2.0-flash-lite -b QG -maxb 6
 ```
 
 ### Example 3: KG-RAG4EM with Top-2 BFS triple and Qwen3-4b
@@ -132,7 +133,7 @@ context_config = {
     top_k_entities = 3  # Number of top entities/properties to use for triple generation
 
 # Setep 3: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m qwen3-4b Q -maxb 6
+python ce_rag4em_main.py -d abt -p test -m qwen3-4b QG -maxb 6
 ```
 
 ## Output
