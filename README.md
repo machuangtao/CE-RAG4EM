@@ -1,4 +1,4 @@
-# CE-RAG4EM: Cost-efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration
+# CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration
 
 This repository provides the source code, data, and supplemental material  of our paper "CE-RAG4EM: Cost-efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration". The full version of our paper including additional related work and technical details have been made available on [Github](https://github.com/machuangtao/CE-RAG4EM/blob/main/ce_rag4em_full.pdf).
 
@@ -151,10 +151,10 @@ The system generates several types of outputs:
 If you find our work helpful, please cite it by using the following BibTeX entry:
 
 ```bibtex
-@misc{ma2026cerag4em,
-    title={Cost-efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration}, 
+@article{ma2026cerag4em,
+    title={Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration}, 
     author={Ma, Chuangtao and Zhang, Zeyu and Khan, Arijit and Schelter, Sebastian and Groth, Paul},
-    url={https://github.com/machuangtao/CE-RAG4EM},
+    journal={arXiv preprint arXiv:2602.05708},
     year={2026}
 }
 ```
@@ -172,4 +172,4 @@ https://webdatacommons.org/largescaleproductcorpus/wdc-block/
 ```
 we thank them for sharing the dataset.
 ### VectorDB
-The VectorDB and its API access are provided by the team behind the [Wikidata Embedding Project](https://www.wikidata.org/wiki/Wikidata:Embedding_Project). We thank them for creating and maintaining this excellent project.
+The Wikidata VectorDB and its API access are provided by the team behind the [Wikidata Embedding Project](https://www.wikidata.org/wiki/Wikidata:Embedding_Project). We thank them for creating and maintaining this excellent project.
