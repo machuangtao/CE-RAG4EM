@@ -1,13 +1,13 @@
-# CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration
+# CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs
 
-This repository provides the source code, data, and supplemental material  of our paper "CE-RAG4EM: Cost-efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration". The full version of our paper including additional related work and technical details have been made available on [Github](https://github.com/machuangtao/CE-RAG4EM/blob/main/ce_rag4em_full.pdf).
+This repository provides the source code, data, and supplemental material  of our paper "CE-RAG4EM: Cost-efficient RAG for Entity Matching with LLMs". 
 
 ## Introduction
 
 CE-RAG4EM is a cost-efficient RAG for entity matching that reduces computation through blocking-based batch retrieval and generation.
 
 - Introduce a blocking strategy to reduce the overall cost of context retrieval and LLM inference for entity matching
-- Retrieves and searches relevant context from external knowledge graphs (e.g., Wikidata)
+- Retrieves and searches relevant context from external knowledge graphs across domains (e.g., Wikidata, KG20C)
 - Augment LLMs for entity matching with retrieved and refined context from an external knowledge base
 - Supports multiple entity matching datasets (abt, amgo, beer, dbac, dbgo, foza, itam, waam, wdc)
 
@@ -66,7 +66,19 @@ Login with your Hugging Face token (required for gated models):
 huggingface-cli login
 ```
 
-### 3. Run the Method
+### 3. Configure Vector AstraDB 
+
+#### Train emebddings and upload to AstraDB
+
+- Create "db_kg20c" in AstraDB
+- Set your AstraDB API endpoint and AstraDB Application API key:
+
+```bash
+export ASTRA_DB_API_ENDPOINT="your-astradb-api-endpoint-here"
+export ASTRA_DB_APPLICATION_TOKEN="your-astradb-application-api-key"
+```
+
+### 4. Run the Method
 
 ### End-to-End Pipeline from Blocking to Matching
 
@@ -75,10 +87,10 @@ huggingface-cli login
 python blocking_pair_generation.py -d abt -p test 
 
 # Step 2: Retrieve contextual knowledge per block
-python batch_retrieval.py -d abt -p test -b QG -maxb 6
+python batch_retrieval.py -d abt -p test -b QG -maxb 6 -kg wikidata
 
 # Step 3: Run CE-RAG for knowledge-augmented inference for entity matching
-python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6 -kg wikidata
 ```
 
 **Key Arguments:**
@@ -87,6 +99,7 @@ python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6
 - `-m`: LLM model to use (gpt-4o-mini, qwen3-4b, etc.)
 - `-b`: Blocking method to use (SB, QG, EQG, SA, ESA)
 - `-maxb`: Maximum blocking size to process for batch retreival and inference
+- `-kg`: KG source for RAG (wikidata, kg20c)
 
 
 ## Usage Examples
@@ -101,7 +114,7 @@ context_config = {
 }
 
 # Setep 2: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gpt-4o-mini -b QG -maxb 6 -kg wikidata
 ```
 
 ### Example 2: RAG4EM with Top-1 QID triple and Gemini-2.0-flash-lite
@@ -115,7 +128,7 @@ context_config = {
 }
 
 # Setep 2: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m gemini-2.0-flash-lite -b QG -maxb 6
+python ce_rag4em_main.py -d abt -p test -m gemini-2.0-flash-lite -b QG -maxb 6 -kg wikidata
 ```
 
 ### Example 3: KG-RAG4EM with Top-2 BFS triple and Qwen3-4b
@@ -133,7 +146,25 @@ context_config = {
     top_k_entities = 3  # Number of top entities/properties to use for triple generation
 
 # Setep 3: Run the main python file
-python ce_rag4em_main.py -d abt -p test -m qwen3-4b QG -maxb 6
+python ce_rag4em_main.py -d abt -p test -m qwen3-4b QG -maxb 6 -kg wikidata
+```
+
+### Example 4: KG-RAG4EM with Top-2 EXP triple from KG20C and Qwen3-4b
+
+```bash
+# Step 1: Configure context in the `ce_rag4em_main.py`
+context_config = {
+        "enabled": True,  # Set to False to disable context retrieval
+        "context_type": "triple",  # "pid", "qid", or "triple"
+        "top_k": 2   # Number of top retrieval results to use (1 or 2)
+}
+# Step 2: Configure tirple in the `ce_rag4em_main.py` if context_type is "triple"
+    triple_id_type = "QID"  # "QID" or "PID", 
+    triple_generation_type = "EXP"  # "BFS" or "EXP (expansion)" Triple search approach for triple generation
+    top_k_entities = 3  # Number of top entities/properties to use for triple generation
+
+# Setep 3: Run the main python file
+python ce_rag4em_main.py -d abt -p test -m qwen3-4b QG -maxb 6 -kg kg20c
 ```
 
 ## Output
@@ -146,19 +177,6 @@ The system generates several types of outputs:
 4. **Logs** (`logs/`): Detailed execution logs for further analysis
 
 
-## Citation
-
-If you find our work helpful, please cite it by using the following BibTeX entry:
-
-```bibtex
-@article{ma2026cerag4em,
-    title={Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Exploration}, 
-    author={Ma, Chuangtao and Zhang, Zeyu and Khan, Arijit and Schelter, Sebastian and Groth, Paul},
-    journal={arXiv preprint arXiv:2602.05708},
-    year={2026}
-}
-```
-
 ## Acknowledgment
 
 ### Dataset
@@ -170,6 +188,16 @@ https://github.com/anhaidgroup/deepmatcher/blob/master/Datasets.md
 SC-Block: Supervised Contrastive Blocking Within Entity Resolution Pipelines
 https://webdatacommons.org/largescaleproductcorpus/wdc-block/
 ```
-we thank them for sharing the dataset.
+
+### KG
+
+The domain-specific KG (KG20C) originated from the following work:
+```
+KG20C & KG20C-QA: Scholarly Knowledge Graph Benchmarks for Link Prediction and Question Answering
+https://github.com/tranhungnghiep/KG20C
+```
+
+we thank them for sharing the dataset and KG.
+
 ### VectorDB
 The Wikidata VectorDB and its API access are provided by the team behind the [Wikidata Embedding Project](https://www.wikidata.org/wiki/Wikidata:Embedding_Project). We thank them for creating and maintaining this excellent project.
