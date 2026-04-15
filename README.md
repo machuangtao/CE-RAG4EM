@@ -71,7 +71,16 @@ huggingface-cli login
 #### Train emebddings and upload to AstraDB
 
 - Create "db_kg20c" in AstraDB
-- Set your AstraDB API endpoint and AstraDB Application API key:
+- Train emebddings and upload to AstraDB
+
+```bash
+python scripts/kg20c_vector_db.py index \
+  --collection kg20c_entities_v1 \
+  --embedding-dim 512 \
+  --model jinaai/jina-embeddings-v3 
+```
+
+- Set your AstraDB API endpoint and AstraDB Application API key for retreival:
 
 ```bash
 export ASTRA_DB_API_ENDPOINT="your-astradb-api-endpoint-here"
@@ -83,8 +92,8 @@ export ASTRA_DB_APPLICATION_TOKEN="your-astradb-application-api-key"
 ### End-to-End Pipeline from Blocking to Matching
 
 ```bash
-# Step 1: Generate blocking pairs
-python blocking_pair_generation.py -d abt -p test 
+# Step 1: Generate batch pairs
+python batch_pair_generation.py -d abt -p test 
 
 # Step 2: Retrieve contextual knowledge per block
 python batch_retrieval.py -d abt -p test -b QG -maxb 6 -kg wikidata
