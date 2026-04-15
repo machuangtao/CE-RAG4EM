@@ -1,0 +1,3391 @@
+{
+  "metadata": {
+    "created_at": "2025-10-10T14:06:38.076306",
+    "total_blocks": 483,
+    "last_updated": "2026-03-23T18:58:54.554139",
+    "kg_source": "kg20c"
+  },
+  "blocks": {
+    "block_to_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_to_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_23": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_24": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_25": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_26": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_27": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_28": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_29": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_30": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_31": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_32": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_33": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_34": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_35": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_36": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_37": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_38": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_39": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_40": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_41": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_42": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_43": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_44": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_45": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_46": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_47": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_48": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_49": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_50": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_51": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_52": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_53": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_54": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_55": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_56": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_57": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_58": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_59": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_60": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_61": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_62": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_63": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_64": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_65": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_66": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_67": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_68": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_69": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_70": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_71": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_72": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_73": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_74": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_75": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_76": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_77": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_78": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_for_sub_79": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_integr_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cation_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ecisio": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_and_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_making": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_23": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_24": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ystems_sub_25": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_emanti_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_emanti_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_emanti_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_23": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_24": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_25": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_26": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_27": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_28": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_29": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_30": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_31": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_32": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_33": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_34": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_35": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_36": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_37": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_38": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_39": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_40": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_41": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_42": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_43": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_44": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_45": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_46": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_47": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_sigmod_sub_48": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rmatio_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rmatio_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rmatio_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rmatio_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_d_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_d_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_enviro_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_enviro_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_gratio": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mental_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mental_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_nforma": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_23": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_24": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_25": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_26": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_27": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_system_sub_28": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_scott": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_plicat": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_models": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ration_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ration_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mation_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mation_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mation_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mation_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_22": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_23": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_of_sub_24": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_query_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_oannid": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_e": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_stribu": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_estima": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_parall_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_parall_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ancing": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_vldb_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_in_sub_21": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_yannis": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_join_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_join_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_pirahe": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mainte_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mainte_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_gregat_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_gregat_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_functi": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ichard": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ementa": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_nction": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_robert": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cessin_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cessin_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_cessin_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_object_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_lectio": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_11": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_12": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_13": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_14": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_15": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_16": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_17": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_18": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_19": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tabase_sub_20": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_gorith": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rocess": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_based": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_select": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_hui": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_operat": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ations": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_g": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erik": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_patial": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_with_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_with_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_fficie": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_8": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_9": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_erence_sub_10": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_simila": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_search": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_daniel": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_a_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_a_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_the_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_the_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mining_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mining_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_mining_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_web": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_relati": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_j": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_5": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_6": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_data_sub_7": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_seshad": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_on": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_manage": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_kemper": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_christ": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_wavele": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_large": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_chen": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_garcia": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ementi": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_hypoth": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_querie_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_querie_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_querie_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_querie_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_zation": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_optimi": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_arehou": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_olap": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_acm": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_nguage": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_access": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_author": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_high": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ructur": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_imensi": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_server": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_patter": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_anagin": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ateria": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_action": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ynamic": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ontent": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_joins": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_hnique": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_v": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_teroge": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_ighbor": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_editor_sub_0": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_editor_sub_1": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_editor_sub_2": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_editor_sub_3": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_editor_sub_4": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_rules": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_update": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_tronic": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    },
+    "block_associ": {
+      "relevant_qids": [],
+      "relevant_pids": [],
+      "kg_source": "kg20c",
+      "relevant_entities": [],
+      "relevant_triples": []
+    }
+  }
+}
