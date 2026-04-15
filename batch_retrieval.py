@@ -9,15 +9,29 @@ from datetime import datetime
 import traceback
 import time
 from data_utils.data_handler import (
+    prepare_structured_data,
+    structured_to_text_data,
+    prepare_text_data,
     _load_raw_data,
     entity_to_text
 )
 from data_utils.context_generation import query_generation_from_block
+from data_utils.wiki_query import triplet_by_id_async
 from tqdm import tqdm
 
+from data_utils import (
+    prepare_text_data,
+    wiki_query_execution,
+    PROMPT_TEMPLATES,
+    fetch_and_save_relevant_kg20c_entities,
+)
+from data_utils.wiki_query import (
+    fetch_and_save_relevant_ids,
+    fetch_and_save_wikidata,
+    fetch_and_save_triplets
+)
 
-from data_utils.wiki_query import fetch_and_save_relevant_ids
-
+from model_utils import (EntityMatchPrompt, process_requests)
 
 # Module logger placeholder; configured in setup_logging
 logger = logging.getLogger("block_retrieval")
@@ -127,7 +141,37 @@ def save_subblocks_as_json(organized_blocks: Dict, output_path: str):
         logger.error(f"Error saving subblocks as JSON: {e}")
         raise
 
-def save_retrieval_results_for_subblock(block_id: str, relevance_data: Dict, pair_map: Dict, retrieval_results_files_dir: str):
+def _kg20c_entities_to_qid_like(entities: List[Dict]) -> List[Dict]:
+    """
+    Convert KG20C retrieval records to a qid-like shape used by downstream code.
+    """
+    converted = []
+    for item in entities or []:
+        if not isinstance(item, dict):
+            continue
+        entity_id = item.get("entity_id", "")
+        name = item.get("name", entity_id)
+        entity_type = item.get("type", "")
+        description = item.get("description") or (f"type: {entity_type}" if entity_type else "")
+        converted.append(
+            {
+                "QID": entity_id,
+                "label": name,
+                "description": description,
+                "similarity_score": item.get("similarity_score", 0.0),
+                "source": item.get("source", "KG20C Astra Vector Search"),
+            }
+        )
+    return converted
+
+
+def save_retrieval_results_for_subblock(
+        block_id: str,
+        relevance_data: Dict,
+        pair_map: Dict,
+        retrieval_results_files_dir: str,
+        kg_source: str = "wikidata",
+):
     """Save retrieval results for a subblock - consolidated single JSON file with both QIDs and PIDs"""
     try:
         # Create output directory if it doesn't exist
@@ -149,39 +193,45 @@ def save_retrieval_results_for_subblock(block_id: str, relevance_data: Dict, pai
                 'blocks': {}
             }
 
-        # Extract QID array from nested structure
-        qid_relevance = relevance_data.get('relevant_qids', {})
-        if isinstance(qid_relevance, dict) and block_id in qid_relevance:
-            # If the data has nested block_id structure, extract the array
-            qid_array = qid_relevance[block_id]
-        elif isinstance(qid_relevance, list):
-            # If it's already an array, use it directly
-            qid_array = qid_relevance
+        if kg_source == "kg20c":
+            # KG20C backend returns query_id -> [entity results]
+            entities = relevance_data.get(block_id, [])
+            if isinstance(entities, dict) and block_id in entities:
+                entities = entities[block_id]
+            qid_array = _kg20c_entities_to_qid_like(entities if isinstance(entities, list) else [])
+            pid_array = []
+            extra_entities = entities if isinstance(entities, list) else []
         else:
-            # Fallback for other structures or null values
-            qid_array = qid_relevance
-        
-        # Extract PID array from nested structure
-        pid_relevance = relevance_data.get('relevant_pids', {})
-        if isinstance(pid_relevance, dict) and block_id in pid_relevance:
-            # If the data has nested block_id structure, extract the array
-            pid_array = pid_relevance[block_id]
-        elif isinstance(pid_relevance, list):
-            # If it's already an array, use it directly
-            pid_array = pid_relevance
-        else:
-            # Fallback for other structures or null values
-            pid_array = pid_relevance
+            # Wikidata backend
+            qid_relevance = relevance_data.get('relevant_qids', {})
+            if isinstance(qid_relevance, dict) and block_id in qid_relevance:
+                qid_array = qid_relevance[block_id]
+            elif isinstance(qid_relevance, list):
+                qid_array = qid_relevance
+            else:
+                qid_array = qid_relevance
+
+            pid_relevance = relevance_data.get('relevant_pids', {})
+            if isinstance(pid_relevance, dict) and block_id in pid_relevance:
+                pid_array = pid_relevance[block_id]
+            elif isinstance(pid_relevance, list):
+                pid_array = pid_relevance
+            else:
+                pid_array = pid_relevance
+            extra_entities = []
 
         # Add current block data with both QIDs and PIDs
         consolidated_data['blocks'][block_id] = {
             'relevant_qids': qid_array,
-            'relevant_pids': pid_array
+            'relevant_pids': pid_array,
+            'kg_source': kg_source,
+            'relevant_entities': extra_entities,
         }
 
         # Update metadata
         consolidated_data['metadata']['total_blocks'] = len(consolidated_data['blocks'])
         consolidated_data['metadata']['last_updated'] = datetime.now().isoformat()
+        consolidated_data['metadata']['kg_source'] = kg_source
         
         # Save consolidated file
         with open(consolidated_file, 'w', encoding='utf-8') as f:
@@ -278,12 +328,25 @@ def create_subblocks(matching_pairs_df: pd.DataFrame, table_a: pd.DataFrame, tab
     
     return sub_blocks
 
-def retrieve_kg_context_for_block(dataset: str, partition: str, query_type: str, block_data: Dict, block_id: str, blocking_method: str, max_block_size: int) -> Dict:
+def retrieve_kg_context_for_block(
+        dataset: str,
+        partition: str,
+        query_type: str,
+        block_data: Dict,
+        block_id: str,
+        blocking_method: str,
+        max_block_size: int,
+        kg_source: str = "wikidata",
+) -> Dict:
     """Retrieve KG context for a specific block or subblock with single concatenated query"""
     logger.info(f"Retrieving KG context for {block_id} with {block_data['size']} pairs")
+    retrieval_top_k = 10 if kg_source == "kg20c" else 10
 
     retrieval_outputs_dir = Path(f"retrieval_outputs/{dataset}")
-    retrieval_results_files_dir = f"{retrieval_outputs_dir}/{dataset}_{partition}_{blocking_method}_{max_block_size}_group_retrieval_results.json"
+    retrieval_results_files_dir = (
+        f"{retrieval_outputs_dir}/"
+        f"{dataset}_{partition}_{blocking_method}_{max_block_size}_{kg_source}_rgroup_retrieval_results.json"
+    )
 
     retrieval_outputs_dir.mkdir(exist_ok=True, parents=True)
 
@@ -335,22 +398,55 @@ def retrieve_kg_context_for_block(dataset: str, partition: str, query_type: str,
         }])
         
         # Use temporary path for API call
-        temp_relevance_path = f"retrieval_outputs/{dataset}/temp/{blocking_method}/{max_block_size}/{block_id}_{partition}_{query_type}_relevant_ids.json"
+        temp_root = f"retrieval_outputs/{dataset}/temp/{kg_source}"
+        temp_relevance_path = (
+            f"{temp_root}/{blocking_method}/{max_block_size}/"
+            f"{block_id}_{partition}_{query_type}_{kg_source}_top{retrieval_top_k}_relevant_ids.json"
+        )
         os.makedirs(os.path.dirname(temp_relevance_path), exist_ok=True)
 
         # Check if relevance data already exists
+        should_fetch = True
         if os.path.exists(temp_relevance_path):
             logger.info(f"Loading existing relevance data from {temp_relevance_path}")
-        else:
+            try:
+                with open(temp_relevance_path, 'r', encoding='utf-8') as f:
+                    cached_relevance_data = json.load(f)
+                if kg_source == "kg20c":
+                    cached_hits = cached_relevance_data.get(block_id, [])
+                    if isinstance(cached_hits, list) and len(cached_hits) >= retrieval_top_k:
+                        should_fetch = False
+                    else:
+                        logger.info(
+                            f"Cached KG20C retrieval has fewer than top {retrieval_top_k} hits; refetching {block_id}"
+                        )
+                else:
+                    should_fetch = False
+            except Exception as e:
+                logger.warning(f"Failed to read cached relevance data for {block_id}: {e}. Refetching.")
+
+        if should_fetch:
             # Execute single KG query for the entire subblock
             try:
-                fetch_and_save_relevant_ids(subblock_query_df, "subblock_id", "query", temp_relevance_path)
+                if kg_source == "kg20c":
+                    fetch_and_save_relevant_kg20c_entities(
+                        subblock_query_df,
+                        "subblock_id",
+                        "query",
+                        temp_relevance_path,
+                        top_k=retrieval_top_k,
+                    )
+                else:
+                    fetch_and_save_relevant_ids(subblock_query_df, "subblock_id", "query", temp_relevance_path)
                 logger.info(f"Successfully fetched subblock relevance data")
             except Exception as e:
                 logger.warning(f"Failed to fetch subblock relevance data: {e}")
                 # Create empty relevance data to continue processing
                 with open(temp_relevance_path, 'w') as f:
-                    json.dump({'relevant_qids': {}, 'relevant_pids': {}}, f)
+                    if kg_source == "kg20c":
+                        json.dump({}, f)
+                    else:
+                        json.dump({'relevant_qids': {}, 'relevant_pids': {}}, f)
         
         # Load relevance data from temporary file
         relevance_data = {}
@@ -360,8 +456,14 @@ def retrieve_kg_context_for_block(dataset: str, partition: str, query_type: str,
             # Clean up temporary file
             # os.remove(temp_relevance_path)
         
-        # Save consolidated subblock retrieval results (no triplets, no individual files)
-        save_retrieval_results_for_subblock(block_id, relevance_data, pair_map, retrieval_results_files_dir)
+        # Save consolidated subblock retrieval results
+        save_retrieval_results_for_subblock(
+            block_id,
+            relevance_data,
+            pair_map,
+            retrieval_results_files_dir,
+            kg_source=kg_source,
+        )
 
         logger.info(f"Saved retrieval results for {block_id}")
         
@@ -380,12 +482,14 @@ def main(
         blocking_method: str = "QG",
         max_block_size: int = 6,
         query_type: str = "pair",
+        kg_source: str = "wikidata",
 ):
     # Setup logging
     global logger, log_file_path
     logger, log_file_path = setup_logging(dataset, partition)
 
     logger.info("=== Starting KG Retrieval Pipeline ===")
+    logger.info(f"KG source: {kg_source}")
     
     # Step 1: Create subblocks
     logger.info("=== Step 1: Creating subblocks ===")
@@ -410,7 +514,16 @@ def main(
     for block_id, block_data in tqdm(sub_blocks.items(), desc="Processing blocks"):
         block_start_time = datetime.now()
         logger.info(f"Retrieving KG context for {block_id}")
-        kg_result = retrieve_kg_context_for_block(dataset, partition, query_type, block_data, block_id, blocking_method, max_block_size)
+        kg_result = retrieve_kg_context_for_block(
+            dataset,
+            partition,
+            query_type,
+            block_data,
+            block_id,
+            blocking_method,
+            max_block_size,
+            kg_source=kg_source,
+        )
         kg_results[block_id] = kg_result
         block_time = (datetime.now() - block_start_time).total_seconds()
         logger.info(f"Completed {block_id} in {block_time:.2f} seconds")
@@ -442,7 +555,7 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Retrieval Pipeline"
+        description="KG Retrieval Pipeline"
     )
     parser.add_argument(
         "--dataset",
@@ -466,7 +579,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--max_block_size",
-        "-maxb",
+        "-m",
         type=int,
         default=6,
         help="Maximum block size (default: 6)",
@@ -478,6 +591,13 @@ if __name__ == "__main__":
         choices=["entity", "pair"],
         help='Query type (default: "pair")',
     )
+    parser.add_argument(
+        "--kg_source",
+        "-kg",
+        default="wikidata",
+        choices=["wikidata", "kg20c"],
+        help='Knowledge graph source for retrieval (default: "wikidata")',
+    )
 
     args = parser.parse_args()
 
@@ -487,4 +607,5 @@ if __name__ == "__main__":
         blocking_method=args.blocking_method,
         max_block_size=args.max_block_size,
         query_type=args.query_type,
+        kg_source=args.kg_source,
     )

@@ -1352,6 +1352,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--kg_source",
+        "-kg",
         default="wikidata",
         choices=["wikidata", "kg20c"],
         help='Knowledge graph source used by block retrieval (default: "wikidata")',
