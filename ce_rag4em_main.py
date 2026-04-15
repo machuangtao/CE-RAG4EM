@@ -12,11 +12,13 @@ from pathlib import Path
 from data_utils import PROMPT_TEMPLATES
 from data_utils.wiki_query import fetch_and_save_wikidata, fetch_and_save_triplets
 from data_utils.bfs_query import bfs_search_with_entity
-from model_utils import (EntityMatchPrompt, process_openai_requests, process_local_request, process_gemini_requests)
+from data_utils.kg20c_astra_vector import fetch_kg20c_triples_for_entity_ids
+from model_utils import (EntityMatchPrompt, process_requests, hf_process_requests, process_local_request, process_gemini_requests)
 from sklearn.metrics import f1_score, confusion_matrix, precision_score, recall_score
 
 
 
+# Module-level logger - will be configured in setup_logging
 logger = logging.getLogger(__name__)
 
 def setup_logging(dataset: str, partition: str, context_config: Dict[str, Union[str, int]], model: str, triple_generation_type: Optional[str], timestamp: str) -> str:
@@ -316,6 +318,12 @@ def generate_save_triples(group_retrieval_results: Dict, dataset: str, top_k: in
     
     # Process blocks 
     block_items = list(blocks.items())
+
+    # # Optionally limit to max_blocks for testing
+    # max_blocks =2
+    # if max_blocks:
+    #     block_items = block_items[:max_blocks]
+    #     logger.info(f"Processing first {max_blocks} blocks for testing")
     
     for block_id, block_data in tqdm(block_items, desc="Processing blocks"):
         # Copy existing block data
@@ -326,6 +334,19 @@ def generate_save_triples(group_retrieval_results: Dict, dataset: str, top_k: in
         
         # Add triples to the block data
         updated_block['relevant_triples'] = relevant_triples
+
+        
+        # Keep top_k QIDs or PIDs based on id_type, remove the other
+        # if id_type == "QID":
+        #     # Keep top_k QIDs, remove PIDs
+        #     if 'relevant_qids' in updated_block:
+        #         updated_block['relevant_qids'] = updated_block['relevant_qids'][:top_k]
+        #     updated_block.pop('relevant_pids', None)
+        # elif id_type == "PID":
+        #     # Keep top_k PIDs, remove QIDs
+        #     if 'relevant_pids' in updated_block:
+        #         updated_block['relevant_pids'] = updated_block['relevant_pids'][:top_k]
+        #     updated_block.pop('relevant_qids', None)
         
         updated_results["blocks"][block_id] = updated_block
         
@@ -336,7 +357,7 @@ def generate_save_triples(group_retrieval_results: Dict, dataset: str, top_k: in
     return updated_results
 
 
-def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, partition: str, triple_id_type: str, triple_generation_type: Optional[str] = None, top_k_entities: int = 3, blocking_method: str = "QG", max_blocking_size: int = 6) -> Dict:
+def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, partition: str, triple_id_type: str, triple_generation_type: Optional[str] = None, top_k_entities: int = 3, blocking_method: str = "QG", max_blocking_size: int = 6, kg_source: str = "wikidata") -> Dict:
     """
     Enrich retrieval results with labels and descriptions for top-k items.
     Removes similarity_score and pretty_string fields.
@@ -359,10 +380,18 @@ def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, pa
     
     # Define output file path
 
+    retrieval_file_candidates = [
+        f"retrieval_outputs/{dataset_key}/{dataset_key}_{partition}_{blocking_method}_{max_blocking_size}_{kg_source}_rgroup_retrieval_results.json",
+        f"retrieval_outputs/{dataset_key}/{dataset_key}_{partition}_{blocking_method}_{max_blocking_size}_group_retrieval_results.json",
+    ]
+    input_file = next((path for path in retrieval_file_candidates if os.path.exists(path)), retrieval_file_candidates[0])
+    group_retrieval_results = load_group_retrieval_results(input_file)
+    kg_source = group_retrieval_results.get("metadata", {}).get("kg_source", "wikidata")
+
     if context_type=="triple":
-        output_file = f"output/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_type}_{triple_generation_type}_{blocking_method}_{max_blocking_size}.json"
+        output_file = f"output/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_type}_{triple_generation_type}_{blocking_method}_{max_blocking_size}_{kg_source}.json"
     else:
-        output_file = f"output/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_type}_{top_k}_{blocking_method}_{max_blocking_size}.json"
+        output_file = f"output/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_type}_{top_k}_{blocking_method}_{max_blocking_size}_{kg_source}.json"
     
     # Check if enriched file already exists
     if os.path.exists(output_file):
@@ -375,10 +404,6 @@ def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, pa
     # Create output directory if it doesn't exist
     os.makedirs(os.path.dirname(output_file), exist_ok=True)
     logger.info(f"Enriched file not found. Generating enriched results for context_type: {context_type}...")
-    
-    # Load input retrieval results
-    input_file = f"retrieval_outputs/{dataset_key}/{dataset_key}_{partition}_{blocking_method}_{max_blocking_size}_group_retrieval_results.json"
-    group_retrieval_results = load_group_retrieval_results(input_file)
     
     # Create a copy of the structure
     enriched_results = {
@@ -409,32 +434,54 @@ def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, pa
                     key=lambda x: x.get("similarity_score", 0),
                     reverse=True
                 )
-                top_qids_list = [item.get("QID") for item in sorted_qids[:top_k] if isinstance(item, dict) and "QID" in item]
+                top_qid_items = [item for item in sorted_qids[:top_k] if isinstance(item, dict) and "QID" in item]
+                top_qids_list = [item.get("QID") for item in top_qid_items]
                 
                 if top_qids_list:
                     blocks_with_qids += 1
                     enriched_qids = []
-                    
-                    # Create temp directory for intermediate files
-                    output_path = f"retrieval_outputs/{dataset_key}/temp/{blocking_method}/{max_blocking_size}/enriched_{context_type}_{top_k}_{partition}_{block_id}.json"
-                    os.makedirs(os.path.dirname(output_path), exist_ok=True)
-                    
-                    # Fetch and save enriched Wikidata info
-                    fetch_and_save_wikidata(top_qids_list, output_path)
-                    
-                    # Load the enriched info from saved file
-                    with open(output_path, "r", encoding="utf-8") as f:
-                        updated_group_qids_results = json.load(f)
-                    
-                    # Restructure to enriched format
-                    for qid in top_qids_list:
-                        qid_str = qid if isinstance(qid, str) else qid.get("QID")
-                        qid_info = updated_group_qids_results.get(qid_str, {})
-                        if qid_info:
+
+                    # Non-Wikidata IDs (e.g., KG20C IDs) already carry label/description.
+                    has_only_non_wikidata_ids = all(
+                        isinstance(qid, str) and not qid.startswith(("Q", "P"))
+                        for qid in top_qids_list
+                    )
+
+                    if has_only_non_wikidata_ids:
+                        for item in top_qid_items:
+                            qid_str = item.get("QID", "")
                             enriched_qids.append({
                                 "QID": qid_str,
-                                "label": qid_info.get("label", qid_str),
-                                "description": qid_info.get("description", "")
+                                "label": item.get("label", qid_str),
+                                "description": item.get("description", "")
+                            })
+                            total_qids_enriched += 1
+                    else:
+                        # Create temp directory for intermediate files
+                        output_path = f"retrieval_outputs/{dataset_key}/temp/{blocking_method}/{max_blocking_size}/enriched_{context_type}_{top_k}_{partition}_{block_id}.json"
+                        os.makedirs(os.path.dirname(output_path), exist_ok=True)
+
+                        # Fetch and save enriched Wikidata info
+                        fetch_and_save_wikidata(top_qids_list, output_path)
+
+                        # Load the enriched info from saved file
+                        with open(output_path, "r", encoding="utf-8") as f:
+                            updated_group_qids_results = json.load(f)
+
+                        # Restructure to enriched format, fallback to original retrieval entry
+                        qid_item_map = {
+                            str(item.get("QID")): item
+                            for item in top_qid_items
+                            if isinstance(item, dict) and item.get("QID")
+                        }
+                        for qid in top_qids_list:
+                            qid_str = qid if isinstance(qid, str) else qid.get("QID")
+                            qid_info = updated_group_qids_results.get(qid_str, {})
+                            fallback = qid_item_map.get(str(qid_str), {})
+                            enriched_qids.append({
+                                "QID": qid_str,
+                                "label": qid_info.get("label") or fallback.get("label", qid_str),
+                                "description": qid_info.get("description") or fallback.get("description", "")
                             })
                             total_qids_enriched += 1
                     
@@ -509,12 +556,60 @@ def enrich_retrieval_results(context_type: str, top_k: int, dataset_key: str, pa
     
     elif context_type == "triple":
         # Generate triples for all blocks
-        logger.info(f"Generating triples with id_type: {triple_id_type} and generation method: {triple_generation_type}")
-        
-        updated_group_results = generate_save_triples(group_retrieval_results, dataset_key, top_k, max_blocks, triple_id_type, triple_generation_type, top_k_entities, blocking_method)
+        logger.info(
+            f"Generating triples with id_type: {triple_id_type} and generation method: {triple_generation_type}"
+        )
+
+        if kg_source == "kg20c":
+            logger.info("Generating KG20C triples from top-ranked retrieved entities.")
+            updated_group_results = {
+                "metadata": group_retrieval_results.get("metadata", {}),
+                "blocks": {}
+            }
+            for block_id, block_data in blocks.items():
+                relevant_qids = block_data.get("relevant_qids", [])
+                entity_hits = []
+                for item in relevant_qids:
+                    if not isinstance(item, dict):
+                        continue
+                    qid = item.get("QID", "")
+                    if not qid:
+                        continue
+                    entity_hits.append(
+                        {
+                            "entity_id": qid,
+                            "name": item.get("label", qid),
+                            "type": item.get("description", ""),
+                            "similarity_score": item.get("similarity_score", 0.0),
+                        }
+                    )
+                relevant_triples = fetch_kg20c_triples_for_entity_ids(
+                    entity_hits,
+                    max_entities=top_k_entities,
+                )
+                updated_block = {
+                    "pairs": block_data.get("pairs", []),
+                    "relevant_triples": relevant_triples,
+                }
+                if "relevant_qids" in block_data:
+                    updated_block["relevant_qids"] = block_data.get("relevant_qids", [])
+                if "relevant_pids" in block_data:
+                    updated_block["relevant_pids"] = block_data.get("relevant_pids", [])
+                updated_group_results["blocks"][block_id] = updated_block
+        else:
+            updated_group_results = generate_save_triples(
+                group_retrieval_results,
+                dataset_key,
+                top_k,
+                None,
+                triple_id_type,
+                triple_generation_type,
+                top_k_entities,
+                blocking_method,
+            )
         
         # Enrich BFS triples if using BFS generation method
-        if triple_generation_type == "BFS":
+        if triple_generation_type == "BFS" and kg_source != "kg20c":
             logger.info("Enriching BFS triples with Wikidata labels and descriptions...")
             
             for block_id, block_data in tqdm(updated_group_results.get("blocks", {}).items(), desc="Enriching BFS triples"):
@@ -740,14 +835,15 @@ def prompt_generation(
     top_k_entities: int = 3,
     triple_generation_type: Optional[str] = None,
     blocking_method: str = "QG",
-    max_blocking_size: int = 6
+    max_blocking_size: int = 6,
+    kg_source: str = "wikidata",
 ) -> List[List[Dict[str, str]]]:
     """
     Generates conversation messages for dataset entries using group retrieval results.
     
     Args:
         dataset_key: Identifier for the target dataset
-        prompt_name: Name of the prompt template to use from PROMPT_TEMPLATES.".
+        prompt_name: Name of the prompt template to use from PROMPT_TEMPLATES. Defaults to "enforced5".
         context_arg: Configuration for RAG context generation with fields:
             {
                 "enabled": bool,
@@ -783,9 +879,9 @@ def prompt_generation(
     if context_arg and context_arg.get("enabled"):
         # Check if enriched file exists, otherwise enrich and save
         if context_arg['context_type'] == "triple":
-            enriched_output_path = f"{output_dir}/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_arg['context_type']}_{triple_generation_type}_{blocking_method}_{max_blocking_size}.json"
+            enriched_output_path = f"{output_dir}/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_arg['context_type']}_{triple_generation_type}_{blocking_method}_{max_blocking_size}_{kg_source}.json"
         else:
-            enriched_output_path = f"{output_dir}/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_arg['context_type']}_{top_k}_{blocking_method}_{max_blocking_size}.json"
+            enriched_output_path = f"{output_dir}/{dataset_key}/enriched_retrieval_results_{dataset_key}_{context_arg['context_type']}_{top_k}_{blocking_method}_{max_blocking_size}_{kg_source}.json"
 
         if os.path.exists(enriched_output_path):
             print(f"Loading existing enriched retrieval results from: {enriched_output_path}")
@@ -793,7 +889,7 @@ def prompt_generation(
                 enriched_results = json.load(f)
         else:
             print("Enriching retrieval results with Wikidata information...")
-            enriched_results = enrich_retrieval_results(context_arg['context_type'], top_k, dataset_key, partition, triple_id_type, triple_generation_type, top_k_entities, blocking_method, max_blocking_size)
+            enriched_results = enrich_retrieval_results(context_arg['context_type'], top_k, dataset_key, partition, triple_id_type, triple_generation_type, top_k_entities, blocking_method, max_blocking_size, kg_source)
 
             # Save enriched results
             with open(enriched_output_path, "w", encoding="utf-8") as f:
@@ -913,6 +1009,8 @@ def evaluate_predictions(dataset_key: str, partition: str, results_path: str, bl
     subblocks_with_pairs = load_group_data(dataset_key, partition, blocking_method, max_blocking_size)
     pairs_df = extract_pairs_from_subblocks(subblocks_with_pairs)
     
+    # For testing, limit to first 5 pairs
+    # pairs_df = pairs_df.head(5)
     
     # Extract predictions from results
     predictions_labels = []
@@ -930,6 +1028,8 @@ def evaluate_predictions(dataset_key: str, partition: str, results_path: str, bl
         # Robust parsing logic to handle different response formats
         response_lower = response.lower().strip()
         
+        # Look for patterns: "match decision:" or "**match decision:**"
+        # Handle variations with/without colon, with/without asterisks
         decision_found = False
         
         if "match decision" in response_lower:
@@ -998,7 +1098,8 @@ def main(
         partition: str = "test",
         model = "gpt-4o-mini",
         blocking_method: str = "QG",
-        max_blocking_size: int = 6
+        max_blocking_size: int = 6,
+        kg_source: str = "wikidata",
 ):
     output_dir = Path(f"./output")
     output_dir.mkdir(parents=True, exist_ok=True)  # Ensure the output directory exists
@@ -1007,7 +1108,7 @@ def main(
      # Configuration for context retrieval
     context_config = {
         "enabled": True,  # Set to False to disable context retrieval
-        "context_type": "qid",  # "pid", "qid", or "triple"
+        "context_type": "triple",  # "pid", "qid", or "triple"
         "top_k": 2   # Number of top retrieval results to use (1 or 2)
     }
 
@@ -1020,13 +1121,16 @@ def main(
         print("Enabling triple context generation...")
         # Triple ID type for generation if using triple context
         triple_id_type = "QID"  # "QID" or "PID", only relevant if context_type is "triple"
-        triple_generation_type = "BFS"  # "BFS" or "EXP (expansion)" Whether to use BFS search for triple generation
+        triple_generation_type = "EXP"  # "BFS" or "EXP (expansion)" Whether to use BFS search for triple generation
         top_k_entities = 3  # Number of top entities/properties to use for triple generation
 
-    if context_config["enabled"]:
-        prompt_name = "rag4em"  # Use a prompt suitable for context
+    if context_config["enabled"]: 
+        if kg_source == "wikidata":
+            prompt_name = "enforced10rag"  # Use a prompt suitable for entity/property context
+        elif kg_source == "kg20c":
+            prompt_name = "enforced10rag_domain"  # Use a prompt suitable for domain-specific context
     else:
-        prompt_name = "llm4em"  # Use a prompt without context
+        prompt_name = "enforced10"  # Use a prompt without context
 
     # Setup logging
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -1039,9 +1143,9 @@ def main(
     # Define messages output path early to check if it already exists
     if context_config["enabled"]:
         if context_config["context_type"] == "triple":
-            messages_output_path = f"{output_dir}/{dataset}/messages_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_group_rag.json"
+            messages_output_path = f"{output_dir}/{dataset}/messages_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}_group_rag.json"
         elif context_config["context_type"] in ["qid", "pid"]:
-            messages_output_path = f"{output_dir}/{dataset}/messages_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_group_rag.json"
+            messages_output_path = f"{output_dir}/{dataset}/messages_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}_group_rag.json"
     else:
         messages_output_path = f"{output_dir}/{dataset}/messages_{partition}_{prompt_name}_{model}_llm.json"
 
@@ -1074,7 +1178,8 @@ def main(
             top_k_entities=top_k_entities if context_config["context_type"] == "triple" else None,
             triple_generation_type=triple_generation_type if context_config["context_type"] == "triple" else None,
             blocking_method=blocking_method,
-            max_blocking_size=max_blocking_size
+            max_blocking_size=max_blocking_size,
+            kg_source=kg_source,
         )
 
         msg_gen_time = time.time() - msg_gen_start
@@ -1098,12 +1203,15 @@ def main(
         print(f"Messages saved to: {messages_output_path}")
         logger.info(f"Messages saved to: {messages_output_path}")
 
+    # Define results output path for testing evaluation
+    # results_output_path = f"{output_dir}/{dataset}/results_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{model}-group_rag_20251029_152230.json"
+    # results_output_path = f"{output_dir}/{dataset}/results_{partition}_{prompt_name}_llm_{model}_20251029_144058.json"
 
     if context_config["enabled"]:
         if context_config["context_type"] == "triple":          
-            results_output_path = f"{output_dir}/{dataset}/results_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}-group_rag_{timestamp}.json"
+            results_output_path = f"{output_dir}/{dataset}/results_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}-group_rag_{timestamp}.json"
         elif context_config["context_type"] in ["qid", "pid"]:
-            results_output_path = f"{output_dir}/{dataset}/results_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}-group_rag_{timestamp}.json"
+            results_output_path = f"{output_dir}/{dataset}/results_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}-group_rag_{timestamp}.json"
     else:
         results_output_path = f"{output_dir}/{dataset}/results_{partition}_{prompt_name}_llm_{model}_{timestamp}.json"
     
@@ -1131,7 +1239,7 @@ def main(
         elif model in ["gpt-4o-mini"]:
             print("Using OpenAI API processing...")
             logger.info(f"Using OpenAI model: {model}")
-            results = process_openai_requests(model, messages_list)
+            results = process_requests(model, messages_list)
         elif model in ["gemini-2.0-flash-lite", "gemini-1.5-flash-8b"]:
             print("Using Google Gemini API processing...")
             logger.info(f"Using Gemini model: {model}")
@@ -1187,9 +1295,9 @@ def main(
     # Save evaluation results
     if context_config["enabled"]:
         if context_config["context_type"] == "triple":          
-            eval_output_path = f"{output_dir}/{dataset}/evaluation_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_group_rag_{timestamp}.json"
+            eval_output_path = f"{output_dir}/{dataset}/evaluation_{partition}_{context_config['context_type']}_{triple_generation_type}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}_group_rag_{timestamp}.json"
         elif context_config["context_type"] in ["qid", "pid"]:
-            eval_output_path = f"{output_dir}/{dataset}/evaluation_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_group_rag_{timestamp}.json"
+            eval_output_path = f"{output_dir}/{dataset}/evaluation_{partition}_{context_config['context_type']}_{context_config['top_k']}_{prompt_name}_{blocking_method}_{max_blocking_size}_{model}_{kg_source}_group_rag_{timestamp}.json"
     else:
         eval_output_path = f"{output_dir}/{dataset}/evaluation_{partition}_{prompt_name}_{model}_llm_{timestamp}.json"
     with open(eval_output_path, "w", encoding="utf-8") as f:
@@ -1207,7 +1315,7 @@ def main(
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="RAG4EM Pipeline"
+        description="LLM Entity Matching Pipeline"
     )
     parser.add_argument(
         "--dataset",
@@ -1242,6 +1350,12 @@ if __name__ == "__main__":
         default=6,
         help="Maximum blocking size to process (default: 6)",
     )
+    parser.add_argument(
+        "--kg_source",
+        default="wikidata",
+        choices=["wikidata", "kg20c"],
+        help='Knowledge graph source used by block retrieval (default: "wikidata")',
+    )
 
     args = parser.parse_args()
 
@@ -1250,5 +1364,6 @@ if __name__ == "__main__":
         args.partition,
         args.model,
         args.blocking_method,
-        args.max_blocking_size
+        args.max_blocking_size,
+        args.kg_source,
     )

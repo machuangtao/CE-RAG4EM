@@ -94,6 +94,25 @@ Additional Information (You can use this in your reasoning if available):\n{}
 Match Decision: Yes / No
 """)
 
+prompt_rag4em_domain = textwrap.dedent("""\
+You are an expert in entity matching, who is to determine whether these two given entity representations refer to the same entity.
+You are also provided additional information retrieved from KG20C Scholarly Knowledge Graph, which might be helpful for your reasoning.
+
+
+## Input
+Entity 1: {}
+Entity 2: {}
+Additional Information (You can use this in your reasoning if available):\n{}
+
+## Instructions
+1. Analyse each entity's semantics independently: consider key terms, roles, and context.
+2. Rank the relevance of each entry in the additional information, and only use it if it is helpful to making the decision.
+3. Perform a step-by-step logical comparison of the two entities.
+
+## Output Format
+Match Decision: Yes / No
+""")
+
 
 
 PROMPT_TEMPLATES = {
@@ -102,5 +121,8 @@ PROMPT_TEMPLATES = {
     },
     'rag4em': {
         'user': prompt_rag4em,
+    },
+     'rag4em_domain': {
+        'user': prompt_rag4em_domain,
     },
 }

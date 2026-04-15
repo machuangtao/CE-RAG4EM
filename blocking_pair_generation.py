@@ -1,623 +1,561 @@
 import argparse
-import os
-import sys
-import time
-import copy
 import json
-import logging
-import numpy as np
+import os
 import pandas as pd
-from data_utils.data_handler import _load_raw_data
-from collections import defaultdict
-from pyjedai.datamodel import Data
-from pyjedai.block_cleaning import BlockPurging, BlockFiltering
-from pyjedai.comparison_cleaning import CardinalityEdgePruning, BLAST
-from pyjedai.block_building import (
-    StandardBlocking,
-    ExtendedQGramsBlocking,
-    ExtendedSuffixArraysBlocking,
-    QGramsBlocking,
-    SuffixArraysBlocking
+import logging
+from pathlib import Path
+from typing import Optional, List, Dict, Union, Literal, Tuple
+from datetime import datetime
+import traceback
+import time
+from data_utils.data_handler import (
+    prepare_structured_data,
+    structured_to_text_data,
+    prepare_text_data,
+    _load_raw_data,
+    entity_to_text
+)
+from data_utils.context_generation import query_generation_from_block
+from data_utils.wiki_query import triplet_by_id_async
+from tqdm import tqdm
+
+from data_utils import (
+    prepare_text_data,
+    wiki_query_execution,
+    PROMPT_TEMPLATES,
+    fetch_and_save_relevant_kg20c_entities,
+)
+from data_utils.wiki_query import (
+    fetch_and_save_relevant_ids,
+    fetch_and_save_wikidata,
+    fetch_and_save_triplets
 )
 
-# Global logger variable
-logger = None
-log_filename = None
+from model_utils import (EntityMatchPrompt, process_requests)
 
-def setup_logging(dataset, partation):
-    """Set up comprehensive logging to capture all output"""
-    global logger, log_filename
+# Module logger placeholder; configured in setup_logging
+logger = logging.getLogger("block_retrieval")
+logger.addHandler(logging.NullHandler())
 
-    log_filename = f"logs/{dataset}/blocking_{dataset}_{partation}_log_{time.strftime('%Y%m%d_%H%M%S')}.log"
+# Setup logging
+class LoggerWriter:
+    def __init__(self, logger, level):
+        self.logger = logger
+        self.level = level
 
-    os.makedirs(os.path.dirname(log_filename), exist_ok=True)
+    def write(self, message):
+        if message.strip():
+            self.level(message.strip())
+
+    def flush(self):
+        pass
+
+def setup_logging(dataset, partition: str) -> Tuple[logging.Logger, str]:
+    """Setup logging to both console and file"""
+    global logger
+
+    # Create logs directory if it doesn't exist
+    log_dir = Path("logs")
+    log_dir.mkdir(exist_ok=True)
+    
+    # Create timestamp for log file
+    timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+    log_file = log_dir / f"{dataset}/block_retrieval_{dataset}_{partition}_{timestamp}.log"
+
+    # Ensure the dataset-specific log directory exists
+    log_file.parent.mkdir(parents=True, exist_ok=True)
+
+    # Configure logger explicitly to avoid relying on basicConfig
+    logger = logging.getLogger("block_retrieval")
+    logger.setLevel(logging.INFO)
+    logger.propagate = False
 
     # Remove any existing handlers to avoid duplication
-    for handler in logging.root.handlers[:]:
-        logging.root.removeHandler(handler)
+    logger.handlers.clear()
+
+    formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+
+    file_handler = logging.FileHandler(log_file, encoding="utf-8")
+    file_handler.setLevel(logging.INFO)
+    file_handler.setFormatter(formatter)
+
+    console_handler = logging.StreamHandler()
+    console_handler.setLevel(logging.INFO)
+    console_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
     
-    # Configure logging with detailed format
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s - %(levelname)s - %(message)s',
-        handlers=[
-            logging.FileHandler(log_filename, mode='w', encoding='utf-8'),
-            logging.StreamHandler(sys.stdout)
-        ],
-        force=True  # Force reconfiguration
+    logger.info(f"Logging initialized. Log file: {log_file}")
+
+    return logger, log_file
+
+
+
+def build_entities_text(entity_a: str, entity_b: str) -> str:
+    return (
+        f"The first entity is {entity_a}.\n"
+        f"The second entity is {entity_b}"
     )
-    
-    logger = logging.getLogger(__name__)
-    return logger, log_filename
 
-def log_message(message, level=logging.INFO):
-    """Log a message to both file and console"""
-    if logger:
-        logger.log(level, message)
-    else:
-        print(message)
-
-def log_print(*args, **kwargs):
-    """Enhanced print function that logs everything"""
-    # Convert all arguments to strings and join them
-    message = ' '.join(str(arg) for arg in args)
-    
-    # Handle kwargs like sep, end, etc.
-    sep = kwargs.get('sep', ' ')
-    end = kwargs.get('end', '\n')
-    
-    if len(args) > 1:
-        message = sep.join(str(arg) for arg in args)
-    
-    # Log the message
-    log_message(message)
-
-
-# Define blocking methods
-classic_method_dict = {
-    'SB': StandardBlocking(),
-    'QG': QGramsBlocking(),
-    'EQG': ExtendedQGramsBlocking(),
-    'SA': SuffixArraysBlocking(),
-    'ESA': ExtendedSuffixArraysBlocking()
-}
-
-classic_method_name = {
-    'SB': 'StandardBlocking',
-    'EQG': 'ExtendedQGramsBlocking',
-    'ESA': 'ExtendedSuffixArraysBlocking',
-    'QG': 'QGramsBlocking',
-    'SA': 'SuffixArraysBlocking'
-}
-
-def validate_blocking_attributes(left_df, right_df, blocking_attributes):
-    """Validate that blocking attributes exist in both datasets"""
-    left_cols = set(left_df.columns)
-    right_cols = set(right_df.columns)
-
-    log_print(f"Configured blocking attributes: {blocking_attributes}")
-    
-    # Check which attributes are available in both datasets
-    available_attrs = []
-    missing_attrs = []
-    
-    for attr in blocking_attributes:
-        if attr in left_cols and attr in right_cols:
-            available_attrs.append(attr)
-            log_print(f"  ✓ '{attr}' found in both datasets")
-        else:
-            missing_attrs.append(attr)
-            if attr not in left_cols:
-                log_print(f"  ✗ '{attr}' missing from left dataset")
-            if attr not in right_cols:
-                log_print(f"  ✗ '{attr}' missing from right dataset")
-    
-    if missing_attrs:
-        log_print(f"Warning: Missing attributes {missing_attrs}")
-        log_print(f"Available left columns: {list(left_cols)}")
-        log_print(f"Available right columns: {list(right_cols)}")
-    
-    return available_attrs
-
-def extract_blocks_info(blocks):
-    """Extract block information from PyJedAI blocks dictionary"""
-    log_print("Extracting block information...")
-    
-    blocks_array = []
-    total_entities = 0
-    entities_in_blocks = set()
-    
-    # First, let's safely inspect what kind of object the blocks are
-    log_print(f"Blocks object type: {type(blocks)}")
-    
-    # Check if blocks is a dictionary (most common in PyJedAI)
-    if isinstance(blocks, dict):
-        log_print(f"Blocks is a dictionary with {len(blocks)} entries")        
-        # Process blocks dictionary
-        for block_key, block_value in blocks.items():
-            
-            ltable_entities = []
-            rtable_entities = []
-            
-            try:
-                # PyJedAI Block objects have entities_D1 and entities_D2 attributes
-                if hasattr(block_value, 'entities_D1') and hasattr(block_value, 'entities_D2'):
-                    # Extract entities from OrderedSet or similar collections
-                    if block_value.entities_D1 is not None:
-                        ltable_entities = list(block_value.entities_D1)
-                    if block_value.entities_D2 is not None:
-                        rtable_entities = list(block_value.entities_D2)
-                    
-                    # Convert to integers if they're not already
-                    ltable_entities = [int(x) for x in ltable_entities if x is not None]
-                    rtable_entities = [int(x) for x in rtable_entities if x is not None]
-                
-            except Exception as e:
-                log_print(f"Error processing block {block_key}: {str(e)}")
-                ltable_entities = []
-                rtable_entities = []
-            
-            # Update entity tracking
-            entities_in_blocks.update([f"ltable_{id}" for id in ltable_entities])
-            entities_in_blocks.update([f"rtable_{id}" for id in rtable_entities])
-            
-            # Add to blocks array
-            blocks_array.append({
-                'block_id': block_key,
-                'ltable_ids': ltable_entities,
-                'rtable_ids': rtable_entities,
-                'ltable_count': len(ltable_entities),
-                'rtable_count': len(rtable_entities)
-            })
-            
-            total_entities += len(ltable_entities) + len(rtable_entities)
-            
-    
-    # Handle case where blocks is not a dictionary
-    else:
-        log_print(f"Blocks object is not a dictionary: {type(blocks)}")
-        return [], 0
-    
-    log_print(f"Extracted {len(blocks_array)} blocks")
-    log_print(f"Total entity occurrences in blocks: {total_entities}")
-    log_print(f"Unique entities in blocks: {len(entities_in_blocks)}")
-    
-    # Show some statistics
-    non_empty_blocks = [b for b in blocks_array if b['ltable_count'] > 0 or b['rtable_count'] > 0]
-    log_print(f"Non-empty blocks: {len(non_empty_blocks)}")
-    
-    if non_empty_blocks:
-        avg_left_entities = sum(b['ltable_count'] for b in non_empty_blocks) / len(non_empty_blocks)
-        avg_right_entities = sum(b['rtable_count'] for b in non_empty_blocks) / len(non_empty_blocks)
-        log_print(f"Average entities per non-empty block: left={avg_left_entities:.2f}, right={avg_right_entities:.2f}")
-    
-    return blocks_array, len(entities_in_blocks)
-
-def generate_block_pairs(blocks_array, match_df):
-    """Generate pairwise matching pairs from blocks and filter it with ground truth labels"""
-
-    # Create ground truth lookup with actual labels
-    match_cols = list(match_df.columns)
-    ground_truth_dict = {}
-    
-    # Build lookup from all rows in match_df (both positive and negative)
-    for _, row in match_df.iterrows():
-        key = (int(row[match_cols[0]]), int(row[match_cols[1]]))
-        label = int(row[match_cols[2]])
-        ground_truth_dict[key] = label
-    
-    log_print(f"Ground truth contains {len(ground_truth_dict)} total pairs")
-
-    # Count positive and negative ground truth pairs
-    positive_gt = sum(1 for label in ground_truth_dict.values() if label == 1)
-    negative_gt = sum(1 for label in ground_truth_dict.values() if label == 0)
-    log_print(f"Ground truth breakdown: {positive_gt} positive matches, {negative_gt} negative pairs")
-
-    log_print("Generating pairwise matching pairs from blocks...")
-    
-    matching_pairs = []
-    total_pairs_generated = 0
-    all_candidate_pairs = set()
-    pairs_with_ground_truth = 0
-
-    # Fix for PyJedAI ID offset issue and determine the minimum right table ID to find offset
-    all_ltable_ids_in_blocks = set()
-    all_rtable_ids_in_blocks = set()
-    
-    for block in blocks_array:
-        all_ltable_ids_in_blocks.update(block['ltable_ids'])
-        all_rtable_ids_in_blocks.update(block['rtable_ids'])
-    
-    if all_ltable_ids_in_blocks and all_rtable_ids_in_blocks:
-        max_ltable_id = max(all_ltable_ids_in_blocks)
-        min_rtable_id = min(all_rtable_ids_in_blocks)
+def load_subblocks_from_json(json_path: str) -> Dict:
+    """Load subblocks data from JSON file"""
+    try:
+        with open(json_path, 'r', encoding='utf-8') as f:
+            data = json.load(f)
         
-        # If right table IDs start after left table IDs, we have an offset
-        if min_rtable_id > max_ltable_id:
-            rtable_offset = min_rtable_id
-            log_print(f"Detected PyJedAI ID offset: Right table IDs start at {rtable_offset}")
-            log_print(f"Will remap right table IDs by subtracting {rtable_offset}")
+        logger.info(f"Loaded subblocks from JSON: {json_path}")
+        logger.info(f"Metadata: {data.get('metadata', {})}")
+        
+        return data['blocks']
+        
+    except Exception as e:
+        logger.error(f"Error loading subblocks from JSON: {e}")
+        raise
+
+def save_subblocks_as_json(organized_blocks: Dict, output_path: str):
+    """Save the organized blocks/subblocks as JSON"""
+    try:
+        # Create output directory if it doesn't exist
+        output_file = Path(output_path)
+        output_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Prepare data for JSON serialization
+        json_data = {
+            'metadata': {
+                'total_blocks_subblocks': len(organized_blocks),
+                'total_pairs': sum(block_data['size'] for block_data in organized_blocks.values()),
+                'created_at': datetime.now().isoformat()
+            },
+            'blocks': organized_blocks
+        }
+        
+        # Save as JSON
+        with open(output_file, 'w', encoding='utf-8') as f:
+            json.dump(json_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Saved subblocks data as JSON to: {output_file}")
+        return str(output_file)
+        
+    except Exception as e:
+        logger.error(f"Error saving subblocks as JSON: {e}")
+        raise
+
+def _kg20c_entities_to_qid_like(entities: List[Dict]) -> List[Dict]:
+    """
+    Convert KG20C retrieval records to a qid-like shape used by downstream code.
+    """
+    converted = []
+    for item in entities or []:
+        if not isinstance(item, dict):
+            continue
+        entity_id = item.get("entity_id", "")
+        name = item.get("name", entity_id)
+        entity_type = item.get("type", "")
+        description = item.get("description") or (f"type: {entity_type}" if entity_type else "")
+        converted.append(
+            {
+                "QID": entity_id,
+                "label": name,
+                "description": description,
+                "similarity_score": item.get("similarity_score", 0.0),
+                "source": item.get("source", "KG20C Astra Vector Search"),
+            }
+        )
+    return converted
+
+
+def save_retrieval_results_for_subblock(
+        block_id: str,
+        relevance_data: Dict,
+        pair_map: Dict,
+        retrieval_results_files_dir: str,
+        kg_source: str = "wikidata",
+):
+    """Save retrieval results for a subblock - consolidated single JSON file with both QIDs and PIDs"""
+    try:
+        # Create output directory if it doesn't exist
+        consolidated_file = Path(retrieval_results_files_dir)
+        consolidated_file.parent.mkdir(parents=True, exist_ok=True)
+        
+        # Use a single consolidated file for both QIDs and PIDs
+
+        # Load existing consolidated data or create new
+        if consolidated_file.exists():
+            with open(consolidated_file, 'r', encoding='utf-8') as f:
+                consolidated_data = json.load(f)
         else:
-            rtable_offset = 0
-            log_print("No ID offset detected")
-    else:
-        rtable_offset = 0
-    
-    for block in blocks_array:
-        block_id = block['block_id']
-        ltable_ids = block['ltable_ids']
-        rtable_ids = block['rtable_ids']
+            consolidated_data = {
+                'metadata': {
+                    'created_at': datetime.now().isoformat(),
+                    'total_blocks': 0
+                },
+                'blocks': {}
+            }
 
-        # Generate all possible pairs within the block via Cartesian product
-        for ltable_id in ltable_ids:
-            for rtable_id in rtable_ids:
-                total_pairs_generated += 1
+        if kg_source == "kg20c":
+            # KG20C backend returns query_id -> [entity results]
+            entities = relevance_data.get(block_id, [])
+            if isinstance(entities, dict) and block_id in entities:
+                entities = entities[block_id]
+            qid_array = _kg20c_entities_to_qid_like(entities if isinstance(entities, list) else [])
+            pid_array = []
+            extra_entities = entities if isinstance(entities, list) else []
+        else:
+            # Wikidata backend
+            qid_relevance = relevance_data.get('relevant_qids', {})
+            if isinstance(qid_relevance, dict) and block_id in qid_relevance:
+                qid_array = qid_relevance[block_id]
+            elif isinstance(qid_relevance, list):
+                qid_array = qid_relevance
+            else:
+                qid_array = qid_relevance
 
-                # Remap right table ID to match ground truth indexing
-                remapped_rtable_id = rtable_id - rtable_offset
-                pair_key = (ltable_id, remapped_rtable_id)
-                
-                all_candidate_pairs.add(pair_key)
-                
-                # Check if this pair has ground truth (either positive or negative)
-                if pair_key in ground_truth_dict:
-                    matching_pairs.append({
-                        'ltable_id': ltable_id,
-                        'rtable_id': remapped_rtable_id,
-                        'label': ground_truth_dict[pair_key],
-                        'block_id': block_id
-                    })
-                    pairs_with_ground_truth += 1
-    
-    # Convert matching_pairs to DataFrame first
-    pairs_df = pd.DataFrame(matching_pairs)
-    
-    # Remove duplicate pairs
-    initial_pair_count = len(pairs_df)
-    pairs_df = pairs_df.drop_duplicates(subset=['ltable_id', 'rtable_id', 'label'], keep='first')
-    final_unique_pair_count = len(pairs_df)
-    duplicates_removed = initial_pair_count - final_unique_pair_count
-    
-    log_print(f"Total pairs generated from blocks: {total_pairs_generated}")
-    log_print(f"Unique candidate pairs from blocks: {len(all_candidate_pairs)}")
-    log_print(f"Pairs with explicit ground truth labels: {pairs_with_ground_truth}")
-    log_print(f"Unique Pairs with explicit ground truth: {final_unique_pair_count}")
-    
-    # Show breakdown of generated pairs
-    positive_generated = len(pairs_df[pairs_df['label'] == 1]) if len(pairs_df) > 0 else 0
-    negative_generated = len(pairs_df[pairs_df['label'] == 0]) if len(pairs_df) > 0 else 0
-    log_print(f"Generated pairs breakdown: {positive_generated} positive matches, {negative_generated} negative pairs")
-    
-    # Return both the filtered pairs and the total unique candidate count
-    pairs_df.attrs['total_candidate_pairs'] = len(all_candidate_pairs)
-    
-    return pairs_df
+            pid_relevance = relevance_data.get('relevant_pids', {})
+            if isinstance(pid_relevance, dict) and block_id in pid_relevance:
+                pid_array = pid_relevance[block_id]
+            elif isinstance(pid_relevance, list):
+                pid_array = pid_relevance
+            else:
+                pid_array = pid_relevance
+            extra_entities = []
 
-def run_blocking_method(method, left_df, right_df, match_df, dataset, blocking_attributes, partition):
-    """Run a specific blocking method and extract detailed block information"""
-    
-    log_print(f"Starting {classic_method_name[method]}...")
-    
-    # Validate and get available blocking attributes
-    attr = validate_blocking_attributes(left_df, right_df, blocking_attributes)
-    
-    if not attr:
-        error_msg = f"None of the specified blocking attributes {blocking_attributes} are available in both datasets"
-        log_message(error_msg, logging.ERROR)
-        raise ValueError(error_msg)
-    
-    log_print(f"Using blocking attributes: {attr}")
-    
-    # Create PyJedAI Data object
-    log_print("Creating PyJedAI Data object...")
-    data = Data(
-        dataset_1=left_df.copy(), id_column_name_1='id',
-        dataset_2=right_df.copy(), id_column_name_2='id',
-    )
-    
-    # Clean dataset
-    log_print("Cleaning dataset...")
-    data.clean_dataset(
-        remove_stopwords=False, 
-        remove_punctuation=False, 
-        remove_numbers=False, 
-        remove_unicodes=True
-    )
-    
-    # Build blocks
-    log_print(f"Building blocks using {classic_method_name[method]} on attributes: {attr}...")
-    start_time = time.time()
-    
-    bb = classic_method_dict[method]
-    blocks = bb.build_blocks(
-        copy.deepcopy(data), 
-        attributes_1=attr, 
-        attributes_2=attr, 
-        tqdm_disable=True
-    )
+        # Add current block data with both QIDs and PIDs
+        consolidated_data['blocks'][block_id] = {
+            'relevant_qids': qid_array,
+            'relevant_pids': pid_array,
+            'kg_source': kg_source,
+            'relevant_entities': extra_entities,
+        }
 
-    log_print(f"Initial blocks created: {len(blocks)}")
+        # Update metadata
+        consolidated_data['metadata']['total_blocks'] = len(consolidated_data['blocks'])
+        consolidated_data['metadata']['last_updated'] = datetime.now().isoformat()
+        consolidated_data['metadata']['kg_source'] = kg_source
+        
+        # Save consolidated file
+        with open(consolidated_file, 'w', encoding='utf-8') as f:
+            json.dump(consolidated_data, f, indent=2, ensure_ascii=False)
+        
+        logger.info(f"Saved retrieval results for {block_id} to consolidated file: {consolidated_file}")
+        
+    except Exception as e:
+        logger.error(f"Error saving retrieval results for {block_id}: {e}")
+        raise
 
+def create_subblocks(matching_pairs_df: pd.DataFrame, table_a: pd.DataFrame, table_b: pd.DataFrame, max_block_size: int = 6) -> Tuple[Dict, str]:
+    """Organize matching pairs by blocks and create subblocks if needed"""
+    logger.info(f"Organizing pairs by blocks with max block size: {max_block_size}")
+    
+    # Group by block_id
+    blocks = {}
 
-    # Extract block information
-    blocks_array, unique_entities = extract_blocks_info(blocks)
+    for _, row in matching_pairs_df.iterrows():
+        block_id = row['block_id']
+        ltable_id = row['ltable_id']
+        rtable_id = row['rtable_id']
+        label = row['label']
+        
+        # Get entity data
+        entity_a = table_a[table_a['id'] == ltable_id]
+        entity_b = table_b[table_b['id'] == rtable_id]
+        
+        if not entity_a.empty and not entity_b.empty:
+            # Convert individual entities to text
+            entity_a_text = entity_to_text(entity_a.iloc[0])
+            entity_b_text = entity_to_text(entity_b.iloc[0])
+            
+            if block_id not in blocks:
+                blocks[block_id] = []
+            
+            blocks[block_id].append({
+                'ltable_id': int(ltable_id),  
+                'rtable_id': int(rtable_id),  
+                'label': int(label),          
+                'entity_a': entity_a_text,
+                'entity_b': entity_b_text,
+                'block_id': str(block_id)     
+            })
     
-    # Save block information to JSON
-    blocks_info = {
-        'method': classic_method_name[method],
-        'timestamp': time.strftime('%Y-%m-%d %H:%M:%S'),
-        'total_blocks': len(blocks_array),
-        'unique_entities_in_blocks': unique_entities,
-        'left_table_size': len(left_df),
-        'right_table_size': len(right_df),
-        'blocking_attributes': attr,
-        'blocks': blocks_array
-    }
-
-    json_filename = f"blocking_outputs/{dataset}/{dataset}_{partition}_{method}_blocks.json"
-    with open(json_filename, 'w', encoding='utf-8') as f:
-        json.dump(blocks_info, f, indent=2, ensure_ascii=False)
-    log_print(f"Block information saved to: {json_filename}")
-    
-    # Generate pairwise matching pairs from blocks and filter with ground truth
-    log_print("Generating matching pairs from blocks...")
-    matching_pairs = generate_block_pairs(blocks_array, match_df)
-
-    
-    # Statistics for ALL generated pairs (before filtering)
-    log_print("\nSTATISTICS FOR ALL GENERATED PAIRS (BEFORE FILTERING):")
-    log_print("-" * 50)
-    
-    end_time = time.time()
-    runtime = end_time - start_time
-    
-    return blocks_array, blocks_info, matching_pairs, runtime
-
-def calculate_blocking_statistics(blocks_info, pairs_df, left_df, right_df, match_df):
-    """Calculate detailed blocking statistics"""
-    log_print("Calculating blocking statistics...")
-    
-    total_possible_pairs = len(left_df) * len(right_df)
-    total_blocks = blocks_info['total_blocks']
-    unique_entities = blocks_info['unique_entities_in_blocks']
-    
-    # Use the total candidate pairs count (before ground truth filtering)
-    total_candidate_pairs = pairs_df.attrs.get('total_candidate_pairs', len(pairs_df))
-    total_blocks = blocks_info['total_blocks']
-    unique_entities = blocks_info['unique_entities_in_blocks']
-
-
-    # Check if pairs_df has the required 'label' column
-    if 'label' in pairs_df.columns and len(pairs_df) > 0:
-        true_matches_found = len(pairs_df[pairs_df['label'] == 1])
-    else:
-        true_matches_found = 0
-        log_print("Warning: No 'label' column found or pairs_df is empty. Setting true_matches_found to 0.")
-    
-    # Get actual ground truth count (only positive matches)
-    match_cols = list(match_df.columns)
-    if len(match_cols) > 2:
-        total_true_matches = len(match_df[match_df[match_cols[2]] == 1])
-    else:
-        total_true_matches = len(match_df)
-    
-    # Reduction Ratio (RR)
-    RR = 1 - total_candidate_pairs / total_possible_pairs
-    
-    # Pair Completeness (PC) - recall
-    PC = true_matches_found / total_true_matches
-    
-    # Pair Quality (PQ) - precision
-    PQ = true_matches_found / total_candidate_pairs
-    
-    # F-measure
-    F = 2 * PC * RR / (PC + RR)
-   
-    
-    stats = {
-        'total_blocks': total_blocks,
-        'unique_entities_in_blocks': unique_entities,
-        'total_possible_pairs': total_possible_pairs,
-        'candidate_pairs': total_candidate_pairs,
-        'true_matches_found': true_matches_found,
-        'total_true_matches': total_true_matches,
-        'reduction_ratio': RR,
-        'pair_completeness': PC,
-        'pair_quality': PQ,
-        'f_measure': F
+    # Create subblocks for large blocks
+    sub_blocks = {}
+    subblock_stats = {
+        'original_blocks': len(blocks),
+        'small_blocks_kept': 0,
+        'large_blocks_split': 0,
+        'total_subblocks_created': 0
     }
     
-    log_print(f"FINAL STATISTICS (AFTER FILTERING):")
-    log_print(f"  Total blocks: {total_blocks}")
-    log_print(f"  Unique entities in blocks: {unique_entities}")
-    log_print(f"  Candidate pairs (filtered): {total_candidate_pairs}")
-    log_print(f"  True matches found: {true_matches_found}")
-    log_print(f"  Total true matches in dataset: {total_true_matches}")
-    log_print(f"  Reduction Ratio: {RR:.4f}")
-    log_print(f"  Pair Completeness: {PC:.4f}")
-    log_print(f"  Pair Quality: {PQ:.5f}")
-    log_print(f"  F-measure: {F:.4f}")
+    for block_id, pairs in blocks.items():
+        if len(pairs) <= max_block_size:
+            # Small block - keep as is
+            block_key = f"block_{block_id}"
+            sub_blocks[block_key] = {
+                'pairs': pairs,
+                'size': len(pairs),
+                'is_subblock': False,
+                'original_block_id': str(block_id),
+                'subblock_index': None
+            }
+            subblock_stats['small_blocks_kept'] += 1
+        else:
+            # Large block - split into subblocks
+            num_subblocks = (len(pairs) + max_block_size - 1) // max_block_size
+            subblock_stats['large_blocks_split'] += 1
+            subblock_stats['total_subblocks_created'] += num_subblocks
+            
+            for i in range(num_subblocks):
+                start_idx = i * max_block_size
+                end_idx = min((i + 1) * max_block_size, len(pairs))
+                subblock_pairs = pairs[start_idx:end_idx]
+                
+                subblock_key = f"block_{block_id}_sub_{i}"
+                sub_blocks[subblock_key] = {
+                    'pairs': subblock_pairs,
+                    'size': len(subblock_pairs),
+                    'is_subblock': True,
+                    'original_block_id': str(block_id),
+                    'subblock_index': i,
+                    'parent_block': str(block_id)
+                }
     
-    return stats
+    logger.info(f"Block organization statistics:")
+    logger.info(f"  Original blocks: {subblock_stats['original_blocks']}")
+    logger.info(f"  Small blocks kept as-is: {subblock_stats['small_blocks_kept']}")
+    logger.info(f"  Large blocks split: {subblock_stats['large_blocks_split']}")
+    logger.info(f"  Total subblocks created: {subblock_stats['total_subblocks_created']}")
+    logger.info(f"  Final blocks/subblocks: {len(sub_blocks)}")
+    
+    return sub_blocks
+
+def retrieve_kg_context_for_block(
+        dataset: str,
+        partition: str,
+        query_type: str,
+        block_data: Dict,
+        block_id: str,
+        blocking_method: str,
+        max_block_size: int,
+        kg_source: str = "wikidata",
+) -> Dict:
+    """Retrieve KG context for a specific block or subblock with single concatenated query"""
+    logger.info(f"Retrieving KG context for {block_id} with {block_data['size']} pairs")
+    retrieval_top_k = 10 if kg_source == "kg20c" else 10
+
+    retrieval_outputs_dir = Path(f"retrieval_outputs/{dataset}")
+    retrieval_results_files_dir = (
+        f"{retrieval_outputs_dir}/"
+        f"{dataset}_{partition}_{blocking_method}_{max_block_size}_{kg_source}_rgroup_retrieval_results.json"
+    )
+
+    retrieval_outputs_dir.mkdir(exist_ok=True, parents=True)
+
+    try:
+        pairs = block_data['pairs']
+        
+        # Create pair queries in the form "What are {entityA}, and {entityB}?"
+        pair_queries = []
+        
+        # Map entities to their IDs for later reference
+        entity_a_map = {}  # ltable_id -> entity_a
+        entity_b_map = {}  # rtable_id -> entity_b
+        pair_map = {}      # pair_id -> entity pair info
+        
+        for pair in pairs:
+            ltable_id = str(pair['ltable_id'])
+            rtable_id = str(pair['rtable_id'])
+            pair_id = f"{ltable_id}_{rtable_id}"
+            
+            entity_a_text = pair['entity_a']
+            entity_b_text = pair['entity_b']
+            
+            # Create query for this pair in the specified format
+            pair_query = query_generation_from_block(dataset, partition, query_type, entity_a_text, entity_b_text)
+            pair_queries.append(pair_query)
+            
+            # Store mappings for later reference
+            entity_a_map[ltable_id] = entity_a_text
+            entity_b_map[rtable_id] = entity_b_text
+            pair_map[pair_id] = {
+                'entity_a': entity_a_text,
+                'entity_b': entity_b_text,
+                'ltable_id': ltable_id,
+                'rtable_id': rtable_id,
+                'pair_query': pair_query
+            }
+        
+        # Concatenate all pair queries for the subblock
+        concatenated_pair_queries = " ; ".join(pair_queries)
+        
+        logger.info(f"Created {len(pair_queries)} pair queries for subblock {block_id}")
+        # logger.info(f"Sample pair queries: {pair_queries[:3]}")
+        logger.info(f"Concatenated queries length: {len(concatenated_pair_queries)} characters")
+        
+        # Create single query dataframe for the entire subblock
+        subblock_query_df = pd.DataFrame([{
+            'subblock_id': block_id,
+            'query': concatenated_pair_queries
+        }])
+        
+        # Use temporary path for API call
+        temp_root = f"retrieval_outputs/{dataset}/temp/{kg_source}"
+        temp_relevance_path = (
+            f"{temp_root}/{blocking_method}/{max_block_size}/"
+            f"{block_id}_{partition}_{query_type}_{kg_source}_top{retrieval_top_k}_relevant_ids.json"
+        )
+        os.makedirs(os.path.dirname(temp_relevance_path), exist_ok=True)
+
+        # Check if relevance data already exists
+        should_fetch = True
+        if os.path.exists(temp_relevance_path):
+            logger.info(f"Loading existing relevance data from {temp_relevance_path}")
+            try:
+                with open(temp_relevance_path, 'r', encoding='utf-8') as f:
+                    cached_relevance_data = json.load(f)
+                if kg_source == "kg20c":
+                    cached_hits = cached_relevance_data.get(block_id, [])
+                    if isinstance(cached_hits, list) and len(cached_hits) >= retrieval_top_k:
+                        should_fetch = False
+                    else:
+                        logger.info(
+                            f"Cached KG20C retrieval has fewer than top {retrieval_top_k} hits; refetching {block_id}"
+                        )
+                else:
+                    should_fetch = False
+            except Exception as e:
+                logger.warning(f"Failed to read cached relevance data for {block_id}: {e}. Refetching.")
+
+        if should_fetch:
+            # Execute single KG query for the entire subblock
+            try:
+                if kg_source == "kg20c":
+                    fetch_and_save_relevant_kg20c_entities(
+                        subblock_query_df,
+                        "subblock_id",
+                        "query",
+                        temp_relevance_path,
+                        top_k=retrieval_top_k,
+                    )
+                else:
+                    fetch_and_save_relevant_ids(subblock_query_df, "subblock_id", "query", temp_relevance_path)
+                logger.info(f"Successfully fetched subblock relevance data")
+            except Exception as e:
+                logger.warning(f"Failed to fetch subblock relevance data: {e}")
+                # Create empty relevance data to continue processing
+                with open(temp_relevance_path, 'w') as f:
+                    if kg_source == "kg20c":
+                        json.dump({}, f)
+                    else:
+                        json.dump({'relevant_qids': {}, 'relevant_pids': {}}, f)
+        
+        # Load relevance data from temporary file
+        relevance_data = {}
+        if os.path.exists(temp_relevance_path):
+            with open(temp_relevance_path, 'r') as f:
+                relevance_data = json.load(f)
+            # Clean up temporary file
+            # os.remove(temp_relevance_path)
+        
+        # Save consolidated subblock retrieval results
+        save_retrieval_results_for_subblock(
+            block_id,
+            relevance_data,
+            pair_map,
+            retrieval_results_files_dir,
+            kg_source=kg_source,
+        )
+
+        logger.info(f"Saved retrieval results for {block_id}")
+        
+    except Exception as e:
+        logger.error(f"Error retrieving KG context for {block_id}: {e}")
+        logger.error(traceback.format_exc())
+        return {'error': str(e)}
+
+
+
+
 
 def main(
         dataset: str,
         partition: str = "test",
+        blocking_method: str = "QG",
+        max_block_size: int = 6,
+        query_type: str = "pair",
+        kg_source: str = "wikidata",
 ):
-    if dataset == "abt":
-        blocking_attributes = ['name', 'description']
-    elif dataset == "amgo":
-        blocking_attributes = ['title', 'manufacturer']
-    elif dataset == "beer":
-        blocking_attributes = ['Beer_Name', 'Brew_Factory_Name', 'Style']
-    elif dataset in ["dbac", "dbgo"]:
-        blocking_attributes = ['title', 'authors', 'venue']
-    elif dataset == "foza":
-        blocking_attributes = ['name', 'addr', 'city', 'type']
-    elif dataset == "itam":
-        blocking_attributes = ['Song_Name', 'Artist_Name', 'Album_Name', 'CopyRight']
-    elif dataset == "waam":
-        blocking_attributes = ['title', 'category', 'brand', 'modelino']
-    elif dataset == "wdc":
-        blocking_attributes = ['brand', 'title', 'description']
-    else:
-        blocking_attributes = ['title', 'name']  # Default attributes
+    # Setup logging
+    global logger, log_file_path
+    logger, log_file_path = setup_logging(dataset, partition)
 
-    # Create necessary directories
-    os.makedirs(f"logs", exist_ok=True)
-    os.makedirs(f"blocking_outputs/{dataset}", exist_ok=True)
+    logger.info("=== Starting KG Retrieval Pipeline ===")
+    logger.info(f"KG source: {kg_source}")
     
-     # Set up logging first
-    logger, log_filename = setup_logging(dataset, partition)
+    # Step 1: Create subblocks
+    logger.info("=== Step 1: Creating subblocks ===")
+    matching_pairs_path = f"blocking_outputs/{dataset}/{dataset}_{partition}_{blocking_method}_matching_pairs.csv"
+    matching_pairs_df = pd.read_csv(matching_pairs_path)
     
-    log_print("PYJEDAI BLOCKING METHODS - DETAILED BLOCK ANALYSIS")
-    log_print(f"Starting execution at: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-    log_print(f"Processing {dataset} dataset with blocking methods...")
-    log_print(f"Logging output to: {log_filename}")
+    # Log the actual columns to debug
+    logger.info(f"CSV columns: {matching_pairs_df.columns.tolist()}")
+    
+    table_a, table_b, loaded_partition = _load_raw_data(dataset, partition)
+    sub_blocks = create_subblocks(matching_pairs_df, table_a, table_b, max_block_size)
 
+    # Save subblocks as JSON
+    json_file_path = save_subblocks_as_json(sub_blocks, f"blocking_outputs/{dataset}/{dataset}_{partition}_{blocking_method}_{max_block_size}_subblocks_with_pairs.json")
+
+    logger.info(f"Created {len(sub_blocks)} blocks/subblocks")
+
+    # Step 2: Retrieval for all blocks
+    logger.info("=== Step 2: KG retrieval for all blocks ===")
+    kg_results = {}
+    start_time = datetime.now()
+    for block_id, block_data in tqdm(sub_blocks.items(), desc="Processing blocks"):
+        block_start_time = datetime.now()
+        logger.info(f"Retrieving KG context for {block_id}")
+        kg_result = retrieve_kg_context_for_block(
+            dataset,
+            partition,
+            query_type,
+            block_data,
+            block_id,
+            blocking_method,
+            max_block_size,
+            kg_source=kg_source,
+        )
+        kg_results[block_id] = kg_result
+        block_time = (datetime.now() - block_start_time).total_seconds()
+        logger.info(f"Completed {block_id} in {block_time:.2f} seconds")
+
+    # Log total retrieval time
+    total_elapsed = (datetime.now() - start_time).total_seconds()
+    logger.info(f"Total retrieval time: {total_elapsed / 60:.2f} minutes ({total_elapsed:.2f} seconds)")
     
-    try:
-        # Load data
-        log_print("STEP 1: Loading data...")
-        left_df, right_df, match_df = _load_raw_data(dataset, partition)
+    
+    logger.info("=== Pipeline completed successfully ===")
+    
+    # Create summary dictionary
+    total_pairs = sum(block_data['size'] for block_data in sub_blocks.values())
+    summary = {
+        'total_blocks_processed': len(sub_blocks),
+        'total_pairs_processed': total_pairs,
+        'subblocks_json_file': json_file_path
+    }
+    
+    print("\n=== Final Summary ===")
+    print(f"Total blocks processed: {summary['total_blocks_processed']}")
+    print(f"Total pairs processed: {summary['total_pairs_processed']}")
+    print(f"Subblocks JSON saved to: {summary['subblocks_json_file']}")
+    print(f"Log file saved to: {log_file_path}")
+    
+    logger.info(f"Pipeline completed. Log file saved to: {log_file_path}")
         
-        log_print("\nDATASET STATISTICS:")
-        log_print(f"Left table size: {len(left_df)}")
-        log_print(f"Right table size: {len(right_df)}")
-        log_print(f"Ground truth matches: {len(match_df)}")
-        log_print(f"Total possible pairs: {len(left_df) * len(right_df)}")
-        log_print("-" * 60)
-        
-        results = []
-        all_methods_results = {}
-        
-        # Test each blocking method
-        log_print("\nSTEP 2: Testing blocking methods...")
-        for i, method in enumerate(classic_method_dict.keys(), 1):
-            log_print(f"\n[{i}/{len(classic_method_dict)}] Testing {classic_method_name[method]}:")
-            log_print("-" * 40)
-            
-            try:
-                blocks_array, blocks_info, pairs_df, runtime = run_blocking_method(
-                    method, left_df, right_df, match_df, dataset, blocking_attributes, partition
-                )
-                
-                # Calculate statistics
-                stats = calculate_blocking_statistics(blocks_info, pairs_df, left_df, right_df, match_df)
-                
-                # Store results
-                result = {
-                    'Method': classic_method_name[method],
-                    'Runtime (s)': round(runtime, 4),
-                    'Total_Blocks': stats['total_blocks'],
-                    'Unique_Entities': stats['unique_entities_in_blocks'],
-                    'Candidate_Pairs': stats['candidate_pairs'],
-                    'True_Matches_Found': stats['true_matches_found'],
-                    'RR (%)': round(100 * stats['reduction_ratio'], 2),
-                    'PC (%)': round(100 * stats['pair_completeness'], 2),
-                    'PQ (%)': round(100 * stats['pair_quality'], 2),
-                    'F-measure (%)': round(100 * stats['f_measure'], 2)
-                }
-                results.append(result)
-                
-                # Store detailed results
-                all_methods_results[method] = {
-                    'blocks_array': blocks_array,
-                    'blocks_info': blocks_info,
-                    'pairs_df': pairs_df,
-                    'stats': stats
-                }
-                
-                log_print(f"RESULTS FOR {classic_method_name[method]}:")
-                log_print(f"  Runtime: {runtime:.4f} seconds")
-                log_print(f"  Total blocks: {stats['total_blocks']}")
-                log_print(f"  Unique entities in blocks: {stats['unique_entities_in_blocks']}")
-                log_print(f"  Candidate pairs: {stats['candidate_pairs']}")
-                log_print(f"  True matches found: {stats['true_matches_found']}")
-                log_print(f"  Reduction Ratio: {100 * stats['reduction_ratio']:.2f}%")
-                log_print(f"  Pair Completeness: {100 * stats['pair_completeness']:.2f}%")
-                log_print(f"  Pair Quality: {100 * stats['pair_quality']:.2f}%")
-                log_print(f"  F-measure: {100 * stats['f_measure']:.2f}%")
-                
-                # Save matching pairs
-                if len(pairs_df) > 0:
-                    pairs_file = f"blocking_outputs/{dataset}/{dataset}_{partition}_{method}_matching_pairs.csv"
-                    pairs_df.to_csv(pairs_file, index=False)
-                    log_print(f"  Matching pairs saved to: {pairs_file}")
-                else:
-                    log_print(f"  No matching pairs to save for {method}")
-                
-            except Exception as e:
-                log_message(f"Error with {method}: {str(e)}", logging.ERROR)
-                import traceback
-                error_trace = traceback.format_exc()
-                log_message(f"Traceback: {error_trace}", logging.ERROR)
-                continue
-        
-        # Create summary table
-        if results:
-            log_print("\n" + "=" * 80)
-            log_print("FINAL SUMMARY RESULTS")
-            log_print("=" * 80)
-            results_df = pd.DataFrame(results)
-            
-            # Log the summary table line by line for better formatting
-            summary_lines = results_df.to_string(index=False).split('\n')
-            for line in summary_lines:
-                log_print(line)
-            
-            # Save summary
-            summary_file = f"blocking_outputs/{dataset}/{dataset}_{partition}_blocking_detailed_summary.csv"
-            results_df.to_csv(summary_file, index=False)
-            log_print(f"\nDetailed summary saved to: {summary_file}")
-            
-            # Save complete results as JSON
-            complete_results_file = f"blocking_outputs/{dataset}/{dataset}_{partition}_complete_results.json"
-            complete_results = {
-                'dataset_info': {
-                    'task': dataset,
-                    'left_table_size': len(left_df),
-                    'right_table_size': len(right_df),
-                    'ground_truth_matches': len(match_df),
-                    'total_possible_pairs': len(left_df) * len(right_df)
-                },
-                'methods_results': {}
-            }
-            
-            for method, method_results in all_methods_results.items():
-                complete_results['methods_results'][method] = {
-                    'blocks_info': method_results['blocks_info'],
-                    'statistics': method_results['stats'],
-                    'matching_pairs_count': len(method_results['pairs_df'])
-                }
-            
-            with open(complete_results_file, 'w', encoding='utf-8') as f:
-                json.dump(complete_results, f, indent=2, ensure_ascii=False)
-            log_print(f"Complete results saved to: {complete_results_file}")
-            
-            # Find best performing method
-            if not results_df.empty:
-                best_f_measure = results_df['F-measure (%)'].max()
-                best_method = results_df[results_df['F-measure (%)'] == best_f_measure]['Method'].iloc[0]
-                log_print(f"\nBest performing method: {best_method} (F-measure: {best_f_measure}%)")
-        
-        else:
-            log_print("\nNo successful results to summarize.")
-        
-        log_print(f"\nExecution completed at: {time.strftime('%Y-%m-%d %H:%M:%S')}")
-        log_print(f"Complete execution log saved to: {log_filename}")
-        log_print("=" * 80)
-        
-    except Exception as e:
-        log_message(f"Fatal error in main execution: {str(e)}", logging.ERROR)
-        import traceback
-        error_trace = traceback.format_exc()
-        log_message(f"Full traceback: {error_trace}", logging.ERROR)
-        raise
+  
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
-        description="Blocking Pipeline"
+        description="KG Retrieval Pipeline"
     )
     parser.add_argument(
         "--dataset",
@@ -632,10 +570,41 @@ if __name__ == "__main__":
         choices=["train", "test", "valid"],
         help='Data partition to use (default: "test")',
     )
+    parser.add_argument(
+        "--blocking_method",
+        "-b",
+        default="QG",
+        choices=["SB", "QG", "EQG", "SA", "ESA"],
+        help='Blocking method to use (default: "QG")',
+    )
+    parser.add_argument(
+        "--max_block_size",
+        "-m",
+        type=int,
+        default=6,
+        help="Maximum block size (default: 6)",
+    )
+    parser.add_argument(
+        "--query_type",
+        "-q",
+        default="pair",
+        choices=["entity", "pair"],
+        help='Query type (default: "pair")',
+    )
+    parser.add_argument(
+        "--kg_source",
+        default="wikidata",
+        choices=["wikidata", "kg20c"],
+        help='Knowledge graph source for retrieval (default: "wikidata")',
+    )
 
     args = parser.parse_args()
 
     main(
         dataset=args.dataset,
         partition=args.partition,
+        blocking_method=args.blocking_method,
+        max_block_size=args.max_block_size,
+        query_type=args.query_type,
+        kg_source=args.kg_source,
     )
