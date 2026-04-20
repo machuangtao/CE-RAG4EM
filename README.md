@@ -1,4 +1,4 @@
-# CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs:A Blocking-based Batch Processing Framework
+# CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework
 
 This repository provides the source code, data, and supplemental material  of our paper "CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework". 
 
