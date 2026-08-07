@@ -26,7 +26,7 @@ from requests.adapters import HTTPAdapter
 from tqdm import tqdm
 
 API_URL = "https://labs.tib.eu/falcon/falcon2/api"
-USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: xxx)"
+USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: YOUR_EMAIL_ADDR)"
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 DATASET_DIR_MAP = {

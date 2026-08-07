@@ -22,20 +22,20 @@ from requests.adapters import HTTPAdapter
 from tqdm import tqdm
 
 API_URL = "https://www.wikidata.org/w/api.php"
-USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: xxx)"
+USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: YOUR_EMAIL_ADDR)"
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 
 def collect_ids(input_glob: str):
     qids, pids = set(), set()
-    files = sorted(glob.glob(input_glob))
+    files = sorted(set().union(*(glob.glob(p.strip()) for p in input_glob.split(","))))
     for path in files:
         with open(path, "r", encoding="utf-8") as f:
             d = json.load(f)
         for v in d.get("entities", {}).values():
-            for q in v.get("relevant_qids", []):
+            for q in (v.get("relevant_qids") or []):
                 qids.add(q["QID"])
-            for p in v.get("relevant_pids", []):
+            for p in (v.get("relevant_pids") or []):
                 pids.add(p["PID"])
     return files, qids, pids
 
@@ -128,7 +128,11 @@ def chunk(seq, size):
 
 def main():
     parser = argparse.ArgumentParser(description="Fetch Wikidata labels/descriptions for retrieved QIDs/PIDs.")
-    parser.add_argument("--input-glob", default="retrieval_outputs/*/*_test_entity_retrieval.json")
+    parser.add_argument(
+        "--input-glob",
+        default="retrieval_outputs/*/*_test_entity_retrieval.json,retrieval_outputs/*/*_test_pair_retrieval.json",
+        help="Comma-separated glob patterns.",
+    )
     parser.add_argument("--output", default="retrieval_outputs/wikidata_entity_metadata.json")
     parser.add_argument("--lang", default="en")
     parser.add_argument("--batch-size", type=int, default=50)

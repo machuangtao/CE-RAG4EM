@@ -22,7 +22,7 @@ from requests.adapters import HTTPAdapter
 from tqdm import tqdm
 
 API_BASE = "https://wd-vectordb.wmcloud.org"
-USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: z.zhang2@uva.nl)"
+USER_AGENT = "CE-RAG4EM-EntityRetrieval/1.0 (research use; contact: YOUR_EMAIL_ADDR)"
 RETRYABLE_STATUS = {429, 500, 502, 503, 504}
 
 DATASET_DIR_MAP = {
