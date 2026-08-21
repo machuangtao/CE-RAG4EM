@@ -176,6 +176,55 @@ context_config = {
 python ce_rag4em_main.py -d abt -p test -m qwen3-4b QG -maxb 6 -kg kg20c
 ```
 
+### Example 5: Running Additional Baselines
+
+You can also run additional baseline comparisons provided in `baselines/`:
+
+#### 1. Offline-Enrich baseline with entity linking via Falcon 2.0
+```bash
+python baselines/falcon_entity_retrieval.py -d abt -p test
+python baselines/prepare_prompts.py -d abt -p test --source falcon
+python baselines/run_openai_inference.py -d abt -p test --source falcon --model gpt-4o-mini
+```
+
+#### 2. RAG+Reranker baseline for reranking QIDs with a cross-encoder
+```bash
+python baselines/wikidata_entity_retrieval.py -d abt -p test
+python baselines/rerank_qids.py -d abt --source wikidata
+python baselines/prepare_prompts.py -d abt -p test --source wikidata --reranked
+python baselines/run_openai_inference.py -d abt -p test --source wikidata --reranked --model gpt-4o-mini
+```
+
+### Example 6: Validation of Batch Size on Retrieval Noise and Evidence Coverage
+
+```bash
+# Generate batch pairs and retrieve batch-level Wikidata knowledge
+python baselines/generate_batches.py -d beer -b 6
+python baselines/batch_wikidata_retrieval.py -d beer -b 6
+
+# Run batch inference and evaluate evidence quality / coverage degradation
+python baselines/run_batch_inference.py -d beer --batch-size 6 --model gpt-4o-mini
+python baselines/evaluate_evidence_quality.py -d beer --model gpt-4o-mini
+```
+
+### Example 7: Evaluating Subsets of Pairs by Difficulty Level
+
+The `scripts/` directory provides utilities to split entity pairs into similarity/difficulty buckets (`easy_non_match`, `ambiguous`, `easy_match`) using record embeddings and evaluate LLM vs. RAG performance on each subset:
+
+```bash
+# Step 1: Split dataset pairs into difficulty buckets (easy_non_match, ambiguous, easy_match)
+python scripts/dataset_ambiguous_bucket_split.py --dataset-key amgo --partition test --low-quantile 0.33 --high-quantile 0.67
+
+# Step 2: Evaluate LLM-only performance across difficulty buckets
+python scripts/dataset_bucket_split_llm_metrics.py --dataset-key amgo --partition test -m gpt-4o-mini
+
+# Step 3: Evaluate Blocking-based Batch RAG performance across difficulty buckets
+python scripts/split_blocking_batch_rag_metrics.py --dataset-key amgo --partition test -m gpt-4o-mini -b QG -maxb 6 -kg wikidata
+
+# Step 4: Compare LLM-only vs. RAG performance across difficulty levels
+python scripts/compare_llm_rag_bucket_results.py --dataset-key amgo --partition test
+```
+
 ## Output
 
 The system generates several types of outputs:
