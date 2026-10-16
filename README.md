@@ -1,6 +1,21 @@
 # CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework
 
-This repository provides the source code, data, and supplemental material  of our paper "CE-RAG4EM: Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework". 
+This repository provides the source code and data for our ACM SIGMOD paper "[Cost-Efficient RAG for Entity Matching with LLMs: A Blocking-based Batch Processing Framework](https://arxiv.org/abs/2602.05708)". 
+
+If you find our work useful,  please cite our paper by using the following BibTeX entry.
+
+```
+@article{cerag4em2026,
+  author       = {Chuangtao Ma and
+                  Zeyu Zhang and
+                  Arijit Khan and
+                  Sebastian Schelter and
+                  Paul Groth},
+  title        = {Cost-Efficient {RAG} for Entity Matching with LLMs: {A} Blocking-based Batch Processing Framework},
+  journal      = {Proc. {ACM} Manag. Data},
+  year         = {2026}
+}
+```
 
 ## Introduction
 
@@ -30,7 +45,7 @@ Place your raw datasets in the `data/raw/` directory.
 ## Quick Start
 
 ### 1. Environment Setup
-The project includes a `rag4em.yml` file that contains all necessary dependencies, and creates a conda environment from YAML file.
+The project includes a `rag4em.yml` file that contains all necessary dependencies and creates a conda environment from the YAML file.
 
 ```bash
 # Create conda environment from the YAML file
@@ -202,7 +217,7 @@ python baselines/run_openai_inference.py -d abt -p test --source wikidata --rera
 python baselines/generate_batches.py -d beer -b 6
 python baselines/batch_wikidata_retrieval.py -d beer -b 6
 
-# Run batch inference and evaluate evidence quality / coverage degradation
+# Run batch inference and evaluate evidence quality/coverage degradation
 python baselines/run_batch_inference.py -d beer --batch-size 6 --model gpt-4o-mini
 python baselines/evaluate_evidence_quality.py -d beer --model gpt-4o-mini
 ```
